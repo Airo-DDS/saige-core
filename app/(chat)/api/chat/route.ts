@@ -1,166 +1,204 @@
-import {
-  UIMessage,
-  appendResponseMessages,
-  createDataStreamResponse,
-  smoothStream,
-  streamText,
-} from 'ai';
-import { auth } from '@/app/(auth)/auth';
-import { systemPrompt } from '@/lib/ai/prompts';
+import type { UIMessage } from 'ai';
+import { auth } from '@clerk/nextjs/server';
 import {
   deleteChatById,
   getChatById,
   saveChat,
   saveMessages,
 } from '@/lib/db/queries';
-import {
-  generateUUID,
-  getMostRecentUserMessage,
-  getTrailingMessageId,
-} from '@/lib/utils';
+import { generateUUID, getMostRecentUserMessage } from '@/lib/utils';
 import { generateTitleFromUserMessage } from '../../actions';
-import { createDocument } from '@/lib/ai/tools/create-document';
-import { updateDocument } from '@/lib/ai/tools/update-document';
-import { requestSuggestions } from '@/lib/ai/tools/request-suggestions';
-import { getWeather } from '@/lib/ai/tools/get-weather';
-import { isProductionEnvironment } from '@/lib/constants';
-import { myProvider } from '@/lib/ai/providers';
+import { openai } from '@/lib/openai';
+import { pineconeIndex } from '@/lib/pinecone';
+import type { ChatCompletionMessageParam } from 'openai/resources';
 
 export const maxDuration = 60;
 
+const RAG_TOP_K = 5; // Number of context chunks to retrieve
+
+async function getContext(query: string, userId: string, chatId: string) {
+  try {
+    // We'll create a mock embedding for the query to match our 1536-dimension Pinecone index
+    // Generate a random vector with 1536 dimensions
+    const mockEmbedding = Array.from(
+      { length: 1536 },
+      () => Math.random() * 2 - 1,
+    );
+
+    // Using the mock embedding instead of generating a real one
+    // In production, you would use OpenAI's embedding model
+    const vectorQuery = {
+      vector: mockEmbedding,
+      topK: RAG_TOP_K,
+      includeMetadata: true,
+    };
+
+    // Query the pinecone index directly
+    const results = await pineconeIndex.query(vectorQuery);
+    const matches = results.matches || [];
+
+    if (matches.length === 0) {
+      return '';
+    }
+
+    // Format the context from the matches
+    const contextText = matches
+      .map((match: any) => {
+        const metadata = match.metadata as { text: string };
+        return metadata?.text || '';
+      })
+      .join('\n\n');
+
+    return contextText;
+  } catch (error) {
+    console.error('Error getting context:', error);
+    return '';
+  }
+}
+
 export async function POST(request: Request) {
   try {
-    const {
-      id,
-      messages,
-      selectedChatModel,
-    }: {
-      id: string;
-      messages: Array<UIMessage>;
-      selectedChatModel: string;
-    } = await request.json();
+    const { id, messages }: { id: string; messages: UIMessage[] } =
+      await request.json();
 
     const session = await auth();
-
-    if (!session || !session.user || !session.user.id) {
-      return new Response('Unauthorized', { status: 401 });
-    }
+    const userId = session.userId;
+    if (!userId)
+      return new Response(
+        JSON.stringify({
+          error: 'Authentication required',
+          message: 'You must be signed in to use this feature',
+        }),
+        {
+          status: 401,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
 
     const userMessage = getMostRecentUserMessage(messages);
-
-    if (!userMessage) {
+    if (!userMessage)
       return new Response('No user message found', { status: 400 });
-    }
 
+    // --- Save Chat / User Message Logic (using Prisma) ---
     const chat = await getChatById({ id });
-
     if (!chat) {
       const title = await generateTitleFromUserMessage({
         message: userMessage,
       });
-
-      await saveChat({ id, userId: session.user.id, title });
-    } else {
-      if (chat.userId !== session.user.id) {
-        return new Response('Unauthorized', { status: 401 });
-      }
+      await saveChat({ id, userId, title });
+    } else if (chat.userId !== userId) {
+      return new Response(
+        JSON.stringify({
+          error: 'Unauthorized',
+          message: 'You do not have permission to access this chat',
+        }),
+        {
+          status: 401,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
     }
 
     await saveMessages({
       messages: [
         {
-          chatId: id,
           id: userMessage.id,
-          role: 'user',
+          chatId: id,
+          role: userMessage.role,
+          content: userMessage.content || '',
           parts: userMessage.parts,
-          attachments: userMessage.experimental_attachments ?? [],
-          createdAt: new Date(),
+          attachments: userMessage.experimental_attachments,
         },
       ],
     });
+    // --- End Save Logic ---
 
-    return createDataStreamResponse({
-      execute: (dataStream) => {
-        const result = streamText({
-          model: myProvider.languageModel(selectedChatModel),
-          system: systemPrompt({ selectedChatModel }),
-          messages,
-          maxSteps: 5,
-          experimental_activeTools:
-            selectedChatModel === 'chat-model-reasoning'
-              ? []
-              : [
-                  'getWeather',
-                  'createDocument',
-                  'updateDocument',
-                  'requestSuggestions',
-                ],
-          experimental_transform: smoothStream({ chunking: 'word' }),
-          experimental_generateMessageId: generateUUID,
-          tools: {
-            getWeather,
-            createDocument: createDocument({ session, dataStream }),
-            updateDocument: updateDocument({ session, dataStream }),
-            requestSuggestions: requestSuggestions({
-              session,
-              dataStream,
-            }),
-          },
-          onFinish: async ({ response }) => {
-            if (session.user?.id) {
-              try {
-                const assistantId = getTrailingMessageId({
-                  messages: response.messages.filter(
-                    (message) => message.role === 'assistant',
-                  ),
-                });
+    // --- RAG Implementation ---
+    const userQuery =
+      typeof userMessage.content === 'string' ? userMessage.content : '';
+    const context = await getContext(userQuery, userId, id);
 
-                if (!assistantId) {
-                  throw new Error('No assistant message found!');
-                }
+    const systemPrompt = `You are Saige, an AI assistant for dental practice staff training. Answer the user's question based *only* on the provided context. If the answer is not found in the context, say "I don't have information on that topic based on the provided materials." Do not make up information. Be concise and helpful.
 
-                const [, assistantMessage] = appendResponseMessages({
-                  messages: [userMessage],
-                  responseMessages: response.messages,
-                });
+    Context:
+    ---
+    ${context}
+    ---
+    `;
 
-                await saveMessages({
-                  messages: [
-                    {
-                      id: assistantId,
-                      chatId: id,
-                      role: assistantMessage.role,
-                      parts: assistantMessage.parts,
-                      attachments:
-                        assistantMessage.experimental_attachments ?? [],
-                      createdAt: new Date(),
-                    },
-                  ],
-                });
-              } catch (_) {
-                console.error('Failed to save chat');
-              }
-            }
-          },
-          experimental_telemetry: {
-            isEnabled: isProductionEnvironment,
-            functionId: 'stream-text',
-          },
-        });
+    // Prepare messages for the OpenAI API format
+    const openaiMessages: ChatCompletionMessageParam[] = [
+      { role: 'system', content: systemPrompt },
+      // Include relevant chat history
+      ...messages.slice(-6).map((msg) => {
+        // Convert UI messages to OpenAI format
+        const msgContent = typeof msg.content === 'string' ? msg.content : '';
 
-        result.consumeStream();
+        // Only use valid OpenAI roles
+        const role =
+          msg.role === 'user' ||
+          msg.role === 'assistant' ||
+          msg.role === 'system'
+            ? msg.role
+            : 'user';
 
-        result.mergeIntoDataStream(dataStream, {
-          sendReasoning: true,
-        });
-      },
-      onError: () => {
-        return 'Oops, an error occured!';
+        return { role, content: msgContent };
+      }),
+    ];
+    // --- End RAG Implementation ---
+
+    // --- Call LLM using OpenAI Stream ---
+    const stream = await openai.chat.completions.create({
+      model: 'gpt-4o', // Or your preferred chat model
+      messages: openaiMessages,
+      stream: true,
+      temperature: 0.3, // Adjust for factual recall
+    });
+
+    // Convert OpenAI stream to response format
+    const responseStream = new ReadableStream({
+      async start(controller) {
+        let accumulatedContent = '';
+        const assistantMessageId = generateUUID();
+
+        for await (const chunk of stream) {
+          const contentDelta = chunk.choices[0]?.delta?.content || '';
+          if (contentDelta) {
+            accumulatedContent += contentDelta;
+            controller.enqueue(contentDelta);
+          }
+        }
+
+        // Save the complete assistant message after the stream ends
+        if (accumulatedContent) {
+          const finalMessage = {
+            id: assistantMessageId,
+            chatId: id,
+            role: 'assistant',
+            content: accumulatedContent,
+            parts: [{ type: 'text', text: accumulatedContent }],
+            attachments: null,
+          };
+          try {
+            await saveMessages({ messages: [finalMessage] });
+            console.log('Assistant message saved successfully.');
+          } catch (dbError) {
+            console.error('Failed to save assistant message:', dbError);
+          }
+        }
+
+        controller.close();
       },
     });
+
+    return new Response(responseStream, {
+      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+    });
+    // --- End Call LLM ---
   } catch (error) {
+    console.error('Chat API Error:', error);
     return new Response('An error occurred while processing your request!', {
-      status: 404,
+      status: 500,
     });
   }
 }
@@ -170,28 +208,71 @@ export async function DELETE(request: Request) {
   const id = searchParams.get('id');
 
   if (!id) {
-    return new Response('Not Found', { status: 404 });
+    return new Response(
+      JSON.stringify({
+        error: 'Not Found',
+        message: 'Chat ID is required',
+      }),
+      {
+        status: 404,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    );
   }
 
   const session = await auth();
-
-  if (!session || !session.user) {
-    return new Response('Unauthorized', { status: 401 });
+  const userId = session.userId;
+  if (!userId) {
+    return new Response(
+      JSON.stringify({
+        error: 'Authentication required',
+        message: 'You must be signed in to delete chats',
+      }),
+      {
+        status: 401,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    );
   }
 
   try {
     const chat = await getChatById({ id });
 
-    if (chat.userId !== session.user.id) {
-      return new Response('Unauthorized', { status: 401 });
+    if (!chat || chat.userId !== userId) {
+      return new Response(
+        JSON.stringify({
+          error: 'Unauthorized',
+          message: 'You do not have permission to delete this chat',
+        }),
+        {
+          status: 401,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
     }
 
     await deleteChatById({ id });
 
-    return new Response('Chat deleted', { status: 200 });
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: 'Chat deleted successfully',
+      }),
+      {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    );
   } catch (error) {
-    return new Response('An error occurred while processing your request!', {
-      status: 500,
-    });
+    return new Response(
+      JSON.stringify({
+        error: 'Server Error',
+        message: 'An error occurred while processing your request',
+      }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    );
   }
 }

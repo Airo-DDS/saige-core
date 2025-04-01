@@ -1,21 +1,20 @@
-import { UIMessage } from 'ai';
-import { PreviewMessage, ThinkingMessage } from './message';
+'use client';
+
+import type { UIMessage } from 'ai';
+import { memo } from 'react';
+import type { Vote } from '@/lib/db/schema';
 import { useScrollToBottom } from './use-scroll-to-bottom';
 import { Overview } from './overview';
-import { memo } from 'react';
-import { Vote } from '@/lib/db/schema';
-import equal from 'fast-deep-equal';
-import { UseChatHelpers } from '@ai-sdk/react';
+import { Message } from './message';
+import type { UseChatHelpers } from '@ai-sdk/react';
 
-interface MessagesProps {
+export interface MessagesProps {
   chatId: string;
   status: UseChatHelpers['status'];
   votes: Array<Vote> | undefined;
   messages: Array<UIMessage>;
   setMessages: UseChatHelpers['setMessages'];
   reload: UseChatHelpers['reload'];
-  isReadonly: boolean;
-  isArtifactVisible: boolean;
 }
 
 function PureMessages({
@@ -25,7 +24,6 @@ function PureMessages({
   messages,
   setMessages,
   reload,
-  isReadonly,
 }: MessagesProps) {
   const [messagesContainerRef, messagesEndRef] =
     useScrollToBottom<HTMLDivElement>();
@@ -37,26 +35,17 @@ function PureMessages({
     >
       {messages.length === 0 && <Overview />}
 
-      {messages.map((message, index) => (
-        <PreviewMessage
-          key={message.id}
-          chatId={chatId}
-          message={message}
-          isLoading={status === 'streaming' && messages.length - 1 === index}
-          vote={
-            votes
-              ? votes.find((vote) => vote.messageId === message.id)
-              : undefined
-          }
-          setMessages={setMessages}
-          reload={reload}
-          isReadonly={isReadonly}
-        />
+      {messages.map((message) => (
+        <Message key={message.id} message={message} isLoading={false} />
       ))}
 
       {status === 'submitted' &&
         messages.length > 0 &&
-        messages[messages.length - 1].role === 'user' && <ThinkingMessage />}
+        messages[messages.length - 1].role === 'user' && (
+          <div className="flex items-center justify-center p-4">
+            <div className="animate-pulse">Thinking...</div>
+          </div>
+        )}
 
       <div
         ref={messagesEndRef}
@@ -66,14 +55,4 @@ function PureMessages({
   );
 }
 
-export const Messages = memo(PureMessages, (prevProps, nextProps) => {
-  if (prevProps.isArtifactVisible && nextProps.isArtifactVisible) return true;
-
-  if (prevProps.status !== nextProps.status) return false;
-  if (prevProps.status && nextProps.status) return false;
-  if (prevProps.messages.length !== nextProps.messages.length) return false;
-  if (!equal(prevProps.messages, nextProps.messages)) return false;
-  if (!equal(prevProps.votes, nextProps.votes)) return false;
-
-  return true;
-});
+export const Messages = memo(PureMessages);

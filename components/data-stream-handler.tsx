@@ -1,96 +1,37 @@
 'use client';
 
-import { useChat } from '@ai-sdk/react';
-import { useEffect, useRef } from 'react';
-import { artifactDefinitions, ArtifactKind } from './artifact';
-import { Suggestion } from '@/lib/db/schema';
-import { initialArtifactData, useArtifact } from '@/hooks/use-artifact';
+import { useEffect } from 'react';
 
-export type DataStreamDelta = {
-  type:
-    | 'text-delta'
-    | 'code-delta'
-    | 'sheet-delta'
-    | 'image-delta'
-    | 'title'
-    | 'id'
-    | 'suggestion'
-    | 'clear'
-    | 'finish'
-    | 'kind';
-  content: string | Suggestion;
-};
+interface DataStreamHandlerProps {
+  id: string;
+}
 
-export function DataStreamHandler({ id }: { id: string }) {
-  const { data: dataStream } = useChat({ id });
-  const { artifact, setArtifact, setMetadata } = useArtifact();
-  const lastProcessedIndex = useRef(-1);
-
+export function DataStreamHandler({ id }: DataStreamHandlerProps) {
   useEffect(() => {
-    if (!dataStream?.length) return;
+    const setupEventSource = async () => {
+      try {
+        // This is a placeholder for setting up a Server-Sent Events connection
+        // or other streaming mechanism to handle real-time data
+        console.log('Setting up data stream for chat ID:', id);
 
-    const newDeltas = dataStream.slice(lastProcessedIndex.current + 1);
-    lastProcessedIndex.current = dataStream.length - 1;
-
-    (newDeltas as DataStreamDelta[]).forEach((delta: DataStreamDelta) => {
-      const artifactDefinition = artifactDefinitions.find(
-        (artifactDefinition) => artifactDefinition.kind === artifact.kind,
-      );
-
-      if (artifactDefinition?.onStreamPart) {
-        artifactDefinition.onStreamPart({
-          streamPart: delta,
-          setArtifact,
-          setMetadata,
-        });
+        // Example of what you might do with an actual EventSource
+        // const eventSource = new EventSource(`/api/stream?chatId=${id}`);
+        // eventSource.onmessage = (event) => {
+        //   const data = JSON.parse(event.data);
+        //   // Process streaming data
+        // };
+        //
+        // return () => {
+        //   eventSource.close();
+        // };
+      } catch (error) {
+        console.error('Error setting up data stream:', error);
       }
+    };
 
-      setArtifact((draftArtifact) => {
-        if (!draftArtifact) {
-          return { ...initialArtifactData, status: 'streaming' };
-        }
+    setupEventSource();
+  }, [id]);
 
-        switch (delta.type) {
-          case 'id':
-            return {
-              ...draftArtifact,
-              documentId: delta.content as string,
-              status: 'streaming',
-            };
-
-          case 'title':
-            return {
-              ...draftArtifact,
-              title: delta.content as string,
-              status: 'streaming',
-            };
-
-          case 'kind':
-            return {
-              ...draftArtifact,
-              kind: delta.content as ArtifactKind,
-              status: 'streaming',
-            };
-
-          case 'clear':
-            return {
-              ...draftArtifact,
-              content: '',
-              status: 'streaming',
-            };
-
-          case 'finish':
-            return {
-              ...draftArtifact,
-              status: 'idle',
-            };
-
-          default:
-            return draftArtifact;
-        }
-      });
-    });
-  }, [dataStream, setArtifact, setMetadata, artifact]);
-
+  // This component doesn't render anything visible
   return null;
 }

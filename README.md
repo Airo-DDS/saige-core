@@ -59,3 +59,53 @@ pnpm dev
 ```
 
 Your app template should now be running on [localhost:3000](http://localhost:3000/).
+
+## RAG Implementation with Pinecone
+
+This project includes a Retrieval-Augmented Generation (RAG) implementation using Pinecone as the vector database.
+
+### Knowledge Base
+
+The knowledge base is stored in the `knowledge` directory. Add text files (`.txt`) to this directory with content you want to be accessible to the AI assistant.
+
+### Embedding Process
+
+To embed your knowledge base into Pinecone:
+
+1. Make sure your Pinecone environment variables are set in `.env`:
+   ```
+   PINECONE_API_KEY=your-api-key
+   PINECONE_ENVIRONMENT=your-environment
+   PINECONE_INDEX_NAME=your-index-name
+   ```
+
+2. Create or recreate the Pinecone index with the correct dimensions:
+   ```
+   npx tsx scripts/recreateIndex.ts
+   ```
+
+3. Embed the knowledge with mock vectors (for development purposes):
+   ```
+   npx tsx scripts/mockEmbedKnowledgeBase.ts
+   ```
+
+### Important Notes
+
+1. The project currently uses mock embeddings with 1024 dimensions for Pinecone integration. In production, ensure that your OpenAI embedding model's dimensions match your Pinecone index dimensions.
+
+2. For actual production use:
+   - Use the OpenAI embedding model `text-embedding-3-small` (1024 dimensions) instead of mock embeddings
+   - Or adjust your Pinecone index to match the dimensions of your preferred embedding model
+
+3. To use real embeddings, modify the `getContext` function in `app/(chat)/api/chat/route.ts` to use actual OpenAI embeddings instead of mock vectors.
+
+## Authentication
+
+This project uses Clerk for authentication. To set up Clerk:
+
+1. Create a Clerk account at [clerk.com](https://clerk.com/)
+2. Add your Clerk API keys to your `.env` file:
+   ```
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your-publishable-key
+   CLERK_SECRET_KEY=your-secret-key
+   ```

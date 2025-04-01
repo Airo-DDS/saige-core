@@ -1,20 +1,26 @@
-export const DEFAULT_CHAT_MODEL: string = 'chat-model';
+// This file will be refactored to remove AI SDK dependencies
 
-interface ChatModel {
+// Define available chat models
+export interface ChatModel {
   id: string;
   name: string;
-  description: string;
+  description?: string;
+  maxTokens?: number;
 }
 
-export const chatModels: Array<ChatModel> = [
+export const CHAT_MODELS: ChatModel[] = [
   {
-    id: 'chat-model',
-    name: 'Chat model',
-    description: 'Primary model for all-purpose chat',
+    id: 'gpt-4o',
+    name: 'GPT-4o',
+    description: 'Most capable model for dental assistant training.',
+    maxTokens: 4096,
   },
   {
-    id: 'chat-model-reasoning',
-    name: 'Reasoning model',
-    description: 'Uses advanced reasoning',
+    id: 'gpt-3.5-turbo',
+    name: 'GPT-3.5 Turbo',
+    description: 'Fast model for basic queries.',
+    maxTokens: 4096,
   },
 ];
+
+export const DEFAULT_CHAT_MODEL = 'gpt-4o';

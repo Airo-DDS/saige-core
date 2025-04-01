@@ -1,18 +1,18 @@
 'use server';
 
-import { generateText, Message } from 'ai';
+import type { Message } from 'ai';
 import { cookies } from 'next/headers';
-
+import { openai } from '@/lib/openai';
 import {
   deleteMessagesByChatIdAfterTimestamp,
   getMessageById,
   updateChatVisiblityById,
 } from '@/lib/db/queries';
-import { VisibilityType } from '@/components/visibility-selector';
-import { myProvider } from '@/lib/ai/providers';
+
+export type VisibilityType = 'private' | 'public';
 
 export async function saveChatModelAsCookie(model: string) {
-  const cookieStore = await cookies();
+  const cookieStore = cookies();
   cookieStore.set('chat-model', model);
 }
 
@@ -21,21 +21,42 @@ export async function generateTitleFromUserMessage({
 }: {
   message: Message;
 }) {
-  const { text: title } = await generateText({
-    model: myProvider.languageModel('title-model'),
-    system: `\n
-    - you will generate a short title based on the first message a user begins a conversation with
-    - ensure it is not more than 80 characters long
-    - the title should be a summary of the user's message
-    - do not use quotes or colons`,
-    prompt: JSON.stringify(message),
-  });
+  // Extract content from message
+  const messageContent =
+    typeof message.content === 'string' ? message.content : '';
 
-  return title;
+  try {
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-3.5-turbo',
+      messages: [
+        {
+          role: 'system',
+          content:
+            'Generate a short title (under 80 characters) based on this user message.',
+        },
+        {
+          role: 'user',
+          content: messageContent,
+        },
+      ],
+      temperature: 0.7,
+      max_tokens: 60,
+    });
+
+    return completion.choices[0]?.message?.content || 'New Chat';
+  } catch (error) {
+    console.error('Error generating title:', error);
+    return 'New Chat';
+  }
 }
 
 export async function deleteTrailingMessages({ id }: { id: string }) {
-  const [message] = await getMessageById({ id });
+  const message = await getMessageById({ id });
+
+  if (!message) {
+    console.error(`Message with id ${id} not found for deletion.`);
+    return;
+  }
 
   await deleteMessagesByChatIdAfterTimestamp({
     chatId: message.chatId,
@@ -50,5 +71,11 @@ export async function updateChatVisibility({
   chatId: string;
   visibility: VisibilityType;
 }) {
-  await updateChatVisiblityById({ chatId, visibility });
+  try {
+    await updateChatVisiblityById({ chatId, visibility });
+    return { success: true };
+  } catch (error) {
+    console.error('Error updating chat visibility:', error);
+    return { success: false, error: 'Failed to update visibility' };
+  }
 }

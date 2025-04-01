@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import { SignedIn, SignedOut } from '@clerk/nextjs';
 
 import { PlusIcon } from '@/components/icons';
 import { SidebarHistory } from '@/components/sidebar-history';
@@ -33,7 +33,7 @@ export function AppSidebar() {
               }}
               className="flex flex-row gap-3 items-center"
             >
-              <span className="text-lg font-semibold px-2 hover:bg-muted rounded-md cursor-pointer">
+              <span className="text-xl font-semibold px-2 hover:bg-sidebar-accent/50 text-primary rounded-md cursor-pointer transition-colors">
                 Saige
               </span>
             </Link>
@@ -43,7 +43,7 @@ export function AppSidebar() {
                   <Button
                     variant="ghost"
                     type="button"
-                    className="p-2 h-fit"
+                    className="p-2 h-fit text-primary hover:text-primary/80 hover:bg-primary/10"
                     onClick={() => {
                       setOpenMobile(false);
                       router.push('/');
@@ -64,9 +64,12 @@ export function AppSidebar() {
           <SidebarHistory />
         </SignedIn>
         <SignedOut>
-          <div className="p-4 text-center text-sm text-muted-foreground">
+          <div className="p-4 text-center text-sm text-sidebar-foreground">
             Please{' '}
-            <Link href="/sign-in" className="underline">
+            <Link
+              href="/sign-in"
+              className="underline text-primary font-medium"
+            >
               Sign In
             </Link>{' '}
             to view chat history.
@@ -74,11 +77,9 @@ export function AppSidebar() {
         </SignedOut>
       </SidebarContent>
       <SidebarFooter>
-        <SignedIn>
-          <div className="flex justify-center p-2">
-            <UserButton afterSignOutUrl="/sign-in" />
-          </div>
-        </SignedIn>
+        <div className="p-3 text-xs text-center text-sidebar-foreground/70">
+          Saige - Dental AI Assistant
+        </div>
       </SidebarFooter>
     </Sidebar>
   );

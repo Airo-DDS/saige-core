@@ -29,14 +29,14 @@ export function Message({ message, isLoading }: MessageProps) {
     return (
       <div
         data-testid={`message-${message.role}`}
-        className="w-full mx-auto max-w-3xl px-4 group"
+        className="w-full mx-auto max-w-3xl px-4 group py-2"
         data-role={message.role}
       >
         <div className="flex gap-4 w-full justify-end">
           <div className="flex flex-col gap-2 items-end">
             <div
               data-testid="message-content"
-              className="bg-primary text-primary-foreground px-3 py-2 rounded-xl"
+              className="bg-primary text-primary-foreground px-4 py-2.5 rounded-xl shadow-sm"
             >
               <Markdown>{userContent}</Markdown>
             </div>
@@ -50,11 +50,11 @@ export function Message({ message, isLoading }: MessageProps) {
   return (
     <div
       data-testid={`message-${message.role}`}
-      className="w-full mx-auto max-w-3xl px-4 group"
+      className="w-full mx-auto max-w-3xl px-4 group py-2"
       data-role={message.role}
     >
       <div className="flex gap-4 w-full">
-        <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border bg-background">
+        <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-primary/20 bg-primary/5 text-primary">
           <span className="font-bold text-xs">AI</span>
         </div>
 
@@ -63,9 +63,9 @@ export function Message({ message, isLoading }: MessageProps) {
           {isLoading && !message.parts?.length && !message.content && (
             <div className="h-4 w-5 mt-1">
               <div className="flex space-x-1 animate-pulse">
-                <div className="h-2 w-2 bg-gray-400 rounded-full" />
-                <div className="h-2 w-2 bg-gray-400 rounded-full" />
-                <div className="h-2 w-2 bg-gray-400 rounded-full" />
+                <div className="h-2 w-2 bg-primary/40 rounded-full" />
+                <div className="h-2 w-2 bg-primary/40 rounded-full" />
+                <div className="h-2 w-2 bg-primary/40 rounded-full" />
               </div>
             </div>
           )}
@@ -80,6 +80,7 @@ export function Message({ message, isLoading }: MessageProps) {
                     <div
                       key={`text-${message.id}-${index}`}
                       data-testid="message-content"
+                      className="prose dark:prose-invert max-w-none"
                     >
                       <Markdown>{part.text}</Markdown>
                     </div>
@@ -91,9 +92,11 @@ export function Message({ message, isLoading }: MessageProps) {
                   return (
                     <div
                       key={`tool-${message.id}-${index}`}
-                      className="bg-gray-100 dark:bg-gray-800 p-3 rounded-md text-sm my-2 border border-gray-200 dark:border-gray-700"
+                      className="bg-secondary/50 p-3 rounded-md text-sm my-2 border border-secondary shadow-sm"
                     >
-                      <div className="font-semibold mb-1">Tool Call</div>
+                      <div className="font-semibold mb-1 text-primary">
+                        Tool Call
+                      </div>
                       <pre className="overflow-auto text-xs">
                         {JSON.stringify(part, null, 2)}
                       </pre>
@@ -107,7 +110,7 @@ export function Message({ message, isLoading }: MessageProps) {
                     key={`other-${message.id}-${index}`}
                     className="text-sm my-2"
                   >
-                    <pre className="overflow-auto text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">
+                    <pre className="overflow-auto text-xs bg-secondary/50 p-2 rounded border border-secondary/50">
                       {JSON.stringify(part, null, 2)}
                     </pre>
                   </div>
@@ -117,7 +120,10 @@ export function Message({ message, isLoading }: MessageProps) {
           ) : (
             // Fallback to message.content if no parts are available
             message.content && (
-              <div data-testid="message-content">
+              <div
+                data-testid="message-content"
+                className="prose dark:prose-invert max-w-none"
+              >
                 <Markdown>{message.content as string}</Markdown>
               </div>
             )
@@ -127,9 +133,9 @@ export function Message({ message, isLoading }: MessageProps) {
           {isLoading && message.parts?.length > 0 && (
             <div className="h-4 w-5 mt-1">
               <div className="flex space-x-1 animate-pulse">
-                <div className="h-2 w-2 bg-gray-400 rounded-full" />
-                <div className="h-2 w-2 bg-gray-400 rounded-full" />
-                <div className="h-2 w-2 bg-gray-400 rounded-full" />
+                <div className="h-2 w-2 bg-primary/40 rounded-full" />
+                <div className="h-2 w-2 bg-primary/40 rounded-full" />
+                <div className="h-2 w-2 bg-primary/40 rounded-full" />
               </div>
             </div>
           )}

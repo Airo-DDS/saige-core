@@ -13,24 +13,25 @@ interface SuggestedActionsProps {
 function PureSuggestedActions({ chatId, append }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'What are the advantages',
-      label: 'of using Next.js?',
-      action: 'What are the advantages of using Next.js?',
+      title: 'What are the best practices',
+      label: 'for dental insurance verification?',
+      action: 'What are the best practices for dental insurance verification?',
     },
     {
-      title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: 'Explain how to handle',
+      label: 'patient anxiety during procedures',
+      action: 'Explain how to handle patient anxiety during dental procedures',
     },
     {
-      title: 'Help me write an essay',
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: "What's the protocol for",
+      label: 'scheduling emergency dental appointments?',
+      action:
+        "What's the protocol for scheduling emergency dental appointments?",
     },
     {
-      title: 'What is the weather',
-      label: 'in San Francisco?',
-      action: 'What is the weather in San Francisco?',
+      title: 'Help me understand',
+      label: 'dental billing codes and insurance claims',
+      action: 'Help me understand dental billing codes and insurance claims',
     },
   ];
 

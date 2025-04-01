@@ -45,8 +45,8 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
         id: message.id,
         parts: message.parts as UIMessage['parts'],
         role: message.role as UIMessage['role'],
-        // Note: content will soon be deprecated in @ai-sdk/react
-        content: '',
+        // Use the actual message content from the database instead of empty string
+        content: message.content,
         createdAt: message.createdAt,
         experimental_attachments: attachments,
       };

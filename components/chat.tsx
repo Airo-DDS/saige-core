@@ -100,13 +100,13 @@ export function Chat({
   const isDevEnvironment = process.env.NODE_ENV === 'development';
 
   return (
-    <div className="flex flex-col min-w-0 h-dvh bg-background">
+    <div className="flex flex-col min-w-0 h-dvh bg-background border-l border-sidebar-border/50">
       <ChatHeader chatId={id} />
 
       {isDevEnvironment && (
         <button
           onClick={logMessageDetails}
-          className="mx-auto my-2 px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded"
+          className="mx-auto my-2 px-3 py-1 bg-primary/10 text-primary hover:bg-primary/20 text-xs rounded transition-colors"
           type="button"
         >
           Debug Messages

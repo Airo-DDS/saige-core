@@ -1,7 +1,7 @@
-import { codeDocumentHandler } from '@/artifacts/code/server';
-import { imageDocumentHandler } from '@/artifacts/image/server';
-import { sheetDocumentHandler } from '@/artifacts/sheet/server';
-import { textDocumentHandler } from '@/artifacts/text/server';
+import { codeArtifactHandler } from '@/artifacts/code/server';
+import { imageArtifactHandler } from '@/artifacts/image/server';
+import { sheetArtifactHandler } from '@/artifacts/sheet/server';
+import { textArtifactHandler } from '@/artifacts/text/server';
 import { ArtifactKind } from '@/components/artifact';
 import { DataStreamWriter } from 'ai';
 import { Document } from '../db/schema';
@@ -90,10 +90,25 @@ export function createDocumentHandler<T extends ArtifactKind>(config: {
  * Use this array to define the document handlers for each artifact kind.
  */
 export const documentHandlersByArtifactKind: Array<DocumentHandler> = [
-  textDocumentHandler,
-  codeDocumentHandler,
-  imageDocumentHandler,
-  sheetDocumentHandler,
+  textArtifactHandler,
+  codeArtifactHandler,
+  imageArtifactHandler,
+  sheetArtifactHandler,
 ];
 
 export const artifactKinds = ['text', 'code', 'image', 'sheet'] as const;
+
+export function getArtifactHandler(kind: ArtifactKind) {
+  switch (kind) {
+    case 'code':
+      return codeArtifactHandler;
+    case 'image':
+      return imageArtifactHandler;
+    case 'sheet':
+      return sheetArtifactHandler;
+    case 'text':
+      return textArtifactHandler;
+    default:
+      return textArtifactHandler;
+  }
+}

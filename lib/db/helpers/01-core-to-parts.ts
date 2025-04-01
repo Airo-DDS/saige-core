@@ -15,11 +15,14 @@ config({
   path: '.env.local',
 });
 
-if (!process.env.POSTGRES_URL) {
-  throw new Error('POSTGRES_URL environment variable is not set');
+// Use DATABASE_URL if POSTGRES_URL is not available
+const postgresUrl = process.env.POSTGRES_URL || process.env.DATABASE_URL;
+
+if (!postgresUrl) {
+  throw new Error('Neither POSTGRES_URL nor DATABASE_URL is defined');
 }
 
-const client = postgres(process.env.POSTGRES_URL);
+const client = postgres(postgresUrl);
 const db = drizzle(client);
 
 const BATCH_SIZE = 50; // Process 10 chats at a time

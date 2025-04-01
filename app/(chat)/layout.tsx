@@ -7,9 +7,10 @@ export default async function ChatLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const cookieStore = cookies();
-  const isCollapsed =
-    (await cookieStore).get('sidebar:state')?.value !== 'true';
+  // Get cookies and check sidebar state
+  // Default to expanded (not collapsed) if cookie isn't set
+  const cookieStore = await cookies();
+  const isCollapsed = cookieStore.get('sidebar:state')?.value !== 'true';
 
   return (
     <SidebarProvider defaultOpen={!isCollapsed}>

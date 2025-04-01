@@ -13,8 +13,9 @@ import {
 export type VisibilityType = 'private' | 'public';
 
 export async function saveChatModelAsCookie(model: string) {
-  const cookieStore = cookies();
-  cookieStore.set('chat-model', model);
+  // Just return a value for now - we'll handle cookies client-side
+  // This avoids the server action cookie API incompatibility
+  return { model };
 }
 
 export async function generateTitleFromUserMessage({

@@ -1,5 +1,4 @@
 import type { UIMessage } from 'ai';
-import { streamText } from 'ai';
 import { auth } from '@clerk/nextjs/server';
 import {
   deleteChatById,
@@ -130,28 +129,41 @@ ${context}
 ---
 `;
 
-    // Convert recent messages for streamText
-    const coreMessages = messages.slice(-6).map((msg) => {
+    // Convert recent messages to a format OpenAI accepts
+    const apiMessages = messages.slice(-6).map((msg) => {
+      // Map to OpenAI compatible format
+      if (
+        msg.role === 'user' ||
+        msg.role === 'assistant' ||
+        msg.role === 'system'
+      ) {
+        return {
+          role: msg.role,
+          content: typeof msg.content === 'string' ? msg.content : '',
+        };
+      }
+      // Default to user for any other roles
       return {
-        role:
-          msg.role === 'user' ||
-          msg.role === 'assistant' ||
-          msg.role === 'system'
-            ? msg.role
-            : 'user',
+        role: 'user' as const,
         content: typeof msg.content === 'string' ? msg.content : '',
       };
     });
 
-    // Call the OpenAI API directly
+    // Add system message at the beginning
+    apiMessages.unshift({
+      role: 'system' as const,
+      content: systemPrompt,
+    });
+
+    // Call the OpenAI API
     const stream = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
-      messages: [{ role: 'system', content: systemPrompt }, ...coreMessages],
+      messages: apiMessages,
       stream: true,
       temperature: 0.3,
     });
 
-    // Process stream and create a response
+    // Create a streaming response
     const { readable, writable } = new TransformStream();
     const assistantMessageId = generateUUID();
     let fullContent = '';
@@ -159,55 +171,92 @@ ${context}
     // Process the stream
     (async () => {
       const writer = writable.getWriter();
+      const encoder = new TextEncoder();
 
       try {
+        // Send a message id event first to identify the response message
+        await writer.write(
+          encoder.encode(
+            `event: id\ndata: ${JSON.stringify({ id: assistantMessageId })}\n\n`,
+          ),
+        );
+
+        // Then setup the initial message event
+        await writer.write(
+          encoder.encode(
+            `event: message\ndata: {"role":"assistant","id":"${assistantMessageId}","content":"","createdAt":${Date.now()}}\n\n`,
+          ),
+        );
+
         for await (const chunk of stream) {
           const content = chunk.choices[0]?.delta?.content || '';
           if (content) {
             fullContent += content;
-            await writer.write(new TextEncoder().encode(content));
+
+            // Send text deltas in the format Vercel AI SDK expects
+            const textDelta = JSON.stringify({
+              type: 'text-delta',
+              textDelta: content,
+              id: assistantMessageId,
+            });
+            await writer.write(
+              encoder.encode(`event: text-delta\ndata: ${textDelta}\n\n`),
+            );
           }
         }
 
-        // Stream is complete, close writer
+        // Close the event stream properly with a final message update
+        const finalMessage = {
+          id: assistantMessageId,
+          role: 'assistant',
+          content: fullContent,
+          createdAt: Date.now(),
+        };
+        await writer.write(
+          encoder.encode(
+            `event: message\ndata: ${JSON.stringify(finalMessage)}\n\n`,
+          ),
+        );
+        await writer.write(encoder.encode('event: done\ndata: {}\n\n'));
         await writer.close();
 
-        // Save the message
+        // Save the assistant message
         if (fullContent) {
-          console.log(
-            `Final assistant content: ${fullContent.substring(0, 100)}...`,
-          );
-
-          const finalMessage = {
-            id: assistantMessageId,
-            chatId: id,
-            role: 'assistant',
-            content: fullContent,
-            parts: [{ type: 'text', text: fullContent }],
-            attachments: null,
-          };
-
-          try {
-            await saveMessages({ messages: [finalMessage] });
-            console.log(
-              'Assistant message saved successfully with ID:',
-              assistantMessageId,
-            );
-          } catch (dbError) {
-            console.error('Failed to save assistant message:', dbError);
-          }
+          await saveMessages({
+            messages: [
+              {
+                id: assistantMessageId,
+                chatId: id,
+                role: 'assistant',
+                content: fullContent,
+                parts: [{ type: 'text', text: fullContent }],
+                attachments: null,
+              },
+            ],
+          });
         }
       } catch (error) {
         console.error('Error processing stream:', error);
+        try {
+          // Send error event
+          await writer.write(
+            encoder.encode(
+              `event: error\ndata: ${JSON.stringify({ message: 'Error generating response' })}\n\n`,
+            ),
+          );
+        } catch (e) {
+          // Ignore write errors on already errored stream
+        }
         writer.abort(error);
       }
     })();
 
-    // Return the response
+    // Return the streaming response with correct headers
     return new Response(readable, {
       headers: {
-        'Content-Type': 'text/plain; charset=utf-8',
-        'Transfer-Encoding': 'chunked',
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache, no-transform',
+        Connection: 'keep-alive',
       },
     });
   } catch (error) {

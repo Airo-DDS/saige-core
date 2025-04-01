@@ -226,6 +226,25 @@ File: app/(auth)/api/auth/[...nextauth]/route.ts
 export { GET, POST } from '@/app/(auth)/auth';
 
 ================
+File: components/ui/skeleton.tsx
+================
+import { cn } from '@/lib/utils';
+
+function Skeleton({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn('animate-pulse rounded-md bg-muted', className)}
+      {...props}
+    />
+  );
+}
+
+export { Skeleton };
+
+================
 File: lib/editor/react-renderer.tsx
 ================
 import { createRoot } from 'react-dom/client';
@@ -346,23 +365,522 @@ export default function Page() {
 }
 
 ================
-File: components/ui/skeleton.tsx
+File: components/ui/alert-dialog.tsx
 ================
-import { cn } from '@/lib/utils';
+'use client';
 
-function Skeleton({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-  return (
-    <div
-      className={cn('animate-pulse rounded-md bg-muted', className)}
+import * as React from 'react';
+import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
+
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
+
+const AlertDialog = AlertDialogPrimitive.Root;
+
+const AlertDialogTrigger = AlertDialogPrimitive.Trigger;
+
+const AlertDialogPortal = AlertDialogPrimitive.Portal;
+
+const AlertDialogOverlay = React.forwardRef<
+  React.ElementRef<typeof AlertDialogPrimitive.Overlay>,
+  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Overlay>
+>(({ className, ...props }, ref) => (
+  <AlertDialogPrimitive.Overlay
+    className={cn(
+      'fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+      className,
+    )}
+    {...props}
+    ref={ref}
+  />
+));
+AlertDialogOverlay.displayName = AlertDialogPrimitive.Overlay.displayName;
+
+const AlertDialogContent = React.forwardRef<
+  React.ElementRef<typeof AlertDialogPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Content>
+>(({ className, ...props }, ref) => (
+  <AlertDialogPortal>
+    <AlertDialogOverlay />
+    <AlertDialogPrimitive.Content
+      ref={ref}
+      className={cn(
+        'fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg',
+        className,
+      )}
       {...props}
     />
-  );
-}
+  </AlertDialogPortal>
+));
+AlertDialogContent.displayName = AlertDialogPrimitive.Content.displayName;
 
-export { Skeleton };
+const AlertDialogHeader = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div
+    className={cn(
+      'flex flex-col space-y-2 text-center sm:text-left',
+      className,
+    )}
+    {...props}
+  />
+);
+AlertDialogHeader.displayName = 'AlertDialogHeader';
+
+const AlertDialogFooter = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div
+    className={cn(
+      'flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2',
+      className,
+    )}
+    {...props}
+  />
+);
+AlertDialogFooter.displayName = 'AlertDialogFooter';
+
+const AlertDialogTitle = React.forwardRef<
+  React.ElementRef<typeof AlertDialogPrimitive.Title>,
+  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Title>
+>(({ className, ...props }, ref) => (
+  <AlertDialogPrimitive.Title
+    ref={ref}
+    className={cn('text-lg font-semibold', className)}
+    {...props}
+  />
+));
+AlertDialogTitle.displayName = AlertDialogPrimitive.Title.displayName;
+
+const AlertDialogDescription = React.forwardRef<
+  React.ElementRef<typeof AlertDialogPrimitive.Description>,
+  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Description>
+>(({ className, ...props }, ref) => (
+  <AlertDialogPrimitive.Description
+    ref={ref}
+    className={cn('text-sm text-muted-foreground', className)}
+    {...props}
+  />
+));
+AlertDialogDescription.displayName =
+  AlertDialogPrimitive.Description.displayName;
+
+const AlertDialogAction = React.forwardRef<
+  React.ElementRef<typeof AlertDialogPrimitive.Action>,
+  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Action>
+>(({ className, ...props }, ref) => (
+  <AlertDialogPrimitive.Action
+    ref={ref}
+    className={cn(buttonVariants(), className)}
+    {...props}
+  />
+));
+AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
+
+const AlertDialogCancel = React.forwardRef<
+  React.ElementRef<typeof AlertDialogPrimitive.Cancel>,
+  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Cancel>
+>(({ className, ...props }, ref) => (
+  <AlertDialogPrimitive.Cancel
+    ref={ref}
+    className={cn(
+      buttonVariants({ variant: 'outline' }),
+      'mt-2 sm:mt-0',
+      className,
+    )}
+    {...props}
+  />
+));
+AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
+
+export {
+  AlertDialog,
+  AlertDialogPortal,
+  AlertDialogOverlay,
+  AlertDialogTrigger,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogFooter,
+  AlertDialogTitle,
+  AlertDialogDescription,
+  AlertDialogAction,
+  AlertDialogCancel,
+};
+
+================
+File: components/ui/label.tsx
+================
+'use client';
+
+import * as React from 'react';
+import * as LabelPrimitive from '@radix-ui/react-label';
+import { cva, type VariantProps } from 'class-variance-authority';
+
+import { cn } from '@/lib/utils';
+
+const labelVariants = cva(
+  'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+);
+
+const Label = React.forwardRef<
+  React.ElementRef<typeof LabelPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> &
+    VariantProps<typeof labelVariants>
+>(({ className, ...props }, ref) => (
+  <LabelPrimitive.Root
+    ref={ref}
+    className={cn(labelVariants(), className)}
+    {...props}
+  />
+));
+Label.displayName = LabelPrimitive.Root.displayName;
+
+export { Label };
+
+================
+File: components/ui/select.tsx
+================
+'use client';
+
+import * as React from 'react';
+import * as SelectPrimitive from '@radix-ui/react-select';
+import { Check, ChevronDown, ChevronUp } from 'lucide-react';
+
+import { cn } from '@/lib/utils';
+
+const Select = SelectPrimitive.Root;
+
+const SelectGroup = SelectPrimitive.Group;
+
+const SelectValue = SelectPrimitive.Value;
+
+const SelectTrigger = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <SelectPrimitive.Trigger
+    ref={ref}
+    className={cn(
+      'flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1',
+      className,
+    )}
+    {...props}
+  >
+    {children}
+    <SelectPrimitive.Icon asChild>
+      <ChevronDown className="h-4 w-4 opacity-50" />
+    </SelectPrimitive.Icon>
+  </SelectPrimitive.Trigger>
+));
+SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;
+
+const SelectScrollUpButton = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.ScrollUpButton>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollUpButton>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.ScrollUpButton
+    ref={ref}
+    className={cn(
+      'flex cursor-default items-center justify-center py-1',
+      className,
+    )}
+    {...props}
+  >
+    <ChevronUp className="h-4 w-4" />
+  </SelectPrimitive.ScrollUpButton>
+));
+SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName;
+
+const SelectScrollDownButton = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.ScrollDownButton>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.ScrollDownButton
+    ref={ref}
+    className={cn(
+      'flex cursor-default items-center justify-center py-1',
+      className,
+    )}
+    {...props}
+  >
+    <ChevronDown className="h-4 w-4" />
+  </SelectPrimitive.ScrollDownButton>
+));
+SelectScrollDownButton.displayName =
+  SelectPrimitive.ScrollDownButton.displayName;
+
+const SelectContent = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
+>(({ className, children, position = 'popper', ...props }, ref) => (
+  <SelectPrimitive.Portal>
+    <SelectPrimitive.Content
+      ref={ref}
+      className={cn(
+        'relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
+        position === 'popper' &&
+          'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
+        className,
+      )}
+      position={position}
+      {...props}
+    >
+      <SelectScrollUpButton />
+      <SelectPrimitive.Viewport
+        className={cn(
+          'p-1',
+          position === 'popper' &&
+            'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
+        )}
+      >
+        {children}
+      </SelectPrimitive.Viewport>
+      <SelectScrollDownButton />
+    </SelectPrimitive.Content>
+  </SelectPrimitive.Portal>
+));
+SelectContent.displayName = SelectPrimitive.Content.displayName;
+
+const SelectLabel = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Label>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.Label
+    ref={ref}
+    className={cn('py-1.5 pl-8 pr-2 text-sm font-semibold', className)}
+    {...props}
+  />
+));
+SelectLabel.displayName = SelectPrimitive.Label.displayName;
+
+const SelectItem = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
+>(({ className, children, ...props }, ref) => (
+  <SelectPrimitive.Item
+    ref={ref}
+    className={cn(
+      'relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      className,
+    )}
+    {...props}
+  >
+    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+      <SelectPrimitive.ItemIndicator>
+        <Check className="h-4 w-4" />
+      </SelectPrimitive.ItemIndicator>
+    </span>
+
+    <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
+  </SelectPrimitive.Item>
+));
+SelectItem.displayName = SelectPrimitive.Item.displayName;
+
+const SelectSeparator = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Separator>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.Separator
+    ref={ref}
+    className={cn('-mx-1 my-1 h-px bg-muted', className)}
+    {...props}
+  />
+));
+SelectSeparator.displayName = SelectPrimitive.Separator.displayName;
+
+export {
+  Select,
+  SelectGroup,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+  SelectSeparator,
+  SelectScrollUpButton,
+  SelectScrollDownButton,
+};
+
+================
+File: components/ui/separator.tsx
+================
+'use client';
+
+import * as React from 'react';
+import * as SeparatorPrimitive from '@radix-ui/react-separator';
+
+import { cn } from '@/lib/utils';
+
+const Separator = React.forwardRef<
+  React.ElementRef<typeof SeparatorPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>
+>(
+  (
+    { className, orientation = 'horizontal', decorative = true, ...props },
+    ref,
+  ) => (
+    <SeparatorPrimitive.Root
+      ref={ref}
+      decorative={decorative}
+      orientation={orientation}
+      className={cn(
+        'shrink-0 bg-border',
+        orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]',
+        className,
+      )}
+      {...props}
+    />
+  ),
+);
+Separator.displayName = SeparatorPrimitive.Root.displayName;
+
+export { Separator };
+
+================
+File: components/ui/sheet.tsx
+================
+'use client';
+
+import * as React from 'react';
+import * as SheetPrimitive from '@radix-ui/react-dialog';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { X } from 'lucide-react';
+
+import { cn } from '@/lib/utils';
+
+const Sheet = SheetPrimitive.Root;
+
+const SheetTrigger = SheetPrimitive.Trigger;
+
+const SheetClose = SheetPrimitive.Close;
+
+const SheetPortal = SheetPrimitive.Portal;
+
+const SheetOverlay = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Overlay>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
+>(({ className, ...props }, ref) => (
+  <SheetPrimitive.Overlay
+    className={cn(
+      'fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+      className,
+    )}
+    {...props}
+    ref={ref}
+  />
+));
+SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
+
+const sheetVariants = cva(
+  'fixed z-50 gap-4 bg-background p-6 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500',
+  {
+    variants: {
+      side: {
+        top: 'inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top',
+        bottom:
+          'inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom',
+        left: 'inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm',
+        right:
+          'inset-y-0 right-0 h-full w-3/4  border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm',
+      },
+    },
+    defaultVariants: {
+      side: 'right',
+    },
+  },
+);
+
+interface SheetContentProps
+  extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
+    VariantProps<typeof sheetVariants> {}
+
+const SheetContent = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Content>,
+  SheetContentProps
+>(({ side = 'right', className, children, ...props }, ref) => (
+  <SheetPortal>
+    <SheetOverlay />
+    <SheetPrimitive.Content
+      ref={ref}
+      className={cn(sheetVariants({ side }), className)}
+      {...props}
+    >
+      {children}
+      <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
+        <X className="h-4 w-4" />
+        <span className="sr-only">Close</span>
+      </SheetPrimitive.Close>
+    </SheetPrimitive.Content>
+  </SheetPortal>
+));
+SheetContent.displayName = SheetPrimitive.Content.displayName;
+
+const SheetHeader = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div
+    className={cn(
+      'flex flex-col space-y-2 text-center sm:text-left',
+      className,
+    )}
+    {...props}
+  />
+);
+SheetHeader.displayName = 'SheetHeader';
+
+const SheetFooter = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div
+    className={cn(
+      'flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2',
+      className,
+    )}
+    {...props}
+  />
+);
+SheetFooter.displayName = 'SheetFooter';
+
+const SheetTitle = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Title>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
+>(({ className, ...props }, ref) => (
+  <SheetPrimitive.Title
+    ref={ref}
+    className={cn('text-lg font-semibold text-foreground', className)}
+    {...props}
+  />
+));
+SheetTitle.displayName = SheetPrimitive.Title.displayName;
+
+const SheetDescription = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Description>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Description>
+>(({ className, ...props }, ref) => (
+  <SheetPrimitive.Description
+    ref={ref}
+    className={cn('text-sm text-muted-foreground', className)}
+    {...props}
+  />
+));
+SheetDescription.displayName = SheetPrimitive.Description.displayName;
+
+export {
+  Sheet,
+  SheetPortal,
+  SheetOverlay,
+  SheetTrigger,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetFooter,
+  SheetTitle,
+  SheetDescription,
+};
 
 ================
 File: components/ui/toast.tsx
@@ -1233,6 +1751,31 @@ export function useChatVisibility({
   };
 
   return { visibilityType, setVisibilityType };
+}
+
+================
+File: hooks/use-mobile.tsx
+================
+import * as React from 'react';
+
+const MOBILE_BREAKPOINT = 768;
+
+export function useIsMobile() {
+  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(
+    undefined,
+  );
+
+  React.useEffect(() => {
+    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
+    const onChange = () => {
+      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
+    };
+    mql.addEventListener('change', onChange);
+    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
+    return () => mql.removeEventListener('change', onChange);
+  }, []);
+
+  return !!isMobile;
 }
 
 ================
@@ -4817,6 +5360,41 @@ File: .eslintrc.json
 }
 
 ================
+File: middleware.ts
+================
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+
+// Define routes that require authentication
+const isProtectedRoute = createRouteMatcher([
+  // '/', // Removed - Let's make root public initially
+  '/chat(.*)', // Protect specific chat pages
+  '/api/(.*)', // Protect most API routes (adjust as needed)
+]);
+
+// Define public routes that should not be protected
+const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)']);
+
+export default clerkMiddleware((auth, req) => {
+  // Don't apply protection to public routes
+  if (isPublicRoute(req)) {
+    return;
+  }
+
+  // Protect routes that need authentication
+  if (isProtectedRoute(req)) {
+    auth.protect();
+  }
+});
+
+export const config = {
+  matcher: [
+    '/((?!.+\\.[\\w]+$|_next).*)', // Exclude static files
+    '/', // Include root
+    '/(api|trpc)(.*)', // Include API routes
+  ],
+};
+
+================
 File: next-env.d.ts
 ================
 /// <reference types="next" />
@@ -4857,151 +5435,6 @@ const config = {
 };
 
 export default config;
-
-================
-File: components/ui/alert-dialog.tsx
-================
-'use client';
-
-import * as React from 'react';
-import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
-
-import { cn } from '@/lib/utils';
-import { buttonVariants } from '@/components/ui/button';
-
-const AlertDialog = AlertDialogPrimitive.Root;
-
-const AlertDialogTrigger = AlertDialogPrimitive.Trigger;
-
-const AlertDialogPortal = AlertDialogPrimitive.Portal;
-
-const AlertDialogOverlay = React.forwardRef<
-  React.ElementRef<typeof AlertDialogPrimitive.Overlay>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Overlay>
->(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Overlay
-    className={cn(
-      'fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
-      className,
-    )}
-    {...props}
-    ref={ref}
-  />
-));
-AlertDialogOverlay.displayName = AlertDialogPrimitive.Overlay.displayName;
-
-const AlertDialogContent = React.forwardRef<
-  React.ElementRef<typeof AlertDialogPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Content>
->(({ className, ...props }, ref) => (
-  <AlertDialogPortal>
-    <AlertDialogOverlay />
-    <AlertDialogPrimitive.Content
-      ref={ref}
-      className={cn(
-        'fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg',
-        className,
-      )}
-      {...props}
-    />
-  </AlertDialogPortal>
-));
-AlertDialogContent.displayName = AlertDialogPrimitive.Content.displayName;
-
-const AlertDialogHeader = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-  <div
-    className={cn(
-      'flex flex-col space-y-2 text-center sm:text-left',
-      className,
-    )}
-    {...props}
-  />
-);
-AlertDialogHeader.displayName = 'AlertDialogHeader';
-
-const AlertDialogFooter = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-  <div
-    className={cn(
-      'flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2',
-      className,
-    )}
-    {...props}
-  />
-);
-AlertDialogFooter.displayName = 'AlertDialogFooter';
-
-const AlertDialogTitle = React.forwardRef<
-  React.ElementRef<typeof AlertDialogPrimitive.Title>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Title>
->(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Title
-    ref={ref}
-    className={cn('text-lg font-semibold', className)}
-    {...props}
-  />
-));
-AlertDialogTitle.displayName = AlertDialogPrimitive.Title.displayName;
-
-const AlertDialogDescription = React.forwardRef<
-  React.ElementRef<typeof AlertDialogPrimitive.Description>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Description>
->(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Description
-    ref={ref}
-    className={cn('text-sm text-muted-foreground', className)}
-    {...props}
-  />
-));
-AlertDialogDescription.displayName =
-  AlertDialogPrimitive.Description.displayName;
-
-const AlertDialogAction = React.forwardRef<
-  React.ElementRef<typeof AlertDialogPrimitive.Action>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Action>
->(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Action
-    ref={ref}
-    className={cn(buttonVariants(), className)}
-    {...props}
-  />
-));
-AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
-
-const AlertDialogCancel = React.forwardRef<
-  React.ElementRef<typeof AlertDialogPrimitive.Cancel>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Cancel>
->(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Cancel
-    ref={ref}
-    className={cn(
-      buttonVariants({ variant: 'outline' }),
-      'mt-2 sm:mt-0',
-      className,
-    )}
-    {...props}
-  />
-));
-AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
-
-export {
-  AlertDialog,
-  AlertDialogPortal,
-  AlertDialogOverlay,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogAction,
-  AlertDialogCancel,
-};
 
 ================
 File: components/ui/button.tsx
@@ -5062,6 +5495,96 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = 'Button';
 
 export { Button, buttonVariants };
+
+================
+File: components/ui/card.tsx
+================
+import * as React from 'react';
+
+import { cn } from '@/lib/utils';
+
+const Card = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      'rounded-lg border bg-card text-card-foreground shadow-sm',
+      className,
+    )}
+    {...props}
+  />
+));
+Card.displayName = 'Card';
+
+const CardHeader = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn('flex flex-col space-y-1.5 p-6', className)}
+    {...props}
+  />
+));
+CardHeader.displayName = 'CardHeader';
+
+const CardTitle = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      'text-2xl font-semibold leading-none tracking-tight',
+      className,
+    )}
+    {...props}
+  />
+));
+CardTitle.displayName = 'CardTitle';
+
+const CardDescription = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn('text-sm text-muted-foreground', className)}
+    {...props}
+  />
+));
+CardDescription.displayName = 'CardDescription';
+
+const CardContent = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div ref={ref} className={cn('p-6 pt-0', className)} {...props} />
+));
+CardContent.displayName = 'CardContent';
+
+const CardFooter = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn('flex items-center p-6 pt-0', className)}
+    {...props}
+  />
+));
+CardFooter.displayName = 'CardFooter';
+
+export {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+  CardContent,
+};
 
 ================
 File: components/ui/dropdown-menu.tsx
@@ -5268,377 +5791,56 @@ export {
 };
 
 ================
-File: components/ui/label.tsx
+File: components/ui/input.tsx
 ================
-'use client';
-
 import * as React from 'react';
-import * as LabelPrimitive from '@radix-ui/react-label';
-import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
 
-const labelVariants = cva(
-  'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
-);
-
-const Label = React.forwardRef<
-  React.ElementRef<typeof LabelPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> &
-    VariantProps<typeof labelVariants>
->(({ className, ...props }, ref) => (
-  <LabelPrimitive.Root
-    ref={ref}
-    className={cn(labelVariants(), className)}
-    {...props}
-  />
-));
-Label.displayName = LabelPrimitive.Root.displayName;
-
-export { Label };
-
-================
-File: components/ui/select.tsx
-================
-'use client';
-
-import * as React from 'react';
-import * as SelectPrimitive from '@radix-ui/react-select';
-import { Check, ChevronDown, ChevronUp } from 'lucide-react';
-
-import { cn } from '@/lib/utils';
-
-const Select = SelectPrimitive.Root;
-
-const SelectGroup = SelectPrimitive.Group;
-
-const SelectValue = SelectPrimitive.Value;
-
-const SelectTrigger = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <SelectPrimitive.Trigger
-    ref={ref}
-    className={cn(
-      'flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1',
-      className,
-    )}
-    {...props}
-  >
-    {children}
-    <SelectPrimitive.Icon asChild>
-      <ChevronDown className="h-4 w-4 opacity-50" />
-    </SelectPrimitive.Icon>
-  </SelectPrimitive.Trigger>
-));
-SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;
-
-const SelectScrollUpButton = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.ScrollUpButton>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollUpButton>
->(({ className, ...props }, ref) => (
-  <SelectPrimitive.ScrollUpButton
-    ref={ref}
-    className={cn(
-      'flex cursor-default items-center justify-center py-1',
-      className,
-    )}
-    {...props}
-  >
-    <ChevronUp className="h-4 w-4" />
-  </SelectPrimitive.ScrollUpButton>
-));
-SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName;
-
-const SelectScrollDownButton = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.ScrollDownButton>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton>
->(({ className, ...props }, ref) => (
-  <SelectPrimitive.ScrollDownButton
-    ref={ref}
-    className={cn(
-      'flex cursor-default items-center justify-center py-1',
-      className,
-    )}
-    {...props}
-  >
-    <ChevronDown className="h-4 w-4" />
-  </SelectPrimitive.ScrollDownButton>
-));
-SelectScrollDownButton.displayName =
-  SelectPrimitive.ScrollDownButton.displayName;
-
-const SelectContent = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
->(({ className, children, position = 'popper', ...props }, ref) => (
-  <SelectPrimitive.Portal>
-    <SelectPrimitive.Content
-      ref={ref}
-      className={cn(
-        'relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
-        position === 'popper' &&
-          'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
-        className,
-      )}
-      position={position}
-      {...props}
-    >
-      <SelectScrollUpButton />
-      <SelectPrimitive.Viewport
+const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<'input'>>(
+  ({ className, type, ...props }, ref) => {
+    return (
+      <input
+        type={type}
         className={cn(
-          'p-1',
-          position === 'popper' &&
-            'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
+          'flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
+          className,
         )}
-      >
-        {children}
-      </SelectPrimitive.Viewport>
-      <SelectScrollDownButton />
-    </SelectPrimitive.Content>
-  </SelectPrimitive.Portal>
-));
-SelectContent.displayName = SelectPrimitive.Content.displayName;
-
-const SelectLabel = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Label>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label>
->(({ className, ...props }, ref) => (
-  <SelectPrimitive.Label
-    ref={ref}
-    className={cn('py-1.5 pl-8 pr-2 text-sm font-semibold', className)}
-    {...props}
-  />
-));
-SelectLabel.displayName = SelectPrimitive.Label.displayName;
-
-const SelectItem = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
->(({ className, children, ...props }, ref) => (
-  <SelectPrimitive.Item
-    ref={ref}
-    className={cn(
-      'relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
-      className,
-    )}
-    {...props}
-  >
-    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
-      <SelectPrimitive.ItemIndicator>
-        <Check className="h-4 w-4" />
-      </SelectPrimitive.ItemIndicator>
-    </span>
-
-    <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
-  </SelectPrimitive.Item>
-));
-SelectItem.displayName = SelectPrimitive.Item.displayName;
-
-const SelectSeparator = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Separator>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
->(({ className, ...props }, ref) => (
-  <SelectPrimitive.Separator
-    ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-muted', className)}
-    {...props}
-  />
-));
-SelectSeparator.displayName = SelectPrimitive.Separator.displayName;
-
-export {
-  Select,
-  SelectGroup,
-  SelectValue,
-  SelectTrigger,
-  SelectContent,
-  SelectLabel,
-  SelectItem,
-  SelectSeparator,
-  SelectScrollUpButton,
-  SelectScrollDownButton,
-};
-
-================
-File: components/ui/separator.tsx
-================
-'use client';
-
-import * as React from 'react';
-import * as SeparatorPrimitive from '@radix-ui/react-separator';
-
-import { cn } from '@/lib/utils';
-
-const Separator = React.forwardRef<
-  React.ElementRef<typeof SeparatorPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>
->(
-  (
-    { className, orientation = 'horizontal', decorative = true, ...props },
-    ref,
-  ) => (
-    <SeparatorPrimitive.Root
-      ref={ref}
-      decorative={decorative}
-      orientation={orientation}
-      className={cn(
-        'shrink-0 bg-border',
-        orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]',
-        className,
-      )}
-      {...props}
-    />
-  ),
-);
-Separator.displayName = SeparatorPrimitive.Root.displayName;
-
-export { Separator };
-
-================
-File: components/ui/sheet.tsx
-================
-'use client';
-
-import * as React from 'react';
-import * as SheetPrimitive from '@radix-ui/react-dialog';
-import { cva, type VariantProps } from 'class-variance-authority';
-import { X } from 'lucide-react';
-
-import { cn } from '@/lib/utils';
-
-const Sheet = SheetPrimitive.Root;
-
-const SheetTrigger = SheetPrimitive.Trigger;
-
-const SheetClose = SheetPrimitive.Close;
-
-const SheetPortal = SheetPrimitive.Portal;
-
-const SheetOverlay = React.forwardRef<
-  React.ElementRef<typeof SheetPrimitive.Overlay>,
-  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
->(({ className, ...props }, ref) => (
-  <SheetPrimitive.Overlay
-    className={cn(
-      'fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
-      className,
-    )}
-    {...props}
-    ref={ref}
-  />
-));
-SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
-
-const sheetVariants = cva(
-  'fixed z-50 gap-4 bg-background p-6 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500',
-  {
-    variants: {
-      side: {
-        top: 'inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top',
-        bottom:
-          'inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom',
-        left: 'inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm',
-        right:
-          'inset-y-0 right-0 h-full w-3/4  border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm',
-      },
-    },
-    defaultVariants: {
-      side: 'right',
-    },
+        ref={ref}
+        {...props}
+      />
+    );
   },
 );
+Input.displayName = 'Input';
 
-interface SheetContentProps
-  extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-    VariantProps<typeof sheetVariants> {}
+export { Input };
 
-const SheetContent = React.forwardRef<
-  React.ElementRef<typeof SheetPrimitive.Content>,
-  SheetContentProps
->(({ side = 'right', className, children, ...props }, ref) => (
-  <SheetPortal>
-    <SheetOverlay />
-    <SheetPrimitive.Content
+================
+File: components/ui/textarea.tsx
+================
+import * as React from 'react';
+
+import { cn } from '@/lib/utils';
+
+const Textarea = React.forwardRef<
+  HTMLTextAreaElement,
+  React.ComponentProps<'textarea'>
+>(({ className, ...props }, ref) => {
+  return (
+    <textarea
+      className={cn(
+        'flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
+        className,
+      )}
       ref={ref}
-      className={cn(sheetVariants({ side }), className)}
       {...props}
-    >
-      {children}
-      <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <X className="h-4 w-4" />
-        <span className="sr-only">Close</span>
-      </SheetPrimitive.Close>
-    </SheetPrimitive.Content>
-  </SheetPortal>
-));
-SheetContent.displayName = SheetPrimitive.Content.displayName;
+    />
+  );
+});
+Textarea.displayName = 'Textarea';
 
-const SheetHeader = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-  <div
-    className={cn(
-      'flex flex-col space-y-2 text-center sm:text-left',
-      className,
-    )}
-    {...props}
-  />
-);
-SheetHeader.displayName = 'SheetHeader';
-
-const SheetFooter = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-  <div
-    className={cn(
-      'flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2',
-      className,
-    )}
-    {...props}
-  />
-);
-SheetFooter.displayName = 'SheetFooter';
-
-const SheetTitle = React.forwardRef<
-  React.ElementRef<typeof SheetPrimitive.Title>,
-  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
->(({ className, ...props }, ref) => (
-  <SheetPrimitive.Title
-    ref={ref}
-    className={cn('text-lg font-semibold text-foreground', className)}
-    {...props}
-  />
-));
-SheetTitle.displayName = SheetPrimitive.Title.displayName;
-
-const SheetDescription = React.forwardRef<
-  React.ElementRef<typeof SheetPrimitive.Description>,
-  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Description>
->(({ className, ...props }, ref) => (
-  <SheetPrimitive.Description
-    ref={ref}
-    className={cn('text-sm text-muted-foreground', className)}
-    {...props}
-  />
-));
-SheetDescription.displayName = SheetPrimitive.Description.displayName;
-
-export {
-  Sheet,
-  SheetPortal,
-  SheetOverlay,
-  SheetTrigger,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetFooter,
-  SheetTitle,
-  SheetDescription,
-};
+export { Textarea };
 
 ================
 File: components/ui/tooltip.tsx
@@ -6076,31 +6278,6 @@ import type { ThemeProviderProps } from 'next-themes/dist/types';
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
-}
-
-================
-File: hooks/use-mobile.tsx
-================
-import * as React from 'react';
-
-const MOBILE_BREAKPOINT = 768;
-
-export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(
-    undefined,
-  );
-
-  React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
-    const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    };
-    mql.addEventListener('change', onChange);
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    return () => mql.removeEventListener('change', onChange);
-  }, []);
-
-  return !!isMobile;
 }
 
 ================
@@ -6757,41 +6934,6 @@ File: biome.jsonc
 }
 
 ================
-File: middleware.ts
-================
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
-
-// Define routes that require authentication
-const isProtectedRoute = createRouteMatcher([
-  // '/', // Removed - Let's make root public initially
-  '/chat(.*)', // Protect specific chat pages
-  '/api/(.*)', // Protect most API routes (adjust as needed)
-]);
-
-// Define public routes that should not be protected
-const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)']);
-
-export default clerkMiddleware((auth, req) => {
-  // Don't apply protection to public routes
-  if (isPublicRoute(req)) {
-    return;
-  }
-
-  // Protect routes that need authentication
-  if (isProtectedRoute(req)) {
-    auth.protect();
-  }
-});
-
-export const config = {
-  matcher: [
-    '/((?!.+\\.[\\w]+$|_next).*)', // Exclude static files
-    '/', // Include root
-    '/(api|trpc)(.*)', // Include API routes
-  ],
-};
-
-================
 File: tailwind.config.ts
 ================
 import type { Config } from 'tailwindcss';
@@ -6913,120 +7055,94 @@ File: tsconfig.json
 }
 
 ================
-File: components/ui/card.tsx
+File: app/(chat)/api/files/upload/route.ts
 ================
-import * as React from 'react';
+import { put } from '@vercel/blob';
+import { NextResponse } from 'next/server';
+import { z } from 'zod';
 
-import { cn } from '@/lib/utils';
+import { auth } from '@/app/(auth)/auth';
 
-const Card = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn(
-      'rounded-lg border bg-card text-card-foreground shadow-sm',
-      className,
-    )}
-    {...props}
-  />
-));
-Card.displayName = 'Card';
+// Use Blob instead of File since File is not available in Node.js environment
+const FileSchema = z.object({
+  file: z
+    .instanceof(Blob)
+    .refine((file) => file.size <= 5 * 1024 * 1024, {
+      message: 'File size should be less than 5MB',
+    })
+    // Update the file type based on the kind of files you want to accept
+    .refine((file) => ['image/jpeg', 'image/png'].includes(file.type), {
+      message: 'File type should be JPEG or PNG',
+    }),
+});
 
-const CardHeader = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn('flex flex-col space-y-1.5 p-6', className)}
-    {...props}
-  />
-));
-CardHeader.displayName = 'CardHeader';
+export async function POST(request: Request) {
+  const session = await auth();
 
-const CardTitle = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn(
-      'text-2xl font-semibold leading-none tracking-tight',
-      className,
-    )}
-    {...props}
-  />
-));
-CardTitle.displayName = 'CardTitle';
+  if (!session) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
 
-const CardDescription = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn('text-sm text-muted-foreground', className)}
-    {...props}
-  />
-));
-CardDescription.displayName = 'CardDescription';
+  if (request.body === null) {
+    return new Response('Request body is empty', { status: 400 });
+  }
 
-const CardContent = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn('p-6 pt-0', className)} {...props} />
-));
-CardContent.displayName = 'CardContent';
+  try {
+    const formData = await request.formData();
+    const file = formData.get('file') as Blob;
 
-const CardFooter = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn('flex items-center p-6 pt-0', className)}
-    {...props}
-  />
-));
-CardFooter.displayName = 'CardFooter';
+    if (!file) {
+      return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
+    }
 
-export {
-  Card,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardDescription,
-  CardContent,
-};
+    const validatedFile = FileSchema.safeParse({ file });
 
-================
-File: components/ui/input.tsx
-================
-import * as React from 'react';
+    if (!validatedFile.success) {
+      const errorMessage = validatedFile.error.errors
+        .map((error) => error.message)
+        .join(', ');
 
-import { cn } from '@/lib/utils';
+      return NextResponse.json({ error: errorMessage }, { status: 400 });
+    }
 
-const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<'input'>>(
-  ({ className, type, ...props }, ref) => {
-    return (
-      <input
-        type={type}
-        className={cn(
-          'flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
-          className,
-        )}
-        ref={ref}
-        {...props}
-      />
+    // Get filename from formData since Blob doesn't have name property
+    const filename = (formData.get('file') as File).name;
+    const fileBuffer = await file.arrayBuffer();
+
+    try {
+      const data = await put(`${filename}`, fileBuffer, {
+        access: 'public',
+      });
+
+      return NextResponse.json(data);
+    } catch (error) {
+      return NextResponse.json({ error: 'Upload failed' }, { status: 500 });
+    }
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Failed to process request' },
+      { status: 500 },
     );
-  },
-);
-Input.displayName = 'Input';
+  }
+}
 
-export { Input };
+================
+File: app/(chat)/api/history/route.ts
+================
+import { auth } from '@clerk/nextjs/server';
+import { getChatsByUserId } from '@/lib/db/queries';
+
+export async function GET() {
+  const session = await auth();
+  const userId = session.userId;
+
+  if (!userId) {
+    return Response.json('Unauthorized!', { status: 401 });
+  }
+
+  const chats = await getChatsByUserId({ userId });
+  return Response.json(chats);
+}
 
 ================
 File: components/ui/sidebar.tsx
@@ -7804,32 +7920,6 @@ export {
 };
 
 ================
-File: components/ui/textarea.tsx
-================
-import * as React from 'react';
-
-import { cn } from '@/lib/utils';
-
-const Textarea = React.forwardRef<
-  HTMLTextAreaElement,
-  React.ComponentProps<'textarea'>
->(({ className, ...props }, ref) => {
-  return (
-    <textarea
-      className={cn(
-        'flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
-        className,
-      )}
-      ref={ref}
-      {...props}
-    />
-  );
-});
-Textarea.displayName = 'Textarea';
-
-export { Textarea };
-
-================
 File: components/diffview.tsx
 ================
 import OrderedMap from 'orderedmap';
@@ -8202,96 +8292,6 @@ yarn-error.log*
 /playwright-report/
 /blob-report/
 /playwright/*
-
-================
-File: app/(chat)/api/files/upload/route.ts
-================
-import { put } from '@vercel/blob';
-import { NextResponse } from 'next/server';
-import { z } from 'zod';
-
-import { auth } from '@/app/(auth)/auth';
-
-// Use Blob instead of File since File is not available in Node.js environment
-const FileSchema = z.object({
-  file: z
-    .instanceof(Blob)
-    .refine((file) => file.size <= 5 * 1024 * 1024, {
-      message: 'File size should be less than 5MB',
-    })
-    // Update the file type based on the kind of files you want to accept
-    .refine((file) => ['image/jpeg', 'image/png'].includes(file.type), {
-      message: 'File type should be JPEG or PNG',
-    }),
-});
-
-export async function POST(request: Request) {
-  const session = await auth();
-
-  if (!session) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-
-  if (request.body === null) {
-    return new Response('Request body is empty', { status: 400 });
-  }
-
-  try {
-    const formData = await request.formData();
-    const file = formData.get('file') as Blob;
-
-    if (!file) {
-      return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
-    }
-
-    const validatedFile = FileSchema.safeParse({ file });
-
-    if (!validatedFile.success) {
-      const errorMessage = validatedFile.error.errors
-        .map((error) => error.message)
-        .join(', ');
-
-      return NextResponse.json({ error: errorMessage }, { status: 400 });
-    }
-
-    // Get filename from formData since Blob doesn't have name property
-    const filename = (formData.get('file') as File).name;
-    const fileBuffer = await file.arrayBuffer();
-
-    try {
-      const data = await put(`${filename}`, fileBuffer, {
-        access: 'public',
-      });
-
-      return NextResponse.json(data);
-    } catch (error) {
-      return NextResponse.json({ error: 'Upload failed' }, { status: 500 });
-    }
-  } catch (error) {
-    return NextResponse.json(
-      { error: 'Failed to process request' },
-      { status: 500 },
-    );
-  }
-}
-
-================
-File: app/(chat)/api/history/route.ts
-================
-import { auth } from '@clerk/nextjs/server';
-import { getChatsByUserId } from '@/lib/db/queries';
-
-export async function GET() {
-  const session = await auth();
-  const userId = session.userId;
-
-  if (!userId) {
-    return Response.json('Unauthorized!', { status: 401 });
-  }
-
-  const chats = await getChatsByUserId({ userId });
-  return Response.json(chats);
-}
 
 ================
 File: app/(chat)/api/vote/route.ts
@@ -9265,6 +9265,94 @@ export default function Page() {
 }
 
 ================
+File: app/(auth)/actions.ts
+================
+'use server';
+
+import { z } from 'zod';
+
+import { createUser, getUser } from '@/lib/db/queries';
+
+import { signIn } from './auth';
+
+const authFormSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(6),
+});
+
+export interface LoginActionState {
+  status: 'idle' | 'in_progress' | 'success' | 'failed' | 'invalid_data';
+}
+
+export const login = async (
+  _: LoginActionState,
+  formData: FormData,
+): Promise<LoginActionState> => {
+  try {
+    const validatedData = authFormSchema.parse({
+      email: formData.get('email'),
+      password: formData.get('password'),
+    });
+
+    await signIn('credentials', {
+      email: validatedData.email,
+      password: validatedData.password,
+      redirect: false,
+    });
+
+    return { status: 'success' };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return { status: 'invalid_data' };
+    }
+
+    return { status: 'failed' };
+  }
+};
+
+export interface RegisterActionState {
+  status:
+    | 'idle'
+    | 'in_progress'
+    | 'success'
+    | 'failed'
+    | 'user_exists'
+    | 'invalid_data';
+}
+
+export const register = async (
+  _: RegisterActionState,
+  formData: FormData,
+): Promise<RegisterActionState> => {
+  try {
+    const validatedData = authFormSchema.parse({
+      email: formData.get('email'),
+      password: formData.get('password'),
+    });
+
+    const [user] = await getUser(validatedData.email);
+
+    if (user) {
+      return { status: 'user_exists' } as RegisterActionState;
+    }
+    await createUser(validatedData.email, validatedData.password);
+    await signIn('credentials', {
+      email: validatedData.email,
+      password: validatedData.password,
+      redirect: false,
+    });
+
+    return { status: 'success' };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return { status: 'invalid_data' };
+    }
+
+    return { status: 'failed' };
+  }
+};
+
+================
 File: app/(chat)/api/document/route.ts
 ================
 import { auth } from '@/app/(auth)/auth';
@@ -9778,94 +9866,6 @@ export const VersionFooter = ({
       </div>
     </motion.div>
   );
-};
-
-================
-File: app/(auth)/actions.ts
-================
-'use server';
-
-import { z } from 'zod';
-
-import { createUser, getUser } from '@/lib/db/queries';
-
-import { signIn } from './auth';
-
-const authFormSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(6),
-});
-
-export interface LoginActionState {
-  status: 'idle' | 'in_progress' | 'success' | 'failed' | 'invalid_data';
-}
-
-export const login = async (
-  _: LoginActionState,
-  formData: FormData,
-): Promise<LoginActionState> => {
-  try {
-    const validatedData = authFormSchema.parse({
-      email: formData.get('email'),
-      password: formData.get('password'),
-    });
-
-    await signIn('credentials', {
-      email: validatedData.email,
-      password: validatedData.password,
-      redirect: false,
-    });
-
-    return { status: 'success' };
-  } catch (error) {
-    if (error instanceof z.ZodError) {
-      return { status: 'invalid_data' };
-    }
-
-    return { status: 'failed' };
-  }
-};
-
-export interface RegisterActionState {
-  status:
-    | 'idle'
-    | 'in_progress'
-    | 'success'
-    | 'failed'
-    | 'user_exists'
-    | 'invalid_data';
-}
-
-export const register = async (
-  _: RegisterActionState,
-  formData: FormData,
-): Promise<RegisterActionState> => {
-  try {
-    const validatedData = authFormSchema.parse({
-      email: formData.get('email'),
-      password: formData.get('password'),
-    });
-
-    const [user] = await getUser(validatedData.email);
-
-    if (user) {
-      return { status: 'user_exists' } as RegisterActionState;
-    }
-    await createUser(validatedData.email, validatedData.password);
-    await signIn('credentials', {
-      email: validatedData.email,
-      password: validatedData.password,
-      redirect: false,
-    });
-
-    return { status: 'success' };
-  } catch (error) {
-    if (error instanceof z.ZodError) {
-      return { status: 'invalid_data' };
-    }
-
-    return { status: 'failed' };
-  }
 };
 
 ================
@@ -14951,97 +14951,122 @@ interface MessageProps {
 }
 
 export function Message({ message, isLoading }: MessageProps) {
-  // Diagnostic logging to see the exact message structure
-  console.log('Message component received:', {
-    id: message.id,
-    role: message.role,
-    content: message.content,
-    hasContent: !!message.content,
-    contentType: typeof message.content,
-    parts: message.parts,
-    hasParts:
-      !!message.parts &&
-      Array.isArray(message.parts) &&
-      message.parts.length > 0,
-  });
-
   const isUser = message.role === 'user';
 
-  // Extract the message content, handling all possible formats
-  const getMessageContent = () => {
-    // If message.content is a non-empty string, use it
-    if (typeof message.content === 'string' && message.content.trim() !== '') {
-      console.log('Using content string:', message.content);
-      return message.content;
-    }
-
-    // If message has parts with text, use the first text part
-    if (
-      message.parts &&
-      Array.isArray(message.parts) &&
-      message.parts.length > 0
-    ) {
-      // Filter for text parts and make sure they have content
-      const textParts = message.parts
-        .filter((part): part is TextPart => part.type === 'text')
-        .filter(
-          (part) => typeof part.text === 'string' && part.text.trim() !== '',
-        );
-
-      console.log('Text parts found:', textParts.length);
-
-      if (textParts.length > 0) {
-        console.log('Using part text:', textParts[0].text);
-        return textParts[0].text;
-      }
-    }
-
-    // Fallback to empty string if no content found
-    console.log('No content found in message');
-    return '';
-  };
-
-  const messageContent = getMessageContent();
-
-  // Don't render empty messages
-  if (!messageContent && !isLoading) {
-    console.log('Skipping empty message:', message.id);
+  // If there are no parts and no content, and not loading, don't render
+  if (!message.parts?.length && !message.content && !isLoading) {
     return null;
   }
 
-  console.log(
-    'Rendering message with content:',
-    messageContent ? messageContent.substring(0, 50) + '...' : 'empty',
-  );
+  // For user messages, we can simply use the content directly
+  if (isUser) {
+    const userContent =
+      typeof message.content === 'string'
+        ? message.content
+        : message.parts
+            ?.filter((part): part is TextPart => part.type === 'text')
+            .map((part) => part.text)
+            .join('\n') || '';
 
+    return (
+      <div
+        data-testid={`message-${message.role}`}
+        className="w-full mx-auto max-w-3xl px-4 group"
+        data-role={message.role}
+      >
+        <div className="flex gap-4 w-full justify-end">
+          <div className="flex flex-col gap-2 items-end">
+            <div
+              data-testid="message-content"
+              className="bg-primary text-primary-foreground px-3 py-2 rounded-xl"
+            >
+              <Markdown>{userContent}</Markdown>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // For assistant messages, iterate through parts
   return (
     <div
       data-testid={`message-${message.role}`}
       className="w-full mx-auto max-w-3xl px-4 group"
       data-role={message.role}
     >
-      <div className={`flex gap-4 w-full ${isUser ? 'justify-end' : ''}`}>
-        {!isUser && (
-          <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border bg-background">
-            <span className="font-bold text-xs">AI</span>
-          </div>
-        )}
+      <div className="flex gap-4 w-full">
+        <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border bg-background">
+          <span className="font-bold text-xs">AI</span>
+        </div>
 
-        <div className={`flex flex-col gap-2 ${isUser ? 'items-end' : ''}`}>
-          {messageContent && (
-            <div
-              data-testid="message-content"
-              className={`${
-                isUser
-                  ? 'bg-primary text-primary-foreground px-3 py-2 rounded-xl'
-                  : ''
-              }`}
-            >
-              <Markdown>{messageContent}</Markdown>
+        <div className="flex flex-col gap-2 w-full">
+          {/* If loading and no content yet, show loading indicator */}
+          {isLoading && !message.parts?.length && !message.content && (
+            <div className="h-4 w-5 mt-1">
+              <div className="flex space-x-1 animate-pulse">
+                <div className="h-2 w-2 bg-gray-400 rounded-full" />
+                <div className="h-2 w-2 bg-gray-400 rounded-full" />
+                <div className="h-2 w-2 bg-gray-400 rounded-full" />
+              </div>
             </div>
           )}
 
-          {isLoading && (
+          {/* Render based on message parts if available */}
+          {message.parts && message.parts.length > 0 ? (
+            <div className="flex flex-col gap-2 w-full">
+              {message.parts.map((part, index) => {
+                // Handle text parts
+                if (part.type === 'text') {
+                  return (
+                    <div
+                      key={`text-${message.id}-${index}`}
+                      data-testid="message-content"
+                    >
+                      <Markdown>{part.text}</Markdown>
+                    </div>
+                  );
+                }
+
+                // Handle tool invocations - basic display
+                if (part.type === 'tool-invocation') {
+                  return (
+                    <div
+                      key={`tool-${message.id}-${index}`}
+                      className="bg-gray-100 dark:bg-gray-800 p-3 rounded-md text-sm my-2 border border-gray-200 dark:border-gray-700"
+                    >
+                      <div className="font-semibold mb-1">Tool Call</div>
+                      <pre className="overflow-auto text-xs">
+                        {JSON.stringify(part, null, 2)}
+                      </pre>
+                    </div>
+                  );
+                }
+
+                // Any other part type - just display as JSON for now
+                return (
+                  <div
+                    key={`other-${message.id}-${index}`}
+                    className="text-sm my-2"
+                  >
+                    <pre className="overflow-auto text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">
+                      {JSON.stringify(part, null, 2)}
+                    </pre>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            // Fallback to message.content if no parts are available
+            message.content && (
+              <div data-testid="message-content">
+                <Markdown>{message.content as string}</Markdown>
+              </div>
+            )
+          )}
+
+          {/* Show loading indicator at the end if still loading */}
+          {isLoading && message.parts?.length > 0 && (
             <div className="h-4 w-5 mt-1">
               <div className="flex space-x-1 animate-pulse">
                 <div className="h-2 w-2 bg-gray-400 rounded-full" />
@@ -15060,7 +15085,6 @@ export function Message({ message, isLoading }: MessageProps) {
 File: app/(chat)/api/chat/route.ts
 ================
 import type { UIMessage } from 'ai';
-import { streamText } from 'ai';
 import { auth } from '@clerk/nextjs/server';
 import {
   deleteChatById,
@@ -15191,28 +15215,41 @@ ${context}
 ---
 `;
 
-    // Convert recent messages for streamText
-    const coreMessages = messages.slice(-6).map((msg) => {
+    // Convert recent messages to a format OpenAI accepts
+    const apiMessages = messages.slice(-6).map((msg) => {
+      // Map to OpenAI compatible format
+      if (
+        msg.role === 'user' ||
+        msg.role === 'assistant' ||
+        msg.role === 'system'
+      ) {
+        return {
+          role: msg.role,
+          content: typeof msg.content === 'string' ? msg.content : '',
+        };
+      }
+      // Default to user for any other roles
       return {
-        role:
-          msg.role === 'user' ||
-          msg.role === 'assistant' ||
-          msg.role === 'system'
-            ? msg.role
-            : 'user',
+        role: 'user' as const,
         content: typeof msg.content === 'string' ? msg.content : '',
       };
     });
 
-    // Call the OpenAI API directly
+    // Add system message at the beginning
+    apiMessages.unshift({
+      role: 'system' as const,
+      content: systemPrompt,
+    });
+
+    // Call the OpenAI API
     const stream = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
-      messages: [{ role: 'system', content: systemPrompt }, ...coreMessages],
+      messages: apiMessages,
       stream: true,
       temperature: 0.3,
     });
 
-    // Process stream and create a response
+    // Create a streaming response
     const { readable, writable } = new TransformStream();
     const assistantMessageId = generateUUID();
     let fullContent = '';
@@ -15220,55 +15257,92 @@ ${context}
     // Process the stream
     (async () => {
       const writer = writable.getWriter();
+      const encoder = new TextEncoder();
 
       try {
+        // Send a message id event first to identify the response message
+        await writer.write(
+          encoder.encode(
+            `event: id\ndata: ${JSON.stringify({ id: assistantMessageId })}\n\n`,
+          ),
+        );
+
+        // Then setup the initial message event
+        await writer.write(
+          encoder.encode(
+            `event: message\ndata: {"role":"assistant","id":"${assistantMessageId}","content":"","createdAt":${Date.now()}}\n\n`,
+          ),
+        );
+
         for await (const chunk of stream) {
           const content = chunk.choices[0]?.delta?.content || '';
           if (content) {
             fullContent += content;
-            await writer.write(new TextEncoder().encode(content));
+
+            // Send text deltas in the format Vercel AI SDK expects
+            const textDelta = JSON.stringify({
+              type: 'text-delta',
+              textDelta: content,
+              id: assistantMessageId,
+            });
+            await writer.write(
+              encoder.encode(`event: text-delta\ndata: ${textDelta}\n\n`),
+            );
           }
         }
 
-        // Stream is complete, close writer
+        // Close the event stream properly with a final message update
+        const finalMessage = {
+          id: assistantMessageId,
+          role: 'assistant',
+          content: fullContent,
+          createdAt: Date.now(),
+        };
+        await writer.write(
+          encoder.encode(
+            `event: message\ndata: ${JSON.stringify(finalMessage)}\n\n`,
+          ),
+        );
+        await writer.write(encoder.encode('event: done\ndata: {}\n\n'));
         await writer.close();
 
-        // Save the message
+        // Save the assistant message
         if (fullContent) {
-          console.log(
-            `Final assistant content: ${fullContent.substring(0, 100)}...`,
-          );
-
-          const finalMessage = {
-            id: assistantMessageId,
-            chatId: id,
-            role: 'assistant',
-            content: fullContent,
-            parts: [{ type: 'text', text: fullContent }],
-            attachments: null,
-          };
-
-          try {
-            await saveMessages({ messages: [finalMessage] });
-            console.log(
-              'Assistant message saved successfully with ID:',
-              assistantMessageId,
-            );
-          } catch (dbError) {
-            console.error('Failed to save assistant message:', dbError);
-          }
+          await saveMessages({
+            messages: [
+              {
+                id: assistantMessageId,
+                chatId: id,
+                role: 'assistant',
+                content: fullContent,
+                parts: [{ type: 'text', text: fullContent }],
+                attachments: null,
+              },
+            ],
+          });
         }
       } catch (error) {
         console.error('Error processing stream:', error);
+        try {
+          // Send error event
+          await writer.write(
+            encoder.encode(
+              `event: error\ndata: ${JSON.stringify({ message: 'Error generating response' })}\n\n`,
+            ),
+          );
+        } catch (e) {
+          // Ignore write errors on already errored stream
+        }
         writer.abort(error);
       }
     })();
 
-    // Return the response
+    // Return the streaming response with correct headers
     return new Response(readable, {
       headers: {
-        'Content-Type': 'text/plain; charset=utf-8',
-        'Transfer-Encoding': 'chunked',
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache, no-transform',
+        Connection: 'keep-alive',
       },
     });
   } catch (error) {

@@ -4,8 +4,7 @@ import { notFound } from 'next/navigation';
 import { auth } from '@clerk/nextjs/server';
 import { Chat } from '@/components/chat';
 import { getChatById, getMessagesByChatId } from '@/lib/db/queries';
-import { DataStreamHandler } from '@/components/data-stream-handler';
-import type { Message } from '@/lib/db/schema';
+import type { DBMessage } from '@/lib/db/queries';
 import type { Attachment, UIMessage } from 'ai';
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
@@ -33,26 +32,28 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
     id,
   });
 
-  function convertToUIMessages(messages: Array<Message>): Array<UIMessage> {
-    return messages.map((message) => ({
-      id: message.id,
-      parts: message.parts as UIMessage['parts'],
-      role: message.role as UIMessage['role'],
-      // Note: content will soon be deprecated in @ai-sdk/react
-      content: '',
-      createdAt: message.createdAt,
-      experimental_attachments:
-        (message.attachments as Array<Attachment>) ?? [],
-    }));
+  function convertToUIMessages(
+    messages: Array<DBMessage & { vote: any }>,
+  ): Array<UIMessage> {
+    return messages.map((message) => {
+      // Handle attachments with proper type checking
+      const attachments = message.attachments
+        ? (message.attachments as unknown as Array<Attachment>)
+        : [];
+
+      return {
+        id: message.id,
+        parts: message.parts as UIMessage['parts'],
+        role: message.role as UIMessage['role'],
+        // Note: content will soon be deprecated in @ai-sdk/react
+        content: '',
+        createdAt: message.createdAt,
+        experimental_attachments: attachments,
+      };
+    });
   }
 
   return (
-    <>
-      <Chat
-        id={chat.id}
-        initialMessages={convertToUIMessages(messagesFromDb)}
-      />
-      <DataStreamHandler id={id} />
-    </>
+    <Chat id={chat.id} initialMessages={convertToUIMessages(messagesFromDb)} />
   );
 }

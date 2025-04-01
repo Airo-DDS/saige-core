@@ -1,6 +1,7 @@
 'use server';
 
 import type { Message } from 'ai';
+import { generateText } from 'ai';
 import { cookies } from 'next/headers';
 import { openai } from '@/lib/openai';
 import {
@@ -26,24 +27,17 @@ export async function generateTitleFromUserMessage({
     typeof message.content === 'string' ? message.content : '';
 
   try {
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo',
-      messages: [
-        {
-          role: 'system',
-          content:
-            'Generate a short title (under 80 characters) based on this user message.',
-        },
-        {
-          role: 'user',
-          content: messageContent,
-        },
-      ],
+    // Use the generateText function from AI SDK
+    const { text } = await generateText({
+      model: openai('gpt-3.5-turbo'),
+      system:
+        'Generate a short title (under 80 characters) based on this user message.',
+      prompt: messageContent,
       temperature: 0.7,
-      max_tokens: 60,
+      maxTokens: 60,
     });
 
-    return completion.choices[0]?.message?.content || 'New Chat';
+    return text || 'New Chat';
   } catch (error) {
     console.error('Error generating title:', error);
     return 'New Chat';

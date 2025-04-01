@@ -1,4 +1,4 @@
-import type { UIMessage } from 'ai';
+import type { UIMessage, CoreMessage } from 'ai';
 import { auth } from '@clerk/nextjs/server';
 import {
   deleteChatById,
@@ -10,6 +10,7 @@ import { generateUUID, getMostRecentUserMessage } from '@/lib/utils';
 import { generateTitleFromUserMessage } from '../../actions';
 import { openai } from '@/lib/openai';
 import { pineconeIndex } from '@/lib/pinecone';
+import { streamText } from 'ai';
 
 export const maxDuration = 60;
 
@@ -149,121 +150,47 @@ ${context}
       };
     });
 
-    // Add system message at the beginning
-    apiMessages.unshift({
-      role: 'system' as const,
-      content: systemPrompt,
-    });
-
-    // Call the OpenAI API
-    const stream = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: apiMessages,
-      stream: true,
-      temperature: 0.3,
-    });
-
-    // Create a streaming response
-    const { readable, writable } = new TransformStream();
     const assistantMessageId = generateUUID();
-    let fullContent = '';
 
-    // Process the stream
-    (async () => {
-      const writer = writable.getWriter();
-      const encoder = new TextEncoder();
-
-      try {
-        // Send a message id event first to identify the response message
-        await writer.write(
-          encoder.encode(
-            `event: id\ndata: ${JSON.stringify({ id: assistantMessageId })}\n\n`,
-          ),
-        );
-
-        // Then setup the initial message event
-        await writer.write(
-          encoder.encode(
-            `event: message\ndata: {"role":"assistant","id":"${assistantMessageId}","content":"","createdAt":${Date.now()}}\n\n`,
-          ),
-        );
-
-        for await (const chunk of stream) {
-          const content = chunk.choices[0]?.delta?.content || '';
-          if (content) {
-            fullContent += content;
-
-            // Send text deltas in the format Vercel AI SDK expects
-            const textDelta = JSON.stringify({
-              type: 'text-delta',
-              textDelta: content,
-              id: assistantMessageId,
-            });
-            await writer.write(
-              encoder.encode(`event: text-delta\ndata: ${textDelta}\n\n`),
-            );
-          }
-        }
-
-        // Close the event stream properly with a final message update
-        const finalMessage = {
-          id: assistantMessageId,
-          role: 'assistant',
-          content: fullContent,
-          createdAt: Date.now(),
-        };
-        await writer.write(
-          encoder.encode(
-            `event: message\ndata: ${JSON.stringify(finalMessage)}\n\n`,
-          ),
-        );
-        await writer.write(encoder.encode('event: done\ndata: {}\n\n'));
-        await writer.close();
-
-        // Save the assistant message
-        if (fullContent) {
+    // Use streamText from AI SDK instead of custom streaming logic
+    const result = await streamText({
+      model: openai('gpt-4o-mini'),
+      system: systemPrompt,
+      messages: apiMessages as CoreMessage[],
+      temperature: 0.3,
+      onFinish: async ({ text }) => {
+        // Save the completed assistant message AFTER the stream finishes
+        if (text) {
           await saveMessages({
             messages: [
               {
                 id: assistantMessageId,
                 chatId: id,
                 role: 'assistant',
-                content: fullContent,
-                parts: [{ type: 'text', text: fullContent }],
+                content: text,
+                parts: [{ type: 'text', text }],
                 attachments: null,
               },
             ],
           });
         }
-      } catch (error) {
-        console.error('Error processing stream:', error);
-        try {
-          // Send error event
-          await writer.write(
-            encoder.encode(
-              `event: error\ndata: ${JSON.stringify({ message: 'Error generating response' })}\n\n`,
-            ),
-          );
-        } catch (e) {
-          // Ignore write errors on already errored stream
-        }
-        writer.abort(error);
-      }
-    })();
-
-    // Return the streaming response with correct headers
-    return new Response(readable, {
-      headers: {
-        'Content-Type': 'text/event-stream',
-        'Cache-Control': 'no-cache, no-transform',
-        Connection: 'keep-alive',
       },
     });
+
+    // Return the stream directly - this format works with useChat
+    return result.toDataStreamResponse();
   } catch (error) {
-    console.error('Chat API Error:', error);
-    return new Response('An error occurred while processing your request!', {
-      status: 500,
-    });
+    console.error('Error in chat API:', error);
+    return new Response(
+      JSON.stringify({
+        error: 'Failed to process request',
+        message: 'An error occurred while processing your request',
+      }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    );
   }
 }
 
@@ -274,11 +201,11 @@ export async function DELETE(request: Request) {
   if (!id) {
     return new Response(
       JSON.stringify({
-        error: 'Not Found',
-        message: 'Chat ID is required',
+        error: 'Missing chat ID',
+        message: 'The chat ID is required',
       }),
       {
-        status: 404,
+        status: 400,
         headers: { 'Content-Type': 'application/json' },
       },
     );
@@ -286,23 +213,35 @@ export async function DELETE(request: Request) {
 
   const session = await auth();
   const userId = session.userId;
-  if (!userId) {
+  if (!userId)
     return new Response(
       JSON.stringify({
         error: 'Authentication required',
-        message: 'You must be signed in to delete chats',
+        message: 'You must be signed in to use this feature',
       }),
       {
         status: 401,
         headers: { 'Content-Type': 'application/json' },
       },
     );
-  }
 
   try {
     const chat = await getChatById({ id });
 
-    if (!chat || chat.userId !== userId) {
+    if (!chat) {
+      return new Response(
+        JSON.stringify({
+          error: 'Chat not found',
+          message: 'The chat was not found',
+        }),
+        {
+          status: 404,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
+    }
+
+    if (chat.userId !== userId) {
       return new Response(
         JSON.stringify({
           error: 'Unauthorized',
@@ -319,7 +258,6 @@ export async function DELETE(request: Request) {
 
     return new Response(
       JSON.stringify({
-        success: true,
         message: 'Chat deleted successfully',
       }),
       {
@@ -328,10 +266,11 @@ export async function DELETE(request: Request) {
       },
     );
   } catch (error) {
+    console.error('Error deleting chat:', error);
     return new Response(
       JSON.stringify({
-        error: 'Server Error',
-        message: 'An error occurred while processing your request',
+        error: 'Failed to delete chat',
+        message: 'An error occurred while deleting the chat',
       }),
       {
         status: 500,

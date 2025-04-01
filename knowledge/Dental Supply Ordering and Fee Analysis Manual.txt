@@ -1,0 +1,2550 @@
+# Dental Supply Ordering and Fee Analysis Manual
+
+# 2024 Edition
+
+Detailed Systems to Analyze Cost per Procedure, Evaluate Insurance Participation, Improve Cash Flow Systems, and Lower Supply and Equipment Costs
+
+# Dental Success Network
+
+# Addison Killeen, DDS
+---
+# 2024 Paperback
+
+# 2024 Addison Killeen, DDS
+
+All Rights Reserved:
+
+Published in the United States by KDP Publishing platform, an imprint of Amazon.
+
+# Library of Congress Cataloging-in-Publication Data
+
+Killeen, Addison: Dental Supply Ordering and Fee Analysis Manual by Addison Killeen, DDS
+
+ISBN: 9798875828294
+
+13 Dentistry Practice Management 2_ Business & Economics Office Management
+
+Cover Design by Eric Lott and Bryce Richert of MyCMOShare
+---
+# Table of Contents
+
+1. How to Use This Manual
+2. Goals of Dental Supply Ordering 13
+3. Ordering Tactics 19
+4. Laboratory Cost and Case Management 39
+5. How to Decide on Dental Radiology Equipment 55
+6. Profitability on Each Procedure 67
+7. Insurance Fee Evaluation 73
+8. Cash Flowing Through Your Business 79
+---
+# About your Author
+
+Addison Killeen, DDS, is a practicing dentist, author, speaker, and business coach. He has owned 8 practices and currently owns one startup in Lincoln, Nebraska that is growing at a logarithmic scale. Prior to the dental field, he was a 'numbers guy' for a large conglomerate, where he learned that you need to keep watching the numbers, no matter how big or small the company. He has traveled the world extensively to provide dental care to the poor and under-served. He is also the Co-Founder of the Dental Success Network, a private Dentist-Only software that provides coaching, Continuing Education, team training, and vendor/supply savings.
+---
+# Dental Success Network
+
+# THE ULTIMATE GUIDES
+
+# DENTAL OFFICE OPERATIONS MANUAL
+
+A 300+ page operations manual that will give you detailed systems to help run your dental practice including Foundational Elements; Back Office Systemization; Front Office and Billing Routines, Human Resources Guidance, Positional checklists, Marketing Resources and Patient Experience verbiage: With all this as an example, as well as video links to help explain, you will have no trouble finishing your own Operations Manual for your practice so that you are not reliant on a few key players - but that everyone plays in the system. Online documents available that will correlate to the handbook will also speed up the learning curve and allow you to maximize the potential this book holds. Don't waste weeks and months doing it yourself, copy this one - and make yours even better.
+
+# DENTAL FRONT OFFICE MANUAL
+
+Trying to manage and learn the Front Office of your Dental Clinic can feel overwhelming: With insurance; billing, phones, and tons of paperwork - there's many moving parts and it is difficult to teach the systems in a clear manner: Sometimes insurance denies treatment: Sometimes the phones keep ringing off the hook and you need to help manage scripts. Sometimes you need a good process for billing; either by mail or text: If this sounds like you; then this book is the answer to your prayers. At 272 pages (plus tons of digital downloads), this book is packed full of the best scripts to help with the phones, the right way to bill appropriately, and the best ways to leverage insurance websites to make sure you get quick and accurate benefits. If you feel like the front office is overwhelming, look no further this book is for you.
+
+# DENTAL OFFICE MARKETING MANUAL
+
+Ever wonder why some dental offices only get 10 new patients per month, where others can get 100-300 new patients per month? Ever wonder why some practices look like they 'have the keys you want to know to help your practice get the best return-on-investment for your marketing dollars? This book includes content around naming; branding; logos, website design, search engine optimization, Google Ads; Facebook ads and funnels. This large manual even includes what to look for in an external marketing agency versus hiring your own internal marketing manager: With many examples for each type of marketing; this is the only book you need in the marketing space if you're looking at doing any sort of marketing for your dental practice.
+
+Order your bundle today at: DentalSuccessNetwork.com/manuals
+---
+# Dental Success Network
+
+# THE ULTIMATE GUIDES
+
+# DENTAL Acquisition MANUAL
+
+# TO DENTAL SUCCESS!
+
+Buying a dental office can be one of the biggest financial decisions you make in your life. Make sure you do it the right way from the beginning with the expert knowledge and documents found in this book. Between the authors, they have purchased and sold more than 20 practices, and the knowledge they pass along in this book can save you hundreds of thousands of dollars over the course of your practice career. This book comes with downloadable documents to help evaluate practices; locations, sample contracts, and the keys to help you at each stage through the acquisition process.
+
+# THE ASSOCIATE MANUAL
+
+Many dentists are getting to the point of burnout because their practice is growing and patients love their personalized care. However, at a certain point, they cannot do any more dentistry. When this problem occurs, the most common answer is to grow the business and hire an associate. Unfortunately, most dentists do not plan, or execute, this idea well at all. This leaves the owner frustrated and the associate in a bad spot after a few months. This book is the answer to help avoid those problems, keep the owner of the practice happy, and give systems to help develop the associate into an amazing clinician and member of the team.
+
+# DENTAL STARTUP MANUAL
+
+Starting a dental clinic is a long journey with many pitfalls. The authors know this well after owning 25 clinics collectively. In this guide, they teach and guide you through the journey from initial idea through first patients, plus saving you more than $50,000 in the process. With downloadable documents to match throughout the process, this guide will attack the major parts of the process including financing, site selection, floor plan design, construction, equipment selection, cabinetry, technology, marketing, systemization, and cash flow control. Included in this book is a 50-page guide on setting up your OpenDental Software from scratch using the best practices.
+
+Order your bundle today at: DentalSuccessNetwork.com/manuals
+---
+# Chapter 1
+
+# How to Use This Manual
+
+Dental Supplies tend to be the one area of a dental practice where dentists overspend. This is chronic and severe, as I've seen many great practices that still spend way more than they should. Some practices may buy a supply for $100, while the other practice down the street may buy the same supply for $50. This overspending eats into the profitability of the practice quickly: Past that; when the supply ordering systems of the practice are broken, it often leads to wastefulness and cluttered supply areas. This often just drives us crazy and doesn't look good to our team: If we are cluttered in one area, it might lead to disorganization in another.
+
+This manual was created to help clean up the mess (and save you more than $20,000 per year)! This is one of the easiest, but most impactful, places to clean up the practice: We want to help you implement a few good systems, decrease waste, and ultimately save quite a bit of money. When done correctly, you will be able to know what your budget is, order off a standard list of supplies, order from places where the prices are clear and economical, track orders A to Z, and check them in to finalize the process. Most of all, you'll be able to spend the appropriate amount on supplies within typical dental industry guidelines - under 4% of total revenues.
+
+These documents and systems are not new ideas. I've been using this system for years and have been able to keep my supply budget within limits - even while experiencing growth, zero revenues with COVID shutdowns, and all the spots in between. I hope the spreadsheets, resources, and systems shared in this manual allow you to achieve the same level of stress relief that these systems have given me over the past few years. And if this example manual speaks to you and this is the sort of thing that gets you excited, then you might enjoy the private dentist-only community that we've created at the Dental Success Network. As part of membership, we have many other documents and spreadsheets shared inside DSN that come with membership.
+
+To get a FREE 45-day trial of Dental Success Network and receive digital versions of these documents visit www.dentalsuccessnetwork.com/supply-ordering or see the QR Code.
+---
+If you ever have questions about this manual or want to see something in future versions, please don't hesitate to reach out to me via WWW AddisonKilleen com. I would love to hear your thoughts and help you implement any way we can:
+
+My energy these days comes from helping dentists make their lives better through systems and good resources. I appreciate you taking the time to read and use it, and once you are done - pass it along to a friend to help improve their practice!
+
+This next section comes from the scorecard that we use in all practices and is a way to help see where you can improve your practice. This systemization scorecard can help you find holes in your practice, or give you serious kudos if you already have all these things in place!
+---
+# Systemization Scorecard
+
+When we work with dentists in the Dental Success sphere, we always start with a self-evaluation. As we start this journey of systemization with you, we would like you to complete it as well: Below is a complete checklist to help you see where you might need to improve. In each section, there are also sub-set checklists to focus on the strategies in that section: Go through this checklist to see how you measure up. Watch the introduction video here:
+
+# Foundation
+
+- We have defined the Mission Statement for our practice.
+- We have defined the Vision Statement for our practice.
+- We have defined our Core Values for our practice.
+- We have posted these foundational principles in a prominent place as well as in the Operations Manual.
+- We have made it an accountability for each team member to commit the foundational principles to memory.
+- We ensure that each team member has committed to living and working by these principles while in the practice.
+- We regularly review the foundational principles to keep them relevant and modify them when they cease to inspire and motivate the team.
+
+# Operational Systemization
+
+- We have created protocol sheets for everyday tasks performed by each team member (with the input of each team member).
+- We have created Accountability Agreements for each position which include: all tasks from each protocol sheet, all tasks that are shared among the team, the practice's Core Values, and signatures of each team member; CEO, and/or direct supervisor and office manager.
+- We have taken photos of each of the following: Ideal tray setups, materials and equipment setups per procedure, common areas, supply, lab, sterilization, and business offices.
+- We have an organizational chart including all team positions. (Note: team members may hold more than one position).
+- We have team performance review forms that are completed and filed in employee personnel files after each review.
+- We have agendas for the following meetings: Morning Huddle, Weekly Growth Meetings, Weekly Departmental Lead Meetings, and Quarterly Calibration Meetings.
+- We have a complete Operations Manual with the following contents: Foundational Principles, Accountability Agreements, Organizational Chart, Agendas, and Scripts for the Patient Experience.
+---
+# Lifetime Patient Experience
+
+We have a telephone script and protocol in place for all categories of incoming calls.
+
+We have a script for all appointment confirmation calls.
+
+We have a script and protocol for all patients entering the doors of the practice (front office).
+
+We have a script and protocol for transitioning patients from the waiting room to the treatment room.
+
+We have a script and protocol for seating a patient.
+
+We have a script and protocol for introduction/transition to the doctor.
+
+We have a script and protocol for treatment planning/case presentation.
+
+We have a script and protocol for the transition to the front office (check-out).
+
+We have a script and protocol for checking out and reappointing each patient.
+
+# New Patient Acquisition
+
+We have a written system for obtaining patient referrals in place.
+
+We hold certain team members accountable for maintaining a referral generation system.
+
+We have a system for gathering doctor/patient photos, testimonials, and online reviews.
+
+We hold the team accountable for a certain minimum number of photos, testimonials, and online reviews per week.
+
+We have a system in place for locating and sponsoring a community outreach recipient every month.
+
+We have a system for tracking the sources of each new patient and verifying its accuracy with the practice management software.
+
+We have identified our monthly marketing budget and can calculate the ROI on each campaign that we run.
+
+We utilize tracking telephone numbers on all marketing campaigns whenever possible.
+
+We do not sign long term contracts for any external marketing source unless its effectiveness has been tested and tracked.
+
+We have identified our Avatar and intentionally designed our external marketing campaigns to attract the ideal patient.
+
+We plan our marketing campaigns several months in advance and diversify the delivery of our marketing to as many different effective avenues as our budget can tolerate.
+---
+# Cash Flow and Overhead Control
+
+We are aware of the profession's ideal expense percentages and understand that elevated expenses in any category decrease the owner's profit.
+
+We focus on profitability as our number one KPI secondary to productions, collections, and new patients.
+
+We understand that debt is acceptable if it is leveraged to create more profit, not just more revenue.
+
+We also understand that incurring debt to purchase depreciating assets that do not generate a profitable ROI will decrease the owner's net worth and cash flow.
+
+We set hourly, daily, weekly, monthly, and yearly adjusted production, collections, new patients, and profitability benchmarks.
+
+We track our KPIs from month to month and year to year.
+
+# Hiring, Firing, and Onboarding
+
+We have a systemized process for recruiting and vetting potential new team members.
+
+We have a systemized process for training and onboarding all new team members.
+
+We have clearly defined the benchmarks and expectations for all new team members set for 30, 60, and 90 days of the hire date.
+
+We have bi-monthly performance reviews and self-assessments during the 90-day "Get Acquainted" period.
+
+We are clear with our new team members about expectations and consequences for underperformance.
+
+We have a systematic process for firing any team member.
+
+After completing the entire checklist, add up all the completed checks and then calculate a percentage score. Put that score below:
+
+|Total Items Completed:|45|
+|---|---|
+|Percentage Score:| |
+|Belt Status:|11|
+---
+# Use the chart below to grade yourself:
+
+|Overhead|Assessment Score|Percentage|
+|---|---|---|
+|Phase 0 (White Belt)|Less than 40%|Above 60%|
+|Phase 1 (Blue Belt)|40% - 60%|56% - 60%|
+|Phase 2 (Brown Belt)|61% - 79%|51% - 55%|
+|Phase 3 (Black Belt)|80% - 100%|Below 50%|
+
+Typically we see most dental practice owners start below 40% systemization. If you have taken this test and have a score close to zero, do not sweat it! Many people start there: The good news is that using the resources in this book will get you up to the 'Black Belt' phase quickly as long as you develop the habits to form these systems every day:
+
+You might be wondering, "What does Black Belt mean?" In the Dental Success Institute's Elite Practice Mastermind, we use the 'Black Belt' moniker as the gold standard for what we all hope to achieve. This means that a dentist's practice has an over 80% systemization score and a below 50% overhead number: In essence, a doctor is taking home half of all their revenues if they are the only doctor in the practice. We also have many doctors who do not do much clinical, and in these cases, the dentists are still making 20-30% profit on the practice without even seeing patients.
+
+As you progress through this book, use it as a resource to help you attack each section and get a better systemization score over time. Nothing happens overnight; but we are excited to help you get all the value out of this book and become more systemized!
+---
+# Chapter 2
+
+# Goals of Dental Supply Ordering
+
+When talk to practice owners, one of the most frustrating parts of looking at their profit and loss monthly statements is the dental supply line item. This cost is sometimes eating away at their profit, and it frustrates them that they cannot seemingly keep it within a normal range. Some months the costs of supplies are low and looking great: Other months it is extremely high and even the people doing the ordering do not know why.
+
+Whether your costs are high or low depends on your target percentage. When we say target percentage, we mean what percentage is dental supplies, when divided by your overall revenues for that period of time: If you ordered $5,000 in supplies on $100,000 in revenues, then you are at 5%. The next obvious question is, "What should my goals be for the target percentage?"
+
+On the next page is the example percentage breakdown for a few different levels of practices. Now if you went through the first chapter and graded yourself as to what level of practice you are, you have already looked at your overhead and goals. If you haven't a quick recap is in order. We typically classify practices into a Belt category: White, Blue, Brown, and Black Belts. White Belt means that your overhead is over 60%, which means that the profit to the owner is around 10%. This is typical for a dental practice, but not ideal by any means. As the practice becomes more efficient and profitable, the overhead percentage goes down, and the profitability goes up. Black Belt practices are those where the overhead is less than 50%, and the profitability is over 20%.
+
+We always keep the doctor's pay out of the overhead percentage equation because it differs greatly due to the geography, style of practice, and skills of the doctor. We assume that doctors will make around 30% of their own adjusted production. When you factor in that a doctor only does 75% of the production of the practice, then their percentage of total revenues decreases to about 24% of revenues. (The other 25% of revenues is usually attributed to hygiene)
+---
+# Profit and Operations Analysis
+
+|Category|Belt Level| | | | |
+|---|---|---|---|---|---|
+|White Belt|Blue Belt|Brown Belt|Black Belt|Double Black Belt| |
+|IProfit|Less than 10%|10%|15%|20%|25%|
+|lOperations TOTAL|65%|60.0%|55.0%|55.0%|45.0%|
+|Front Back Off|17.0%|16.0%|15.0%|13.0%|11.5%|
+|Hygiene Salarie|10.0%|9.0%|8.5%|8.0%|8.0%|
+|Payroll Taxes ai|3.0%|2.5%|2.0%|2.0%|2.0%|
+|Fringe Benefits|3.0%|2.5%|2.0%|2.0%|2.0%|
+|Lab Speciality|7.5%|7.0%|6.5%|6.0%|6.0%|
+|Dental Supplies|5.5%|5.0%|5.0%|4.5%|4.0%|
+|Advertising|2.5%|2.0%|3.5%|3.5%|3.0%|
+|Other Minor|1.0%|1.0%|0.50%|0.50%|0.30%|
+|Other Expenses|4.0%|4.0%|3.0%|2.5%|1.5%|
+|Insurance|1.00%|1.00%|0.50%|0.50%|0.30%|
+|Legal and Acco|1.00%|1.00%|0.50%|0.50%|0.30%|
+|Office Expense:|1.0%|1.0%|1.0%|1.0%|1.0%|
+|Facility and Equ|8.5%|8.0%|7.0%|6.0%|5.0%|
+|Associate|10.0%|10.0%|10.0%|10.0%|10.0%|
+|Owner Salary|14.0%|14.0%|14.0%|14.0%|14.0%|
+|Total Dr.|24.0%|24.0%|24.0%|24.0%|24.0%|
+
+As you look at this chart; you can see that Dental Supplies are usually 5.5% on the high end, down to 4% on the low end: These are typical ranges, but of course, there are practices across the country that can be even lower than 4% on a routine basis. Sadly, some practices have dental supply spending above 8% as well:
+
+Dental laboratory spending is also grouped right next to that row, mostly because these costs are sometimes conflated together: Sometimes dentists using newer technologies buy really to make CAD-CAM crowns. In this case, then the cost would usually go into the 'Lab' category: If this sounds like your practice, then we suggest that you look at the groups together as one expense. So for White Belt status, your grouped costs might be 13%, but for Black Belt practices your costs should be 10% or less.
+
+Thinking - "How do I keep my costs down when I'm already trying to spend less?" In general, we like to think of this problem in a framework - specifically when you have an issue, there are different "levers" to achieve the same outcome. Here are three levers that will generally help you keep your percentage costs down among the supply and laboratory costs:
+
+1. Decrease waste and use less
+2. Buy from better sources
+3. Increase revenues
+---
+# Decrease Waste and Use Less
+
+Decreasing waste and using less materials is the first strategy we suggest in general. Part of this is evaluating what is the best amount to be using in each procedure: Maybe you always put 5 pieces of gauze on a tray; when 2 is most often used. Maybe you use a huge amount of PVS impression material when a small dime size is all that is needed. Or maybe you use a large mixing tip that wastes a ton of volume when a short, quick-mix tip will do just as good of a job with less wasted material. In any sense, looking at your usage with a new set of eyes will help evaluate if you can cut down on waste and over-usage. Some materials are priced differently, just due to the nature of their packaging: Vitrabond that is mixed on a pad from powder and liquid is half the cost of the clickable dispenser; Temp-bond temporary crown cement is a fraction of the cost when used in two tubes, as opposed to single-use packets where you rip off the top of the package and mix manually: So, evaluate both the amount of material and the packaging it comes in.
+
+We will also plant the idea right here that we should never order in bulk to save a little money: The "Buy 2, Get 1 FREE" deals are typically not a good business practice. In general, buying in bulk may lead to more wasted supplies and wasted costs. We like to order "just in time". "Just in time" is a philosophy that ordering should be done in the previous 2-3 weeks before the supply will be used. We adhere to this philosophy and it works as long as you know that the supply is in stock, and the shipping will get the supply to you on time: (In cases where shipping is unreliable; and supplies go in and out of stock, we suggest keeping more stock of a supply.)
+
+When is it ok to order in bulk? We generally think it's ok to order these bulk-discount orders when you will use them up in 4-8 weeks. If you're using the supply this quickly, then it is a good strategy to have a little more: However; if this will take you longer to use up, then it is not worth blowing up this month's budget, just to save a few dollars on a supply.
+
+# Buy from Better Sources
+
+Next, you will want to buy these materials from the right sources. Sometimes the same supply from one vendor is significantly cheaper than others. Some warehouse companies have higher overhead due to sales teams, technology; or other factors. When you see a higher price, it might mean that they buy the same material at the same cost from the vendor; but they have to charge much more due to their built-in costs.
+
+Sometimes cheaper vendors can also negotiate better deals because they buy in much higher volumes from the manufacturer. As a fictitious example, 3M might sell Fluoride Varnish for $1 a package to one vendor buying 100,000 units a year. 3M might turn around and sell that same fluoride varnish to a larger vendor at a different price.
+---
+vendor for 60 cents as that larger vendor buys 10 million units. This means the same material can be priced much differently because of many different factors.
+
+# What about buying groups and clubs?
+
+Sometimes you can buy a supply from a specific vendor; and you will get two different prices depending on whether you are in a buying group versus a single, stand-alone practice: This is incredibly frustrating for many dentists, because we all want to pay the lowest fee, but often do not get the opportunity: Typically DSO's pay the least for supplies, but that is because they can: 1. Force their offices to buy only certain supplies, and 2. Spend extremely high amounts of money with just one vendor: How can the "little guys" compete with that?
+
+Enter group buying conglomerates and clubs--commonly referred to as Group Purchasing Organizations (GPOs): Oftentimes when a bunch of dentists group together; they can order the same supplies, but because there's such a volume in the group they can pay up to 40% less for the same supply from the same vendor: These GPOs have deals directly with the manufacturer; not necessarily the actual company that ships the supplies to your office: For example, let us assume you joined a GPO and ordered some PVS made by the 3M company; but placed the order on a website through this national dental supply company: You pay this discounted rate for the supply, but it's only because the GPO has negotiated directly with 3M to drop the price passed through to you: The national supply company had no hand in the discussions, other than reflecting the best price for you.
+
+One of the best buying groups in all of dentistry is with Dental Success Network--hands down: (Of course I am biased because I am a Co-Founder with Dr. Mark Costes and Michael Lomotan:) However; I have seen behind the curtain and know how the market works. DSN has one of the largest buying groups in the world by number of vendors. And in almost any segment of supplies, DSN has a deal with one or multiple vendors to allow you to order the supplies you want at a steep discount from regular prices. To learn more, check out www.DentalSuccessNetwork.com: For $199 a month, you get not only the buying group, but access to hundreds of hours of continuing education, a group of like-minded dentists, and actionable documents that will help improve your practice.
+
+# What about "Gray Market supplies?
+
+Of course, there is something called "Gray Market" supplies. These are supplies that are not up to typical clinical standards for a variety of reasons. They could be expired: They could be from overseas and not acceptable for use in the USA: They could have been manufactured correctly but had a temperature event which negated the effectiveness of the supply: Unfortunately, vendors from all over the world see the US as a market where dentists will look to save money, and they will try to prey on dentists by selling a product that only looks like the real thing: They will take these supplies and send them to the US to try to sell to unsuspecting dentists.
+---
+Identifying a "Gray Market" product is difficult: Sometimes the price is too good to be true, but that might be the only tip-off: People who manufacture and traffic gray market goods will do a good job mimicking the packaging so that any gray market product will look the same. Quite simply; the best way to avoid "Gray Market" products is to always buy from reputable sources who can prove their chain of custody and track the supply back to the manufacturer.
+
+What's the final word on balancing out 'buying from better sources' but avoiding the gray market? Our general philosophy is that there are some supplies where you might be very picky about the quality or feel of a supply: Maybe this is gloves, or maybe this is the type and weave on your gauze. This is normal and is to be expected. You love what works well in your hands! We suggest ordering all your favorites - but make sure you are doing your research to find the best price on that supply from a reputable source. What we do not suggest is buying everything from the same source. We suggest not locking yourself into a contract to buy everything from one place. If you do, you will essentially remove your power to save money and run the practice like you want: So, shop around; look for the best prices, and buy from the best places.
+
+# Increasing Revenues
+
+Changing the denominator on a fraction will change the percentage and while it seems so simple to say, it is true that increasing revenues will help decrease your percentage. Mathematically it is true, but in practice, it is much harder: Now some dentists will say; "But when I increase production, I need more supplies, right?" Sometimes that is true, but from what we have seen in working with hundreds of practices all across the country is that typically when production rises, the percentage of supplies does not rise in the same linear fashion: When your production is at $60,000, keeping a budget at 4% is difficult, but when you are at $150,000 per month, it is a little easier.
+
+What we also see is that when a practice has more revenue, its procedure mixture often tends to have a higher amount of crowns, implants, and extractions. Typically these procedures use fewer supplies per unit of production, and so the percentage of revenues often decreases.
+
+Increasing revenues is the last strategy to decrease supplies, and we suggest that this is not a goal, but rather a wonderful side effect of other noteworthy actions. The philosophy of Dental Success Network is that systemization and teamwork are the most important goals, and when this occurs, production and revenues naturally rise.
+
+When Roger Bannister ran the 4 minute mile in 1954, it was previously thought impossible to achieve such speed and time. Now that he achieved it, there have been hundreds of people who have also marked 4 minutes or less. What was previously thought impossible, is now achieved almost yearly by high performers. In the same way, some people think that a low supply budget is only attainable by using.
+---
+questionable sources and skimping on supplies; however; we are here to tell you that it's not only possible, but it's also pretty easy when done the right way: We see it each month continuously with hundreds of dentists inside DSN: We're sure that if they can do it, You can too, as long as you decrease waste, order from the right places, and then slowly grow revenues.
+
+So now that we know the goal and strategy, what are the actual tactics to achieve this level of spending? The next chapter will answer these questions.
+
+18
+---
+# Chapter 3
+
+# Ordering Tactics
+
+# Setting the Budget
+
+To begin the process of keeping the budget in line, we need to start with setting up the budget and how to calculate our 4%. Once you work in a clinic long enough, you will see the pattern that sometimes our collections percentage is great, and sometimes it is horrible. We all have ups and downs, and so to smooth that out, we suggest taking a 3 month average of collections.
+
+Note: We only suggest using collections when the production-to-collections percentage is 95% or above. In the case where you consistently have below 95% collections percentage; then you will need to use 'net production' as your budget baseline. Having below 95% collections percentage is also worrying because it means you have some operations issues in your collections policies or front desk systems. In this case, make sure to examine how you have such low collection numbers. Once you are back above 95% collections (hopefully 99%+), then switch back to using collections as the baseline number.
+
+To take a 3 month average; begin by going to your OpenDental Reports > Standard, and run the 'This Year' report to see the monthly totals. Take the average of the last 3 months. See the example:
+
+| |Production|(Adjustments)|(Write-Offs)|Net Production|Collections|
+|---|---|---|---|---|---|
+|August 23|299,946|14,086|-98,883|186,976|222,048|
+|September 23|354,273|-26,459|-62,735|265,077|193,797|
+|October 23|407,668|29,381|100,232|278,054|277,777|
+|Averages|Averages|Averages|Averages|243,369|231,207| | | |
+---
+use collections as the base number for our supply percentage: Since the average of the last 3 months' collections is S231,207, that means that the supply budget set at 4% should be $9,248.28. Place the number S231,207 into the top left corner of the ordering spreadsheet, this is your three month average that you will base your ordering budget on. For those of you who have practices that might do sedation or implants, having a target range for each subset of supplies is a great way to keep track of how much you want to spend on certain supplies each month. As mentioned above a great supply budget is usually set at 4%, so you will want to divide accordingly amongst your subset in your supply budget.
+
+|Average|S231,207|Target Range| | | |
+|---|---|---|---|---|---|
+| |3.5%|0.50%|1%|0.25%|4.0%|
+|November 2023|S8,092.24|S1,156.04| |S578.02|S9,248.28|
+
+Date Ordered: 11/01/23
+
+Vendor: Crazy Dental
+
+Supplies Ordered: Dental Supplies, Sedation Supplies, Implants/Bone IMembrane, Office Supplies
+
+In the example above, with a 4% supply budget, you could allocate 3.5% of that budget towards Dental Supplies and 0.50% to Sedation Supplies. In other costs that we love to track, we also include 1% for implants/Bone/Membrane and 0.25% towards Office Supplies and other non-categorized items. Now; doing the math here you will realize that this adds up to more than 4%. That is because typically we take the Implants/Bone/Membrane out of our "Lab" Cost category, not the Dental Supplies. Many dentists on DSN choose to do it this way because as you do more implants, your revenues go up but lab percentages typically do not rise quite as much: You will also see that Office Supplies is listed here as a 0.25% cost category: This is because we like to keep all our costs on here where a team member is buying something, and so that they know exactly what the budget is and where they can spend money: Your percentages for the supply categories should add up to supply budget goal of 4%, but other categories might be useful to track on this spreadsheet as well: If you do many procedures that are in their own category (like Sedation), and you want to separate them, you are free to do that.
+
+To calculate subset budgets you can take your average revenue, S231,207 for example, and multiply it by the predetermined percentage to calculate that subset budget for the month, as seen in the calculations above. The division of the budget depends upon what procedures are generally done at your office, so if Sedations are not something done in your office, but you do a lot of Endodontic procedures you could adjust categories accordingly per practice requirements.
+---
+# Cadence of Ordering
+
+One of the most common questions we get when discussing ordering is how often to place orders in a busy office. This makes sense because it seems like our team members never have enough time to complete ordering each week. When they run short on time, they often forget to order some important supplies which puts the office in a pinch: So what is the best cadence?
+
+We always suggest weekly evaluation of supply levels and weekly ordering: This is for a couple of reasons:
+
+1. Weekly Schedules/Routines are easier to maintain
+2. Weekly orders are smaller
+3. Keep less supplies on hand
+
+Weekly routines are simply easier to keep, if there's something you do only every month or 6 months, it is harder to schedule in our busy lives. By keeping the cadence to a weekly routine, it is easy for one person to have that duty; and they get 1-4 hours each week to complete this task: This person should have no other duties, such as seeing patients, during these hours. Trying to mix in patient care and supply duties can lead to errors in the order and will take longer.
+
+Note: The typical time it takes for a dental assistant (preferred person) to do this ordering can vary greatly, depending on the size of the office. In a small office, it might only take 1 hour per week: In a large office doing over $5 Million, it might take 4 hours per week. The systems set up at the beginning (given out in this book) will help save time down the road, as well as some certain software. Even at 4 hours a week; the hourly wage of the person doing the ordering is negligible to the savings they will earn for the business by keeping the supply budget in the desirable range.
+
+If you order weekly, the orders tend to be smaller as well: This helps because it will take shorter amounts of time to both order and check in the supplies once they arrive: Trying to accept and track large orders can be quite a task if you only order once a month.
+
+The final reason, and maybe the most important; is that you will keep a more appropriate amount of supplies in the office. To be the most efficient office, you want just the right amount of supplies on the shelves, in the operatories, and in the drawers. If you do bulk orders each month, then you need to have extra shelving space for large boxes, which can be wasteful. If you order only what you need for the next 3-4 weeks, then you always have just the right amount of supplies for any procedure:
+---
+# Creating a Formulary
+
+Now we come to the most difficult part of creating an ordering system: the actual list of supplies you order. This might seem straightforward and simple, but it is absolutely not: To get this next part right, it will take up to 12 hours of work for someone to complete with accuracy and in a way that will help the office going forward. However, once it is completed, the system is extremely effective. What you will be creating over these 12 hours is called a Formulary: This is the name for the list of supplies that are approved for ordering in your office. If it is on the formulary, then it is approved to be ordered: If it's not on the list, your team will need to ask for special approval for it.
+
+To start creating this formulary you will want to gather a list of each item you order in the office, broken down by categories. For example:
+
+- Anesthetics
+- Burs
+- Cleaning & Infection Control
+- Crown & Bridge
+- Dentures
+- Disposables
+- Endodontics
+- Hygiene
+- Impression Materials
+- Miscellaneous
+- Oral Surgery & Implants
+- Restorative
+- Whitening
+- X-Ray
+- Office Supplies (Not Counted in the Supply Budget but still important to keep track of)
+
+To make your life simple, we have a spreadsheet attached to this book that goes through all of these items above. Check out the QR code in the beginning of this book. As you go through each section, make sure you know all the supplies you might order in a 12 month period. For example, in the anesthetic category, you will want to list every needle size, anesthetic, protector sheath, topical, and sharps container. Now, even though sharps containers do not get ordered very often, they should be on the list because you would most likely order them at least one to two times per year.
+
+The formulary should be very simple to understand and execute for anyone in the practice: With that in mind, if you want to re-prioritize these categories to make it more simple, we encourage that. There might also be other categories in your practice that you need to add to the formulary: Whatever it takes to make it a simple system for your office to order from a single list, we love it.
+---
+As you go through the list of items that you order or want to order; you will want to remember a few things. First of all, there are many different products and SKUs for products. If you have a favorite brand or type, make sure that you pick that brand for the formulary: If you are agnostic about which type of material it is, then make a note of that supply as well:
+
+You will start to see the extreme price differences between generics versus brand names. In these cases, we suggest doing one small order of a new product to see whether that product will work well for you: In the case of 2 x 2 gauze, you might test that order where it's 50% cheaper; only to find out that the weave and thickness are unworkable: However; sometimes when you order a new brand you will find that it is exactly the same thing, just with a different logo on the box. In this case, pat yourself on the back for saving a huge amount of money and still getting a good product:
+
+As you look at a single supply; you will need to fill out as much data as possible in the attached spreadsheet:
+
+|Description|QUANTITY in PK|Crazy Dental SKU|Crazy $|NET32 $|DARBY PureLife (Synergy)|DARBY $|SKU|
+|---|---|---|---|---|---|---|---|
+|ANESTHETICS|Lidocaine HCL 2% w/epi|50|999-AN401/S33.39|$40.01|$42.99|$34.18|9515510|
+
+On the second tab after this ordering one, then you will also find a printable sheet with the same supplies, but without color. This sheet is easy for anyone to look at and help order:
+
+|Description|QUANTITY in PK|When to order|Typical order Quantity Needed| |
+|---|---|---|---|---|
+|ANESTHETICS|Accuject 27g Short Needles|100|Half container empty|6 boxes|
+
+This will take quite a bit of work to figure out when to order; and what is the typical order; but once completed it makes the ordering process so simple that almost anyone could do it. Even if the preferred ordering assistant is out of the office for a week, someone else in the office could execute the order easily:
+
+23
+---
+                                                                                              Crazy Dental                       Net 32 Detailt
+                                                                                  Crary     DSN Prices (wl DARAY                 (Cumpany.
+                                                                                  Dental    DSN1O coupon                         SKU;er                   PureLie
+                          Description                                QUATTYin PK SKU                code) SKU       DARBT $      tescription)  NEn $      SKU     FureLile $
+Instuctions               Each WNeekprintthis gheet out
+                          Anyone wfo (nds somethirig (hat needs to be restocked: check the box and highlight the checkmark #ith & colored marker
+                          On he speclicdayeach week lhis gels laken Up. ordered,  Ihen new sheet iS Printed for Ihe next week Or ordering
+                                                                    and
+           7              ANESTHETICS                                         Use this code-. DSN1O 514.50    8053u06     513.07 Monoject (488/4    91446   1071703      516 37
+                          Scptoject ? Tg Long Necde                                                 514.50    8870+16                               SIZSS   1071704      86 37
+                          Seplotect 308 Shont Ncedes                            S0 999 AA40I        537.45    9515510      313 Cook-Waile ( 99 [    S40.0[  1074101      42.99
+                          Lidoratre HCL 2*# Wept                                 So 337-PNSSUU      552.30    9533804      554.33 Protectur (PNSS   S600 Na            Na
+                          SeptocaEr Gold 4* E[00                                50 AxSu6            554.10    9515432      85281 Septacaine (LA     5616S   1074401      86+.99
+                          Sharps C ottatner t                                     550-676236         54.75    9902651     53.7} Monoject ( S88[6     87.08  [73030 [     S8.79
+                          Ie Best lopral EVER                        Websle ( uitomn  J3TOP-MI       54.50    950299 4      S2S1 House Baand (27       024  10702044     85.59
+                          Topical Gei   J00                                     50 991-1852557      576.15    820096}    578.22 Cook-Waite (99 [    587.06  10z440[      83.29
+                          Marrain 0 56#pi                                       50 994 AN4io         47 40    9516210    842.17 Cook-Waite (99 [    565.32  107050 [      3169
+                          Mpivacaire HCL 3%u
+           8              BURS                                                  30 [4+BC-78 (        54.55 Na         Vu         Ni            Na                  Vi  Na
+                          V2 Plase GARNET Finte                                 50 [4+-BC-78-$       54.55    3673045      571.24 Na           Na                   N  Nj
+                          V2 Plastie SAND Fine (EC Ment}
+                          NoDrnud Blatk Thuak Charufer                          25 212-M6SC         541,.45 Na        Na         Na            N                   Na  Na
+                          NcoDiantfd Blck Tit: Chafer                           3 2[2-[4SC          54145 Na          Na         Vi            Na                  Na  Na
+                          Gnen C oarseFouball                                   25 212-1920€        41.45 Na          Na         Delend (379-02}    S2630 Na           Nj
+                          Green Coarse Necdle                                     212-[3M4.[0(      841.45 Na         Na          Franha Diamonc    SSL.99 Na          Wia
+                          Grecn Coarse Rourd Erd €hamfer                        3 212-[+O           4145 Na           Na         Wa            Na                  Na  N
+                          Red Fine Kuund Demortuf Ball                          3 212.1923F         541.45    9592132  3+8.40   Takaguti (bv2lzz             86.99 Na  Na
+                          Reu Daarni Rrrha                                      3 135-859-0[4       449.70 Ni         Na          Arinha Diamonc    SSL.99 Na          Na
+                          Trnming and Finichirg Bur                                  [9+HM379F      542.70    9599217     S51.25 Meisinger (Z8J3    SS.20 Nh           Na
+                          Ydlov: Football                                       25 212-3923VF       559.25    9592426      86+.77 NcoDumond ( I5    SS7.70 Na          Wa
+                          Ydlowv Hamne                                          3 212-934.10'       S59.25 Na         Va          NcoDianad ( 3}    579.30 Na          Na
+                          357 Grl Whit: Cold                                    10 135 [52[8        537.45    89u0560      526.00 Grcat Whle Gok    524v9 N            NB
+                          Fodo Aeres Bu #6 Rourz Rall                             428-671796        523.15     668802      530_0 Endo Access (66: unavaiiabk M thi Na  Ni
+                          Sugicai Bur #6 Rourd Bali                             10 Ns-[4057-S       517,60    9503878      527.88House Bnand (S1             59199 Na  Na
+                          557 suyicalbur                                        10 Na                  NJa    9581542     81454 SS White ( 30007    SSL.99 Na          Nia
+                          suucsl703 Shak /                                                         S41,.45                 348 -
+                          laterprxima Rrd Fine ( Irvisign}                      3 212H41F            840.15 Na9592152         40 Na            NA                  Na  Na
+                          Blec Foothall                                         2 212-[923M         598.85            Na          Defend (79-023                 SRNa  Nja
+                          256 Carbde Ru                                          tOU33-SB-FG2:                89na659    S20 [9 SS WHite ( [505.    319.59 Na          Na
+                          330 Carbide Bur                                         10 BXSB-FGS:      598.85    9525116                               579.+8 Na          Nia
+                          ASSS Cutdeburs                                       I0o 13513243        5182.50    9527925      599.95 Beavers (1-3864" unarailabk & thiNa  Nia
+                          Two-striper Diamord FG 767.7C Preriic                     42+201545}      S55.50 Ni         Nu       Two Striper (20 [    S6z 03 Na          Ni
+                          Twv-striper Red Diarond FG F80,9F Pnrlict                424-2015497      555.50 Na         Na        Twn Strier (20 [    S6+05 Ni           Nha
+                          Two-St per Diamord FG 7S0.%C                              42+2015467      555.50 N          Nd       Two Striper (20 [    56}59 Na           Nia
+                                                 Prenuer                            42+20[5459      555.50 Na         Na        Tie Striper (20[    S6}.59 Wa          Na
+            7             V2 Round Cabik (I0 patk)                              16 Na                   Na    9525102         S6 House Brind (33    563.99 Na          Na
+                          #2Round Catbide ( I0 pxk}                             10 Na                   Nt    95251 [0     SUL6t House Brind (38    562.99 Na          Na
+                          4Round Carhide { I0 pack}                             I0 Na                   Na    952S1[6      Sl64 Hvuse Brand ( 38    55897 Na           Na
+                          76 RounidCabde ( 10                                   10 Na                   N4    952S112      3IL6+ House Brand (JS    S65.97 N4          Nia
+                                        pack )                                  10 Na                         8903+      S21.93 Hous: Brand ( 33    S58.97 Na          Ni
+                           Routd Carbide (10 pack}                                                       N                                          535 95 Nia
+                          Browni Mint Point                                     62 1450413          527.30 Na         Na         Broxnic (041J)                        Na
+                          EnEuncc Fiishing Cups                                 02 428-524055      5t04.65    8138*7;     53350  Fnhance (62405:    597.10 Na          Na
+                          Eckance Fiishing Poixts                               12 +28-624065      5104.65    8135874  Ss8.S0   Enharice (62406:            S[O.77 Na  Na
+                          Gren Miiget FG I5                                     12                  523.65 Na                    Midgets (4580)     530,05 Na          Ni
+                                                                                12 9004582                            Na
+            |             CLLANNNG NFECTION CONTROL                               516- 1355.24       56.55    9512666        5493 Delind (AT-zo?    SILX?   3173801       SI99
+                          Autndiave Tape                                          3J} BARC          Sto_75    9551670      524.96 Housc Brnd (IC     56.94  103450 [     S13 29
+                          Banicr Fim                                 To              S+13-HI50      513.85    9541206      81035 CaviWipes (13-[    S1L9    I75001       S1u.99
+                          CavWvips Towekte                           Ic0can                         534.75    9541200       S30.44 CanCidc([3-I0    52380   175020[      51Z 30
+                          CaviideGaon
+                          Advantakar Wipc                                          616-IMS-2l€      514.20    8430227         SIL6? AdvanaCkar (    S15.98 337270[       515.99
+                          Cloie Ln                                                 735 [200-U0       S6.15    9535950       S7.06 Glove n Care ( :  S2L.J0  172050[      5l3.59
+                          Handicce Uil                               Roz          428380134        8163.70    3642329     S168,78  Denraunm (055    536 00 N           Nia
+                          Speed Cean Midnrk                          163z           96002-0391      519.35 Na                    SpeedCkean (020    52+86 Na           Na
+                          Steri Pouch 2 234                                    10033}-SPZX+          54.80    950820}       5S52 House Brind (05      5417  190101        85.49
+                          Strn Fotch 2 759                                    200 33}-SP2XQ          55.25    950820[       55.75 Maxll Seri-sor     85.70  H90102        55.49
+                          Steni Pouck ; 519                                   200 333-SpSX9          55.30    9508205     S6.28 Maxil} Steri-sar      4498   190[0        55.49
+                          Stcn Fouch 515.25                                      100 SLSPXS          S5.05    9503208      S5.50 Maxill Stti-sox      5S59  1190103        5549
+                          Stcn Fourh - Zw1                                     200 Nia              521.75    9508212       SILSS Dua-Check (SCE    52540 Na           Na
+                          Sten Pouch 5 25x10                                                            Na    953008}     51734 Sal Scai Quattro    S1SS8   1190[05     SIO. 99
+                          Steri Farh /41?                                     Z0u 330-88040         581.85    9530091    572.98 SafeSeal Quatrro    S6+56 Na           Nha
+                          Tantar and Suin Rcmovr                                  999-[C230         514.10    952198       STO.QO Quala             S1s62   H4+501       5I4.39
+                                                                    SL            46[-21V35        S149.25    9518786       S1JZ35 Putevac SC @H   5146.94  140701      51S4 52
+             0                                                                  S0235CSu-B          538.85    X70203z       558.98 CitnSi ((50-W    4L7?    2030105      41.56
+                          Shoek Tablet (20 tabt}                                20 235-FCS-20       S40 55    8702034        4130 Cilns) (CS-20"    54349   2030103      44.82
+                          CROWNBRIDGE                                                               510.60                  5[0.42 Gingi-Fak MAX                         514.39
+             8            Gig-pak Z-(wist Retrattion Cord_ PUAN                       208-MOsM                9201025                               3104    141707
+                          Ging pak 2 (wt Retraction Cord EPI                           Z0+I0OM      S11.10    920015          SI68 Gingi-Pak MAX    SLI?    [460?        S1S.(9
+                          Teoth Sbeth                                                               514.65    9533750      31388 Tooth Slaath (6    Sza.0 Wa           Na
+                          GC                                                                       5150.90               829[.60 GC Fuji IILC (0    SISSQ0
+                            TujM Capsue                                           677425015                   9538568                                       50u [903    5374.39
+                                                                                         24
+---
+# CRB Metabond Complete Kit
+
+|CRB Metabond Complete Kit|Na|Na|8750390|5463.61|
+|---|---|---|---|---|
+|CXB Metabond Clear Powder|685-S39|539.95|8750388|441.0+|
+|CER Metabond Ruclepac Powder|685S396|554.95|8750380|556.448|
+|CeB Metabond Quick Base|Na|Na|8750385|591.68|
+|CEB Metabond Enamel Etch|6855395|527.70|9330850|522.84|
+|C&B Metabond Catalyst|Na|Na|8750386|5232.94|
+|Relyx Aplicap Transka Capsules|50 516-56816|5411.95|8677566|538.5|
+|Poty Caated 3x3 mixing pad (10 sheets)|Na|Na|951844|3M|
+|Fro Temp Rus A2 Refill|5164696|5215.40|8780674|5205.72|
+|Parapost Fiber Lux (brown)|777-PFI?I|557.40|9062584|559.62|
+|Parapost Fiber Lux (yellow)|777-PFI7IA|557.40|9062586|559.62|
+|Parapost Fiber Lux 4.5 (blue)|777-PFI?I|557.40|9062588|559.62|
+|Parapost Fiber Lux (red)|777-PFI7I-5|557.40|9052590|559.62|
+|Parapost Fiber Lux 5.5 (pink)|777-PFI7I-5|557.40|9052592|559.62|
+|Paracore Dentin Refill 5 ml|777-C5887|5107.25|9052600|Na|
+|Paracore White Refill ml|777-C5886|5107.25|9062598|510.11|
+|Paracore Mixing eps (brown super fine)|777-C6747|543.20|9062604|344.36|
+|Parabond Adhesive 4 & B (Red & Yellow)|777-7493|576.80|9062527|579.78|
+|Parabond Conditioner (Green) Non-rinse|777-7494|539.30|9062526|440.34|
+|Parapost Drills|777-P4z|384.80|9062330|864.37 each|
+
+# DENTURE
+
+|Coe-Soft Denture Reline|677.34401| |8190726|162.28| |
+|---|---|---|---|---|---|
+|Denture Brushes|12 33DADB|510.10|952/613|6.55| |
+|PIP Paste|159-6204400|155.15|9512325|588.52| |
+|PIP Paste Brushes|12 Na|Na|8692622|5840| |
+
+# DISPOSABLES
+
+|Ai Water Syringe|250 Na|Na|9528840|2647|
+|---|---|---|---|---|
+|Monitored syringe|50 559 41[20[2|25.15|9513416|5984|
+|Pesticide|000 990-DI3IS|832.75|340202|519.75|
+|Plastic holders|Na|Na|9503308|535.98|
+|Cotton Rolls Med #|200 33CRLL|511.80|9509371|519.44|
+|Cotton Tipped Applicators Sin (Dynatex)|Idmo 33CTN|53.95|9328312|Na|
+|Dr Angle small|40 69-32-SAG|519.15|942802|576.65|
+|Dr Angle W' Silver Lage|320 6932-LAG|519.15|942806|576.65|
+|Earloop Masks ASIM|50 333ELMI-F|57.95|9515119|6.65|
+|Nitrile Mask Assorted SMALL|4 270 913/46|598.85|9584126|5107.17|
+|Nitrile Mask Assorted MEDIUM|4 270-9134647|598.85|9534128|5107.17|
+|Nitrile Mask Assorted LARGE|34 2709131647|598.85|#IOOSI|139.20|
+|XS Nitrile Gloves|300 257 43932|528.15|9900246|28.45|
+|Small Nitrile Gloves|30 257-4393|528.15|9500240|28.45|
+|Medium Nitrile Gloves|300 257 4393+|528.15|9900242|28.45|
+|Large Nitrile Gloves|30 257-43935|528.15|990024|28.45|
+|XL Nitrile Gloves|250 257-43936|528.15|5252021|6.95|
+
+# Headrest Covers 14" * 95"
+
+| | |150 999-DI6S|10.75|9514705|6.98| | |
+|---|---|---|---|---|---|---|---|
+| |Pt Bbs|50 BALBZ-AQ|18.55|3410596|83032| | |
+| |Dry Cover|000 999-DI5|56.20|House Brand|16.00| | |
+
+# MVT Comba-Lp vented
+
+| | |16 999EVH|3.95|954989|502| | |
+|---|---|---|---|---|---|---|---|
+| |Sara Ejctors|10 333FJBB-[(|3.15|9549890|54.0| | |
+|Surgical Suction 14" (green)| |3 999EVSOO|4.45|9501593|52.60| | |
+|Disposable Trapa #5501| |14 999 EVSso|21.75|9551600|68.84| | |
+
+# ENDODONTICS
+
+|Butane Refill|991LA40I|6.25|3990804|543.5|
+|---|---|---|---|---|
+|Ca 6|516 44313|35.95|873036|536.07|
+|Endo Irrigation Syringes Ziga Yellow|T0 999 EVIOI|25.90|9503612|530.25|
+|Endo Ice|Doz 777-H05032|33.50|340615|534.37|
+|Endo Ring|427-ER|20.90|9516454|25.4|
+|Fum Inserts|427-ERFB|28.65|9516428|29.00|
+|Glass Mairg Shb|Na|Na|Na|Na|
+|Mc Torch|999LA40Q|42.50|9514730|23.8|
+|Pulp Canal Sealer|Lt|Na|Na|Na|
+|RLFueeJar|J*gm|43+9007131|836.85|3781320|
+|NOV LATEX Hygienic Detital Dam medium 6x6|30 777-H099|440.65|8441836|532.65|
+|Superoxol|[oz]|Na|Na|Na|
+|Temp Canal Syringe 3ml|539-TEK|46.95|221860|536.74|
+---
+8               KTile #65 Imm                                               999 EN-KS}          54.65    8946268           812,08 Ilouse Brand (KI     5235 Wa  Nia
+                K-Fie #*JImm                                                999-EV-KS}          54,65    X9+7020             S120B House Brand (KI    53,63 Na  Na
+                K-Fues I0 3Imm                                             999 -EN-KS3          84.65    X1+6270                SE Hous: Brund (KF    52.44  132133        4,9
+                K-Fulcs #15/3mm                                             909 EN KS}          54.65    8946272              81208 House Brnd (KI   85.,24  132/134     64.99
+                HYCIENE                                                     99g-PRIJ7           53.20    8520820         S5H Rech (002736)            S6 %4 Wa  Niu
+                Foss Dispenist                                              681-S9IPF          514.30    81[0K57       81455 GUM (S9imFX             S20 |8             819 [9
+                Fiostcrs                                                    17[-21/8964         54.05    8520604        53,29 Reach (2733)             L02 Nia  Na
+                Rcach Wared floss refill 200 yd                             68[840PUA'         530.50    8140616       83168 GUM Ecz-Thru            540,30  1790701     58.32
+                Floxs Threadets                                         10                     527.15                      827.X3 Oral-B Glide Pro   829,69  179120[       SL6
+                                                                       130 666-8484340                   9508418
+                Giice loqorg 4m                                          72 666 8484339        536.70    9504459           836.38 Oral R Glide Fro   542.67  1791102    571.39
+                Gum Soft Pick                                            72 681-632D           546.40    814070[              448.22 GUM Sof Picks   S60.66  1S0 [00L   859.99
+                Listerixe 2 Galbn                                           603.42750          542.40    2571311            84525 Cooi Mint Listen  874,91 Nia  Na
+                Mageif ying Flouth Mitrors #5                            12 999-INO?-21        511.75    9516472           419.52 Wiltex (67-669/5   857.99  425270}     8+.79
+                Prophy Argea                                            5( 100-248-500        5158.35    0442148           S626.39 ProAngke (247-5  8147447  2304001   {147.12
+                Proxy Bruch                                              36 681-36124          527.10     xiooso               82655 GUM Proxahrus   S36.32  1500203    535.19
+8               Mnt Vamish                                               50 516-12149M        8128.15     802235      S22582 3M(12[S8M)             5355,97  2247209
+                Raspbeny Varrish                                         50 428-1302[3        5101.80    8501928   8177 5} VamnishAmerica           8159,99  2247208    811425
+                Oinpm) SL synnge rcfil Llml                                 516-12627          526.90    8671526       S26.49 Clinpro ( 12627)       529 VX  215470+
+8               Sparkk: Prophy Paste MNT                                     200 I4-UFCM       539.15    3410254              423%6  Sparkle (UPMM    83899  1823305     86.79
+                Propby Pase ASSORTED                                    Z00 999PRSOT           519.05    3410252              $162 Housc Brand (PP   Si9 J}  [828307    536,79
+                Sparkk Fropky PssteBUBELE GUM                            200 141-UPCBG         539.15    3410250       831.62 Spatkle (UPCA)         S38.99  182830}     56,79
+                Nala Pentte                                                 200 238 223315     539.90    9550764       S40 Ix Nada (223313)          552.89  1839001    446.39
+                FMP RESSION                                                 526-27477          517.85    9532654           812,71 Identie (2747S0;    8199}  5193102     30.97
+                Identic Algmate Fas Set
+8               Ficxtimc Pulty G0 ml                                        504-.5001430      5126.50    8493526        510) 69 Flexitimne ( 50014   869.61  Toolol    8146.39
+                Imprint III Liht Body                                       516-|0778         5130.30    867[218       812445 Imprie        (40778   814899  2153107   8140,01
+                Heevy Body PVS                                               331VPS-HF         825.55    5252776            522 0} House Brand (IV    siosi  2153102   S140,0}
+                Bitc Regstration Carlnege                                   333-BR-SF          518.95    5252751            318.21 Delerd (BR-900;   528,06  143066 |    50.99
+{               Teal Mixing Tips                                         48 999-[MST2          524.15    9430702            821.92 House Brand (VI   524.57  I70k10     828.79
+                Yeiow MixiEg Tips                                           Na                   Nla     9430706              820 68 Mouse Bmnd (v   S21,15  1/70808     38,79
+                ProTeor Mixing Tis Mue                                   50 516-71453          S80 45    87805z8              8584 House Brind (21    81529  21S0O8     865.78
+                SM Intriora} SyrngeCrcin Vake: Pxck                      S0516-71506           577.50    867[589       57031 Na           Na                 2157601    579,94
+                Plastic Perforated [mpress;on rys Uppa #1 Loge           12 999-[M40T           52.95   80926150            S8.78 Houss: Brand (IV      S5,  1170101     44,39
+                Piastic Perforated [mpress On Trays Lower #2Large        12 999-[M402           52.95    3096152             Sk,75 House Erand (Wv     S5[3  1170102     34,89
+                Peestic Pertoratcd [mppression Trays Uppc #} Meditm      12 999-[M40}           52.95    8096154            58,75  Tray-Always (09    89,60  H7010}      54.49
+                Pistic Perior;ted [mpression Tny Lower #4 Medium         12 999-[M+04           52.95    8096|56             58.75 Tray-Always (09    S1025  170[04      44.39
+                Piastic Periorated ImpressionTrysUppa75 Small            02 999-IM405           52.95    8096158              52.75 Housc Brnd (IV    55.12  170i05      44.39
+                Pastic Perforated Impression Trays Lower # Soell         12 999.[M406           52.95    8096160              8875 House Brand (IV     S480  170/06       4.39
+8               Antttur Triple Tray ( Darhy}                             35 424-106213         549.20    956050o          S11 27  Tnple Tray ( IOK   543 03  1170301     53.79
+                Poxterior Quadrant TripkTcy(Darby)                       35 424-1006223        549.20    9500508                                     554,30  170303      58.74
+                                                                                               549.20    9s00506        411,27 Triple
+                                                                                                                                  Tray '
+                Sidclcss Posterior TrpleTray(Daby}                       48 424 |00624}                                                       (TOt    SSR25  170104      8x.79
+                MISCELLANEOUS                                               763-65-28           54.85    9555235        54.77 Milex (65-28)           54.76  4252802    S6.30
+                Mesl; Bur Holder [4rge                                      768-65-29           69.05    9555214         S9 6Mile> (65-29)            S1287  425280[    SII.99
+                Mesh Bur Holder Smail                                       50+5004627         541.85    8491470                                     839 59 1/75601 (3  838,39
+                Buff Lab Stons Modcm Mataids - 25 #                         5045004657         857.60    8490400             44}96 Modemn Matctia|   869.28  177030[    869,39
+                De-Keer Gteen Store 25 b                                    693-0906KA          52.10    8101230       51491 FroDent USA             Sz0.00  2020246    S17.59
+                Mixing Spalula                                                                5171.40                 8174,02   (220402)
+                Icon by DMG South Sur fice Mni Kit                          317-220400                   9502904             Icon                   6201.06  225070[   5197.95
+                Diamord Finishing                                           865-FS3-MX        S117 40    9593806             S1/35} NTI Diamond Su   5x4.95  521480|     87.19
+                Dentur e Ca5e  Strips P                                  12 999-Mi40O          S7.70 Nla         Na               Keystotie (95765   81795 Nia  Na
+                Onhodoiice Rclakit Cas                                   10 159-0921517        S12.50    80'1601          810 29 Fiak Smnacker (76    S1749  4002i01     83,59
+                ORALSURGERY                                                 Na                    Nfa Nk                           Alveocyl (01-Sm  861 $9 Nia  Nia
+                Dry Socket Faste                             1oz
+                #2nbde                                                      Ti) 999-SUJIS      523,25    99490u7             357.14 Myco Mediul (2   S15,*7  3369H02     51.79
+                15 Rlade                                                    1o0 999 SLJMII     517.10    9919008              838 M Myco Medial (2    81557  3369403   8144.79
+                Chrona" (Jut Suture ;-0                                  12 999-Su78i          531.20    9502771       527 7} Na          Ni                 3368504     35.39
+                Vietyl Suure 5-0                                         12 771-J4636         8234.55    32650+0      {27.12 Na           Wa                Ni  Nla
+O               Collgen                                                                       5154.85                                                 S5 95
+                      PlugRccorbabie                                     Io 76.62.202                    990[304             5130.29 FuraPLUG (PGP           425026|   5129.59
+8                                                                           999 PRSUO           54,30    6uz050u            53.53 House Brand ( [$   8124    212720|    S10.Je
+                0.9" Sodtm Chioride Injcetson 5OQ m} (hsg)                  80+Qx0o [           57 40   0.063152           55,30 B. Bcarin (L8OO [    8524 Nia  Nia
+                0.9"# Sodium Chloride Irrigationᴰᵒⁿᵐ                       804 R5zOO 0          56.90  0.06,3254not avatlable a t B. Braun ( RS206   56.91 Nia  Wia
+                Senic Walr I000 ml                                          So+RsouO-0          59.35   0 OKstss                                      89,99 Wa  Nla
+                RESTORATIE                                                  999-ALZOO         514.85 Nh                                             S29,95 Nla
+                Amalgam Wdll                                             50 317-61016         5107 55            Wa                 Osuing (DTB-0)              Na
+                Amalgam AHoy 80O mg }-spil                               20 516-6029A[[       5135.20    9526974       8837.57   Dexiler ( 1[9494/  Siz1.00 Na  Nia
+                Fitek Suprcrne Ultra Composite AIB                       20 516-6029A21       5135.20    8454764   81z6 33 Flitex Supreme          4137,44   21SIS01   8121.44
+                Ftek Supreme Uhra CompstleAZR                            20 516-6029A3I       5135.20    8451766   8126 33 Flitex Supreme          413794    2151562    S121.4
+                Fitek Suprerne Ulra Composile A 3B                                            8135.20    8451708   81z6.33 Flitex Suprcme          8137 94   2151503   5121.44
+                FitckSuptcme Ultra Composite A }.SB                      2} 516-602943.       5135,20    8451710       8126 33 Flitex Supreme      8137.94   2151504   S12I.44
+                Fitek Supremne Ulca Compostle AAB                        20 516-6029A41       5135.20    8451712   5126 33 Flitex Supreme          814898    21s1505   S121.44
+                Filtek Supreme Uktra Composite BIB                       20 516-602981[       5135.20    8451716       8126.,33 Flitex Supreme     5137.94   2151506    812L.4
+                Fiitek Suprernc Ukra Composile RZB                       20 516-6029B21                  8451718  S126,33} Flitex Suprcme          513591    2151507    51Z144
+                Fiitek Suprcme Uitra Composite B3B                       20 516-6029B3[       5135.20    X451720   S126.33 Flitex Supreme          M6 07   Nia  Nja
+                FdtckSupremeUktra Compositc CIB                          20 516-6029CH[       5135.20    8451724      S126,33 Flitex Suprene [     8137 94  Na  Na
+                                                                                  26
+---
+# Fitek
+
+|Supreme Ultra Composite CB|20 516-6029C21|$8135.20|
+|---|---|---|
+|Flirex Supreme|8451726|$8126.33|
+|Fitek Ultra Composite C3B|20 516-6029C3|$5135.20|
+|Flitex Supreme|8451728|$5126.33|
+|Fitek Supreme Ultra Composite DZE|20 516-6029DZI|$5135.20|
+|Flitex Supreme|8451730|$5126.33|
+|Fitek Supreme Ultra Composite DJB|30 516 3029D%|$5135.20|
+|Flitex Supreme|8451732|$8126.33|
+|Fitek Supreme Ultra Composite AIE|10 516-60294H[|$569.40|
+|Flitex Supreme|845173X|$565.09|
+|Fitek Supreme Ultra Composite AZI|10 516-60294Z1|$569.40|
+|Flitex Supreme|8451740|$565.19|
+|Fitek Supreme Ultra Composite ABF|10 516-6029AJI|$569.40|
+|Flitex Supreme|8451742|$565.09|
+|Fitek Supreme Ultra Composite BIE|16 516-6029B1[|$569.40|
+|Flitex Supreme|845174|$365.09|
+|Fitek Supreme Ultra Composite BZE|10 516 6029821|$569.40|
+|Flitex Supreme|38451746|$565.09|
+|Fitek Supreme Ultra Composite DZE|10 516-6029D20|$569.40|
+|Flitex Supreme|8451748|$865.09|
+|Hch Gel 38" Refib|589-ET-SOR|$534.05|
+|Fich 643840|589 FTC|$15.85|
+|Fbwabile Composite Zgm Shacc 42|33}-FFA2|$24.20|
+|Articulating Paper Horseshoe Red Blue Combo|144 %99-ARIC|$56.70|
+|Articulating Paper Thin Rite|1444 999-ARIOO|$56.70|
+|Clear Matrix Myar Stps|100 949340|$54.25|
+|This Manx Bard 00l5|36 [46-345789|$55.20|
+|Ukrrathan Tofilemic band .Q1|12 Na|Nia|
+|VITA Classics Sha Guide|266 -Gox 903|$129.80|
+|GC Cavty Condwnt fgm|677-000[10|$58.90|
+|Gluna $ ml|504-6587235|$127.05|
+|Ivoclesh GM|579.637568|$37.45|
+|Vircbord|516.7571|$229.75|
+|Micronbrush Fius Fine|100 732MFFIOO|$59.95|
+|Scall MouthProp|2 SJI MPBSC|$10.85|
+|Nedim MouthProp|2 3SL MPB-A|$10.65|
+|Black Ent Tps %g|Foo 999 Col66|$18.25|
+|Black Flonabk Tp / %ga|10o 999-C0162|$18.25|
+|Yellow SM-Flo Tp: IYg2|Io 250,1210|$50.55|
+|Wouka Wauge , =snb"|50 999-MASuU|$24.60|
+|Peiodcet Pin Trecztra|428-659820|$58.65|
+|WITENING PRODUCTS| | |
+|Opalescence 35%PF Mint Refill Kit|40'synngcs|Nia|
+|Opalescence 15%PF Mirs Refi Kn|4) synngcs|Nia|
+|Opalescence Boost PF 40% Fcono Refil|20 syringer|Nia|
+|OpsDDam Refill|20 syringes|Nia|
+|UhraEZ Syringe Earso Kit (descn uving gel)|20 syringes|Nia|
+|PoFom @fEVA 040 vacuum fon bbacb tay moterial|25 Na|Nia|
+|XRAY| | |
+|EncoXeay [Ki (uming Zbiteboc)|428-559903|$597.95|
+|Imtrori Dexcan} Camcra Shcaths casc|Na|Nia|
+|Xray sersor siceve; Size 82 1S$|Sw 99<BFSqOO|$12.50|
+|ANtiot|2 428-559901|$448.65|
+|Fostctior|428-559902|$548.85|
+|Horizontal Baewing|428-55990}|$548.85|
+
+Note: Some ordering services also add in shipping costs. When figuring out the lowest price, make sure to know whether it is from a place that charges shipping costs per order; or whether it's free shipping:
+
+There are a few other tactics that make a huge difference when ordering: First of all, you are going to go through this list and do a ton of work to find the lowest prices However; prices do change over time- sometimes to a sickening level. We suggest that you check these prices every month or two to make sure you are still ordering from the best place and the lowest prices Each month, set aside an hour or two to spot check some of the biggest costs of supplies that you have, and make sure that you still want to order the same supply from the same vendor.
+---
+In the last few years, we have seen prices change significantly with time so it seems like we are almost constantly changing at least a couple of supplies every month: This is normal, and the goal of this is to always stay below 4% of our total supply budget.
+
+The second key point in order is that you will only order from this list. If you need something not on the list, then the ordering person should add it, do the research on the best places and prices, and then it can get ordered. Ordering new supplies and not checking prices is the death knell for any budget.
+
+Finally, the last tab on the spreadsheet that is given to you is the password storage place: Because you will most likely have many different websites that you might check for price comparison, keeping all these passwords in one safe place will be important.
+
+# When You Run Out of Budget
+
+It will often happen, especially as you start this process, that you will get very close to or go over your goal percentage spent: This occurs frequently and is expected. When the ordering costs are nearing the target budget number; you will try to manage the ordering to move some things to next month, or possibly order slightly fewer supplies. Rather than getting a 4-week supply, maybe you could get by with only a 2-week supply: That might help push the next 2-week order into the next month, thereby saving this month's budget.
+
+However, sometimes managing supply levels just does not cut it: When this occurs, the ordering assistant will need to go to the doctor or owner and check that they are ok to order these supplies. Once they get approval, which should almost always be approved if it's truly needed, then the order can be placed. When the owner knows that the budget was over-shot by an amount; then they can be prepared for their goal percentage not being hit once end-of-month reports are prepared.
+
+# Tracking Orders
+
+When ordering you should use one email address for all ordering sites, this will help to keep all payment and shipping information in one place that can be reviewed at a later time. We suggest creating an office email such as "ordering@com". This way, the purpose of the email is clear. Once an order is placed, you should receive a confirmation email from the supplier confirming your purchase. We suggest that you always check for confirmation emails because some sites have multiple step processes to finalize an order; you do not want to miss placing an order due to failure to complete the order on the website.
+
+We recommend that you have your preferred person check the email inbox every 1-2 days for updates on order processing and tracking numbers from suppliers. Remember different suppliers tend to have different delivery schedules, depending on your supplier it can take anywhere from 2-5 days to receive your supplies, or sometimes a week-plus. So when ordering certain supplies you must keep in mind how quickly you can receive products, which could adjust how often you are ordering specific supplies.
+---
+Once your shipment has been received we suggest crossing off the received supplies from the invoice that is provided with the shipment: This is to ensure two things:
+
+1. That you have received the correct quantity of supplies ordered
+2. To make sure that everything on your order has been shipped with the order
+
+By checking off what you have received, and putting away; you will ensure that you will not miss any supplies. If your shipment is missing supplies you should first check with the supplier's websites to see if any supplies are back ordered. If the site shows that it should have shipped, call your supplier to see about sending missing supplies as soon as possible:
+
+A great way to keep track of completed and uncompleted orders is to have two separate folders to put invoices in. Closed or complete invoices can be put in the completed folder to save. We recommend saving invoices for the month to compare to your monthly statement from your bank to check for any discrepancies. By keeping your incomplete, or open, invoices separately, you can keep track of what supplies you are still waiting on. Once received, you can move the invoice into the completed folder.
+
+Keeping track of previous invoices, shipment times, and the efficiency of suppliers will help you to determine when and where to order items for your inventory:
+
+# Setting Up Tip-Out Bins and Operatory Bins
+
+One of the biggest drags on ordering budgets is when we order more than we need, primarily because we don't know how much is stocked in the practice: This typically occurs when supplies are tucked away in cabinets, drawers, and other places that cannot easily be seen. Out of sight, out of mind, right?
+
+This next section is going to show you a system where you can easily show what supplies are available and in stock, both in your central dispensing area as well as operatories. First off, all supplies stocked and opened in the dispensing area, which for most of us is a mix of sterilization and shelving: The best strategy we've seen for this is to have both shelves available for supplies, as well as clear tip-out bins.
+
+The shelving, whether it is wired or solid wood, should have pieces of blue painter's tape on it to show where the necessary supplies are placed, within those lines. When there is a good 3-4 week supply of the item, it should reach the front of the shelf: As it gets used and supplies dwindle, then the front moves backward:
+---
+# Buy Rinse
+
+When the supplies start to get too far back from the front edge of the shelf; they should get added to the week's order: Sometimes you might want to put a piece of painter's tape at the 'critical level' where the supply gets re-ordered.
+
+The next, and most important, piece of equipment to have in the practice are called tip-out bins: They are clear bins that can be hung on any wall where you can store dental supplies (Popular also for children's LEGOs or other toys! The most popular setups are from Simplastics, found here: https://simplastics.com/bins-containers/clear-tip-out-bins/dental).
+
+Here's a QR Code for those who want to go directly to that page. We suggest using the SIM26WF or the SIM24AWF: The first option, as shown on the left in the picture, has a few smaller bins that are good if you are storing a lot of smaller supplies. The option on the right has larger bins, which is sometimes preferable as well.
+
+|SIM26WF|SIM24AWF|
+|---|---|
+|9 X 23-5/8 X 70|9 X 23-5/8 X 70|
+|Carton Qty|Carton Qty 1|
+|Carton Price $548.18|Carton Price $600.30|
+|Add to cart|Add to cart|
+
+In the attached documents for this book, we will include a spreadsheet where you can plan what you want to store in each of your tip-out bins.
+---
+Each tip-out bin should either be clearly labeled or have a 'key' off the side as to which bin is used for each supply: It should also be so clear that you might not even need a label after you get it set up.
+
+When a supply gets low; like the left picture, then you will know you need to re-order: After a re-supply, it looks like the picture to the right:
+
+31
+---
+The tip-out bins are only the first part of a well-organized office supply system: The second is clear bins for each operatory: These bins are manufactured by many places, but the best depth/size that we have found is from the manufacturer called Plano. These are sold in Walmart or on Amazon.com and usually for around $10. The ideal model number we recommend is Plano 23730-05.
+
+# Plano 23730-05 Prolatch Stowaway Deep with Adjustable Dividers
+
+|Specs:| |
+|---|---|
+|Length:|14 in|
+|Height:|3.25 in|
+|Color:|Clear|
+|Dividers:|Adjustable|
+|Stowaway Size:|3700|
+|Creates:|4 - 15 deep, adjustable compartments|
+|Good for:|pork jars and other large baits|
+|Secure:|Prolatch closures|
+|Transparent:|for quick and easy identification of contents|
+
+When set up correctly, these will hold many of the supplies you need for everyday procedures. Typically you will need two of these for each operatory for all the regular bread-and-butter types of dentistry; however, you might need a 3rd or 4th if you also do surgery or endodontics out of the operatory and need more specialized supplies for those procedures.
+
+The philosophy/system starts with all supplies being stocked in central sterilization/dispensing and then placed into the clear bins in each operatory each day: At the end of the day, or when supplies get low in the operatory, a team member takes these bins back to the central dispensing and refills them: Since the operatory bins and tip-out bins are all clear; it is easy to see the supply levels at a quick glance. Here are a few example pictures of bins:
+---
+After you have them set up, you can always use an aluminum slat wall on the rear operatory wall to keep these, if not choosing to store them in any drawers.
+---
+# INTERLOCKING ALUMINUM SLATWALL
+
+# Slatwall Panel Garage Wall Organizer:
+
+Heavy Duty Wall Mounted PVC Wall Rack, Interlocking Slat Wall Paneling for Garage Wall Storage, Slatwall Board, Slatwall Shelves System - White (2'H x 4'W)
+
+Visit the DLDIRECT Store
+
+4.5 78 ratings
+
+$69.95 ($34.98/Count)
+
+If you are interested in using the slatwall anywhere in the office, this brand with this link is a good one. Choose the correct size, or have a contractor cut it down to the width you need. We then went to a custom metal fabricator for the angled shelf that was designed specifically for the storaway that we got.
+
+# Managing Implant Supplies
+
+If your office does a lot of implants, sometimes it is difficult to figure out how to manage those supplies. In our office, we recently implemented a Husky Cart that works well and keeps a full stock of many sizes of implants. On the top of the cart is a nice wooden-looking countertop, but that could also be covered up with a custom laminate to match the countertops in your office.
+
+The top drawer can be used to store many different sizes of implants. Use a label maker to stick the sizes of implants you will be storing on each column: Then in each drawer; you can keep different types of abutments, whether they are Multi-Unit Abutments, healing abutments, or stock abutments for crowns: You might even choose to use this cart as your surgical cart and put the surgical/implant handpiece unit on top of it for the doctor to use.
+---
+As for keeping a stock of implants, it all depends on how many implants you place each month generally: It's not a good idea to buy a large stock up front if you are new to implants, or only place a couple each month: However; if you place a lot and are guaranteed to use them, then keeping a larger stock of implants is a good idea.
+
+If this system looks intriguing to you and you want to purchase this exact Husky cart for your office, you can buy it from Home Depot with the QR code listed below:
+
+35
+---
+# Managing Burs and Bur Blocks
+
+If the burs you use are getting to be hard to manage; it might make sense to systemize how you track and use these as well:
+
+In our office, we have a specific set of 16 burs that are in each and every operative bur block. These are the same 16 burs that all doctors agree on to use every day, and they get the job done 95% of the time. (We do however keep a separate Endo Bur block that contains some Endo-Z and other burs.)
+
+# Bur Block Setup Universal
+
+This bur block setup looks like this picture to the left.
+
+|Black Thick|Black Thin|Bur Block Setup|Universal|
+|---|---|---|---|
+|Chamfer|Chamfer|Green|Green|
+|Chamfer|Needle|Football|Gold|
+|Red Ball|Yellow|Yellow|Carbide|
+|Flame|Football|We have many 9 x 3 bur blocks for these friction-grip burs. The simple graphical design here is laminated in the sterilization area and shown to all new employees so that they know how to get these bur blocks to be the same.|We have many 9 x 3 bur blocks for these friction-grip burs. The simple graphical design here is laminated in the sterilization area and shown to all new employees so that they know how to get these bur blocks to be the same.|
+
+When a bur goes dull, the doctor can trash them, or the sterile tech can throw them out as well. To restock the block, we have small tip-out bins mounted to the wall to have an easy place to grab a new one.
+
+# Surgical Burs: [Straight Shank]
+
+|PPK Needle|1703 Shank 1|
+|---|---|
+| |1703 Shank 2|
+|Black Cobra|#8 Shank 1|
+| |#8 Shank|
+
+Using a system like this makes it easy for the doctor to know; without having to squint or get up close, exactly which bur they are grabbing at a moment's notice. However; there are some burs that you only need in certain situations. The picture on the left shows surgical burs, endodontics burs, and other ones that are rarely used. We keep these in separate bur blocks and individual packaging to only use them as needed.
+---
+# Managing Office Supplies
+
+Your typical weekly office supplies should be kept stocked much like your back office supplies, you're going to want at least two weeks worth of supplies on hand, the only difference is how quickly you can get your supplies. If you refer back to our example supply ordering budget you will see a portion dedicated to office supplies. Most office supplies generally consist of bathroom, kitchen/break room, and stationery supplies.
+
+Similarly to ordering your back office supplies, you will have your preferred person order such supplies. In some offices, this person will be the same as the one doing the dental supply ordering: In larger offices it may be beneficial to have two preferred persons, one for the back office and another for the front office to handle your office supplies ordering, both should still refer to the same ordering budget.
+
+We recommend comparing prices for the most financially beneficial option without compromising the quality of the product. A great example is printer ink/toner; sometimes buying directly from the manufacturer can be more expensive in comparison to a second-party vendor: In this example, we will use Brother toner; buying directly from the Brother website costs $495.96 whereas buying the same toner from Amazon, a second-party vendor, is $395.00.
+
+General office supplies can be easier to get in bulk without breaking the bank, especially with the use of second-party vendors. Also using local discount or wholesale stores, such as Target or Costco, can help to manage to keep prices low. Remember ordering office supplies can be a lot easier to get quick delivery when using sites or stores like Amazon, Office Depot, and Costco.
+
+# Downloads:
+
+In the associated resources with this book for this chapter and previous chapters, you will find:
+
+1. Systemization Scorecard
+2. Budget Goals per Belt Status
+3. Ordering Formulary
+4. (Remember to check out Dental Success Network for code to save 10% on ALL Crazy Dental orders)
+5. Monthly Ordering Budget
+6. Cost per Procedure
+---
+38
+---
+# Chapter 4
+
+# Laboratory Costs and Case Management
+
+We stated earlier in the book that dental supplies and lab costs should collectively add up to 10-13% of costs in only the lab category to add up to 7.5% of revenues. If you're trending towards "Black Belt", then it might be as low as 5.5%, or lower:
+
+When we teach these numbers, we often hear dentists ask about how to manage these costs so that they can get that low: There are really only three ways to get cheaper lab bills:
+
+1. Negotiate with current laboratories
+2. Find new labs
+3. Change your technology to create internal processes
+
+# Negotiate
+
+Once we get into a routine of using a lab that we enjoy working with, sometimes it is hard to change: We totally understand that a good working relationship with a lab technician and system can help your dentistry maintain a high quality: However, sometimes these labs are tough on your profitability: When this occurs, it is best to approach this lab and tell them the competitive landscape, and that you are looking at trying to reduce your lab fees.
+
+In these situations, you should do the math on what your current cost per unit is, and compare it against other labs around the country: If you are doing 50 units of crown and bridge, and the local lab is costing you $126 per unit; then this is $6,300. Whereas another lab might be at $59 per unit, which would only total $2,950. In this example, the cost to keep using this local lab is $40,200 per year!
+
+The first strategy to try to lower these costs is to negotiate with this lab to lower their costs by using other labs as a benchmark: You can show them the prices for other labs around the country, and see if they will start to give you a discount.
+---
+When comparing these costs for a current lab versus new lab, make sure to add in all costs, including model fees and shipping fees. Sometimes the per-unit cost is similar; but the other fees add up to make the existing lab more expensive than other options.
+
+# Find a New Lab
+
+There are many labs across the country that have wildly different costs. Sometimes this is based on quality, but other times it is the existing cost structure for that business which sets their prices at wildly different rates. If you are willing to try a new lab, you might find huge savings.
+
+Switching labs is obviously a stressor; because you might not know the quality of the lab, their system, or how to work with them: In these cases, it might be best to test out a new lab by sending a scan or impression to two different labs at the same time, and do a blind test: Have your assistant keep the crowns and have you test them in without knowing which lab they came from. Then you can test out to see which one is acceptable:
+
+One thing to watch out for with new labs is different processes. A new lab may have a different communication strategy with its doctors so make sure you know how they like to communicate with you on cases. The other is that some labs charge for remakes while others do not. Watch out for this as these costs can add up.
+
+When you switch labs, you change the per unit cost, but most of your other processes stay the same. This is an easy way to start to save money without changing your workflow: We have seen doctors drop 3-4% from their lab category by switching labs to some of the preferred vendors associated with the Dental Success Network.
+
+# Changing Technology
+
+The final way to save money with respect to your lab percentage is to change up the entire process by bringing technology in-house. This will most likely include 3-D scanning, in-house designing and milling of crowns, or even 3-D printing of dentures. When you look at the costs and time associated with these technologies, there can be many areas where costs are significantly slashed, even deeper than some of the cheapest outside labs.
+
+When running the cost analysis on bringing some of these technologies in-house, there are a few things to consider: In each of these categories, you will need to make assumptions on how much money will either be saved or spent, as well as how long any fixed asset equipment will last.
+
+1. Increased cost of materials (scanning sleeves, blocks for crowns, milling burs, resin)
+2. Decreased costs for legacy materials (less PVS, less impression trays)
+3. Cost of equipment
+1. Purchase price
+---
+# Maintenance contracts
+
+# 4 Longevity of equipment--How long can you amortize this cost?
+
+# 5 Increase or decrease in chair-time associated with procedure
+
+# 6 Increase or decrease in overall number of visits per procedure
+
+# 7 Decreased shipping costs
+
+# 8 Marketing opportunity and patient satisfaction (difficult to measure)
+
+While there are many doctors switching to these new technologies, that does not necessarily mean that this is the best in your practice. For you and your workflow, it might be a huge savings, but it could also be a financial nightmare. To evaluate fully, it's best to look at the numbers, as well as the systems and intangibles.
+
+In the earlier example, we had said that some labs have full zirconia crowns as low as $59. So, the next question is whether new technologies can beat this price. Well, let's run the numbers and find out!
+
+|Glidwell.io FastMill|More Materials|+$29 block, $5 bur; $3 scanning sleeve|
+|---|---|---|
+| |Less Materials|~$29 multiple trays and PVS, -$13 temporary and temp-bond, -$14 sterilization for second appointment|
+| |Equipment Cost|$55,000 mill, $25,000 scanner|
+| |Equipment Longevity|5 Years, 3,000 crowns|
+| |Increase/Decrease in Chair Time|2.5 hour appointment, rather than 1.5 hrs|
+| |Increase/Decrease in Visits|1 visit|
+| |Decrease Shipping Costs|-$4.99 per case|
+| |Patient Satisfaction|+4 Google reviews/month (Difficult to put monetary value)|
+| |Staff Time/Doctor Time|30 more minutes of staff (+ $10 in Staff time), 10 more minutes of doctor time|
+|NET|$28.72 More Expensive|No Lab Fee (Possible $59 savings)|
+
+Total Net Savings: $120.28 per Crown if using Fastmill from Glidewell
+---
+# Lab Case Tracking
+
+Many of us send out traditional lab cases still for dentures, crowns, or other devices. When using OpenDental for these lab cases, it can be easy to lose track of when they were sent; where they were sent to, and when they might come back. Here's our system for tracking labs:
+
+# Creating a Lab Case
+
+1. Select a patient in Open Dental and open chart
+
+|Select Patient|Coralog|E-mail|WebMail|Text|Letter|Forms|Tasks|0DLbel|Poplps|Apieryx|Ceris Yixiin|Fler|Opi Menal Inyis|Sctedule|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Appb|Prirt|Ne Rx|ReRX|LabC zse|Perio Chart|Drto Chart|Consent|Tooih Crart|Exam Sheet|CCD Laxout|DentalTek SmanotlicePhore|Apteryh|Fier|Op|
+
+Enter Treatment Meeting Primary Movements Planned Pppts Show Dra# Ottho
+
+|Diagnosie|Procedure List|Or |Type Proc Code|Ok|
+|---|---|---|---|
+|Family|(mEF v)|Caries|Procedure Buttons; Sirdle Clck;|
+|Recurrert (Cai)|Quick Butors|Xplode AII Ceramic Cown|Xplode PFM Crown|
+|Delete (& Tisl|Df: Exame X-rayt|Xplode Gold Croxn| |
+
+Account: 40 12 13 15 Complete Revers Pulp: Fillirg? Pos & Core
+
+|Tx Plan|Exis CurProv|Necrotic|Endo|Pecement Ciotn|
+|---|---|---|---|---|
+|Apicel Feric|Crexne|~eb|ExidOther|Prognosis|
+|Bricges|IPFM crotn|Refened|Detorervisalign|Gold crown|
+|Condition|coDrogrosis|Oral Surgery|Ceranic cfon| |
+
+Chan 01
+
+Toda; (12122023 no pricrity Treatment Plan;
+
+|Imaging|Date|Sur Dx|Chan LbTX|Prox AmoumADA Code|User|Signed|
+|---|---|---|---|---|---|---|
+|1212/2023|7729|Qutcoing Text test|Misc Descuipton|Sta|Korrin| |
+
+Kanage
+
+Paliehi Ino
+321
+Comra?
+Misc
+DK
+110 DZE
+Krin
+
+HyG-1
+
+HyG-2 Pge
+
+HyG ? Freferre c Proron Nore
+
+|LBCD|MD|Fostetict| |np DCE|15 Dn|
+|---|---|---|---|---|---|
+|NSCX|Eillirg Type|Stncara| | | |
+
+Referred From 09,01/2020
+
+Doc1 Date First Visit
+
+Prov . (Pri, Sec) Drk- Nore 172672079
+
+|Surg| Pri irs|Areritzs|cercelled zppointrent|Yie|
+|---|---|---|---|
+|Surg2 Sec Ins|Payor Types|107128,2019| |
+
+Problengs
+
+RRezcy Otha No Healith Corncitiors
+
+|Ph A35tHeartrrans?|0e3|Cance|Blceding|
+|---|---|---|---|
+|sordetIHen|1720 219|ext rellol MBe| |
+
+Giaucens From Flex Palient Forig as 0{ : 2019-04-25 132545 Incomin Ext Receikec
+
+Mec Urgert Previous bad reactiontodental ancotedc;
+
+TP DC 2
+027
+DK 2 IL
+D2aA
+
+Mecical Surmary FromFlex Faient Forms a3 of : 2020-02-07 16.3737
+
+PCP: Nore
+
+Srokes No
+
+Recreztional Drugs No
+
+Previous bad reaction i0 Certal aresttetic: No
+
+Frevious complicationa folloxirg derral treatment No
+
+Hotor cclc sensitivity: No
+
+Irritation % sofes in Totih No
+
+Grinas: No
+
+Previously diagrosec with periodortal cisease: No
+
+Brushirg trecuercy: Never
+
+# Option 1- (if appointment is scheduled)
+
+Double-click the appointment (green highlighted box) an edit appointment box will pop up
+
+Click on the "Lab" button on the left-hand side (the edit lab case box will pop up)
+---
+# Status Scheduled
+
+Single click on items in the list below to add item to this appointment
+
+# Unscheduled Status
+
+none
+
+# Confirmed Not Called
+
+|CompExFMX-Pro-Flo|Sutf Code|Description|Fee|
+|---|---|---|---|
+|CompEx2Bw-Pano-ChPro-Flo | TP|N4119|All Cer Cin Seat|0,00|
+|PerEx-4Bw-Pro-Flo-ZPA| | | |
+|New Patient| | | |
+
+# Clinic CD
+
+|Provider Dik:1|Hygienist|none|
+|---|---|---|
+|Is Hygiene (use hyg color)|Assistant|none|
+|Time Length|50| |
+|Time Locked| | |
+|Color|none| |
+
+# Appointment Type
+
+None
+
+# Time Ask To Arrive
+
+# Time Arrived
+
+# Time Seated
+
+# Dismissed
+
+# Lab
+
+# InsPlan 1
+
+# Patient Info
+
+|First Name|Nicole|
+|---|---|
+|Last Name|Novakovski|
+|Middle Initial| |
+|Birthdate|03/07/1993|
+|Home Phone| |
+|Work Phone| |
+|Wireless Phone|(308) 1850-5593|
+|Credit Type| |
+|Billing Type|Standard Account|
+|Total Balance|0.00|
+|Address and Phone| |
+|Notes| |
+|Family Balance|0.00|
+|Est Patient Portion|0.00|
+|Fee This Appt|0.00|
+
+# Audit Trail
+
+To Task List
+
+# Communications Log Appointment Scheduling
+
+|DateTime|Description|Text|
+|---|---|---|
+|11/21/2019|(flex) New patient welcome email sent| |
+|11/26/2019|(flex) New patient welcome email sent| |
+---
+A "Select Lab Case" pop-up will appear; click "New"
+
+|Status|Scheduled|Single click on items in the list below to add them to this appointment| | | | | |
+|---|---|---|---|---|---|---|---|
+|Unscheduled Status|none|CompEx-FMX-Pro-Flo| | |0.00| | |
+|Confirmed Not Called|CompEx-ZBw-Pano-ChPio-Flo|19|N4119|All Cer Cin Seat| | | |
+|New Patient|Clinic CD|Provider DiK-1|Hygienist none|Is Hygiene (use hyg color)|Assistant none| | |
+|Time Length|50|Select a lab case from the list below Or create a new one: This list will not show lab cases that are already attached to other appointments:| | | | | |
+|Color|no|Lab Cases| | | | | |
+| |Date Created|Lab|Phone|Instructions| | | |
+|Appointment Type|None|Time Ask To Arrive|Time Arrived|Time Seated|Time Dismissed| | |
+|Lab|InsPlan|JocDlan|New|OK|Cancel|Fent|0|
+
+Appointment Note
+
+| |Birthdate|03/07/1993| | | |
+|---|---|---|---|---|---|
+|Home Phone| | | | | |
+| |Work Phone| | | | |
+|Wireless Phone|(308) 1850-5593| | | | |
+| |Credit Type| | | | |
+|Appt Fields|Billing Type|Standard Account| | | |
+| |Total Balance|0.00| | | |
+| |Address and Phone| | | | |
+| |Notes| | | | |
+| |Family Balance|0.00| | | |
+|Est Patient Portion| | | | |0.00|
+| |Fee This Appt|0.00| | | |
+
+Delete
+
+Ok
+
+Cancel
+---
+# Select the lab the case was sent to (Dental Designs/Precision/Devine Prosthetics/etc)
+
+|Appointment|Detach|Created|11/27/2019 3:28:39 PM|
+|---|---|---|---|
+|Planned Appt|Detach|Sent|Now|
+|Provider|Dik-1|Received|Now|
+|Fee|0.00|Quality Checked|Now|
+|Lab|Set Due Date| | |
+|Anowhead| | | |
+|Danter Lab| | | |
+|Default Lab| | | |
+|DENTAL DESIGNS|4024761331| | |
+|Devine Prosthetics Dental Lab|4021580| | |
+|Di Glenn|Cieations|4024884141| |
+|New| | | |
+|Oithodontics Only|4024885557| | |
+|Reflections|4024212022| | |
+
+# Instruction:
+
+PP
+
+Delete
+New Slip
+OK
+Cancel
+Lixt
+# Address and Phone
+
+# Notes
+
+|Family Balance|0.00|
+|---|---|
+|Est Patient Portion|0.00|
+|Fee This Appt|0.00|
+
+OK
+Cancel
+---
+# Crown/Bridge
+
+In the "Instructions" box include:
+
+- Tooth #s
+- Type of material used (Bruxzir/PFM/PFZ/E-MAX)
+- Shade
+- Any special instructions to lab from doctor (light occlusion, firm contacts, etc)
+
+# Implant Crowns-
+
+All info above ++
+
+- Type of Implant (Biohorizons, Camlog, Biomet 3i, Straumann, etc:)
+- Screw retained or cement retained (doctor will specify)
+
+# Appointment
+
+Detach
+
+Created 11/27/2019 3:28:39 PM Now
+
+# Planned Appt
+
+Detach
+
+Sent Now
+
+# Provider | Dik-1
+
+Received Now
+
+# Fee 0.00
+
+# Quality Checked
+
+Now
+
+# Lab
+
+Set Due Date
+
+- Arrowhead
+- Danter Lab
+- Default Lab
+- DENTAL DESIGNS 4024761331
+- Devine Prosthetics Dental Lab (4021580-
+- Dr Glenn
+- New Creations 4024884141
+- Orthodontics Only 4024885557
+- Rellections 4024212022
+
+# Date Time Due
+
+Instructions #19 bruxzir
+
+Shade A1
+
+ApH
+
+all
+
+# Delete
+
+New Slip
+
+Ok Caricel List
+
+# Address and Phone
+
+~Delete
+
+# Notes
+
+Family Balance 00
+
+Est Patient Portion 0.00
+
+Ok
+
+Fee This Appt 0.00
+
+Cancel
+
+# Dentures (Lab-Dental Designs):
+
+In the "Instructions" box include:
+
+- Immediate or Complete Denture
+- If Complete Denture, include what step in the process you are on
+- Custom trays
+- Wax rim try-in
+- Add teeth to wax
+- Fabricate to completion
+---
+# Maxillary or mandibular
+
+# Shade of teeth
+
+# Partial Dentures:
+
+In the "Instructions" box include:
+
+- Teeth #s to be included in partial
+- Type of material used (cast metal/valplast/etc:)
+- Shade of teeth
+- Place clasp on teeth # or where necessary
+
+# Occlusal Guards
+
+In the "Instructions" box include:
+
+- Maxillary or mandibular
+
+# Implant Impression Coping:
+
+In the "Instructions" box include:
+
+- Tooth number of implant
+- Type of implant (Biohorizons, Camlog, Biomet 3i, Straumann; etc:)
+- "Impression Coping"
+
+47
+---
+# Appointment
+
+Enter the Date Time Due (seat date)
+
+12/06/2019 12:00 PM, #19 CrCmnSeat
+
+Created: 12/05/2019 12:05:33 PM
+
+No Planned Appt
+
+Sent: 12/05/2019 12:06:58 PM
+
+Provider: DrK-1
+
+Fee: $0.00
+
+Quality Checked: Now
+
+# Lab
+
+ArrowheadDanter LabDefault LabDENTAL DESIGNS 402176131Devine Prosthetics Dental Lab (402-5804)Dr. GlennNew Creations 4024884141Orthodontics Only 4024885557Reflections 4024212022
+
+# Date Time Due
+
+Thu 12/5/19
+
+# Instructions
+
+#19 BRUXZIR
+
+Shade 41
+
+# Actions
+
+Delete | New Slip | Ok | Cancel | List
+
+# Verification
+
+Ticket Number:
+
+Address and Phone:
+
+# Notes
+
+Family Balance: $0.00
+
+Est Patient Portion: $0.00
+
+Fee This Appt: $0.00
+---
+Lab case will appear as a commlog in the patient's chart
+
+Log =
+
+|Cff|File|Serup|Lss|Repoits|Toel|&lt; Clirics eServices Aierta (0} Help| | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| |'Select Patientt|Commlog|E-mal|WebMal|Test|Letter|Foims|Task:|Label|Popups|Aptelyx|Dexis|Vixwin|Venific|
+|Appts|NewRx|ReRx|LabCase|Perio Chart|Ortho Chatt|Consent|Tooth Chart|Exam Sheet|Layout|DentalT ekSmailOfficePhone|Apleryx|ViWin| | |
+| |Laan| | |IaaatEnter Treatment|Micsing Teeth Movements|Piimary Planned Appts|Show Diaw|Diagnocis|Procedure List|Or Type Proc Code|OK| | | |
+| | | | |BXF|None|Procedure Buttons:|Single Ckck:| | | | | | | |
+
+Family
+
+|(M|04|Caiies|Sudem|Or -| |
+|---|---|---|---|---|---|
+| | |D|Recurent (Car|Uial|Simple Extraction|
+| | | |Incipiert (Car)|Implant:|Surgical Ext|
+| | | |Defect (0r miss|Watch Tooth| |
+
+Entry Status
+
+Missing (tooth = Nitrouc: Sedation Soft Tissue Imp
+
+Account
+
+| |5|6|9|10|11|12|13|14|415|16|
+|---|---|---|---|---|---|---|---|---|---|---|
+| | | | |Complete|Revers Pulp.|(Other|Partial Bony Ext| | | |
+|32|31|30|718|17|ExislOther|Apical Perio|Incise and Drain| | | |
+
+Treat Plan
+
+Refeied
+
+Prognosis
+
+Condition no plogross
+
+Today
+
+12/05/2019
+
+no ptioilty
+
+Treatment Plan: Chart Lab Fx Amount ADA Code] Signed
+
+Date Suf Dx Dexcrption Stat Puov Uget
+
+11/21/2019 Comm ApplRelated Adrin
+
+Images 12/05/2019
+
+11/26/2019 (llex) Hew patient_welcome emall cent
+
+Comi ApptRelated Adrin
+
+112/05/2019 LabCase - DENTAL DESIGNS
+
+Manage
+
+4024761331
+
+Sent
+
+Putent Info
+
+#19 BRUXZIR
+
+12u672019 Shade41 Appointment - TZOOPA
+
+Age
+
+112/06/2019179 #19CCinSeat DiC 2 N41T9
+
+Op ABCO
+
+Op 2 Billing Type Standaid Account
+
+Referred From
+
+Op 3 Date First Visit
+
+PiReadyProv. (Pri, Sec] DrK-1, None
+
+Pii Ins
+
+Sec
+
+Ph Asst Ins
+
+PayorTypes
+
+Op 1 Problems none
+
+(Med
+
+Op2 Urgent
+
+Medical Summary
+
+Op 3 Service Notes
+
+Medications none
+
+PtReady Allergies none
+
+Ph Asst Pat Restiiction: None
+
+49
+---
+# Option 2: (if appointment is not scheduled)
+
+Select a patient in Open Dental and open chart
+
+Click the "Lab Case" button on the upper left-hand corner of the chart
+
+|Log|Off File Setup|Lists|Reports|Clinics|Services|Alerts (0)|Help| | | |
+|---|---|---|---|---|---|---|---|---|---|---|
+|Dsais Vitin Venific| | | | | | | | | | |
+|Select Patient|Corm|Eil|wetHail|Text|Letter|Forms|Tasks| | | |
+|@D Label|Pones|Aoleryz|Aopb|New Rx|R eR|Lab Case|-Perio Chart| | | |
+|Onto Chart|Course|Tooth Chart|Exam Sheet|Layc|DentalTek|SranOnictPhor?|Aleryk Vuwlc| | | |
+|RA|MUAAA|Enter Treatment|Missing Teeth|Moveneris|Primary Planned Kppts|Shot|Dren| | | |
+| | | |Diagnosis|Procedure List|Cr Type|Pipe Code|Ok|Family|BFIV|None|
+|Procedure Buttons|Single Click:| |Cares|Surgery|On D|Recunert (Car)|ial|Incipient (Car)| | |
+|Implants|T Sedation Fir 15|Detect IOr mics|Match Tooth|Entry Status|Missing tooth|Inirous Sedation;|Iv-15 Min| | | |
+|Kccduft|Treat Plan|InbvetsPulp|Membership|57|6|7|81| | | |
+| |10|T1|12|13|14|15|46|Complete| | |
+|Revers. Pulp|Other|30|23|28|27|26|25| | | |
+| |24|23|22|21|20/|419|78|Exist Cur Prov| | |
+|Necrotic|Exist Other|Kpical Pero|Tren|Relened|Prpgnosia|Plan OM|Num| | | |
+| | |Condition|Diagnosis;|Today|Priority|12/05/2019|no priority|Treatment Plans Chart- Lab RX|Amount ADA Code| |
+| | |Date|Th|Sud Dz|Description|Exact Point|User|Signed|12106/2019| |
+|19|All Cer Crn Seat|TP|DrC-2|0.Joi N4119|images 12/05/2019|images 12/05/2019| | | | | |
+|Mariage| | | | | | | | | | |
+|Patient Info|Pge|25|Billing Type|Standard Account| | | | | | |
+|Referred From|Date First Visit|Prox. (Fri, Sec)|Drk-1, Nore|FReacy| | | | | | |
+|Pri Ins|Ph Asst|Sec Ins|Payor Types|Op 1| | | | | | |
+|Problems|Tone|Op 2|Mec Uigent|Medical Summary| | | | | | |
+|Service Notes|Medication|Tore|FReacy|Allergies| | | | | | |
+|Asst|Pat Restrictions|Nore|Proceed and follow the instructions above| | | | | | | |
+---
+# Checking in a lab case:
+
+Select patient in Open Dental and open their chart
+
+commlog created when the case was sent off
+
+Double-click on the lab case
+
+Log Off  File Setup List  Reports Tools Clinics eServices Alerts (0) Hep
+
+Select Patient  Commlog  Email  Webmail  Ten  Lister  Fonte Twbs  @ Latl
+
+Dezia Vutin  Veriiic
+
+Appts R New Rx  R eRx  Labcase  Perio Chart  Ortho Chart  Content  Tooth Chart  Exam Sheet Lut  Vizin
+
+Enter Treatment  Missing Teeth  Movement?  Primary Planned  Arbo Show  Draw
+
+MUNAA
+
+Diagnosis  Procedure Log  O (Type Proc Code  Ok
+
+Family
+
+BFTV  Cores  Procedure Buttons: Or Single Click;
+
+M 01  Recurrent Caries  Sugar
+
+Incipient Caries  Oral  %ous
+
+Implants  No Sedation  First  15
+
+Detect (per miss?)  Watch Tooth
+
+Entry Status
+
+Treatment Plan  Inverses  Pulp  Membership
+
+|2|5|6|7|8|9|10|11|12|13|14|75|116|Ocomplete|Revera|Pulp|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|132|31|30|29|28|27|26|25|24|33|22|21|20|9|48|OEiCurProv|
+|Necrotic|EidCther|Apical Pero|Patient|Opened|Prognosis|Condition|No prognosis|0|EToday|Promptly|Chant|(12/05/2019|no priority|Treatment Plans|{Charge Lab R|
+
+Date  11/21/2019  Co Appt Related
+
+(Ilex) New Patient welcome email sent
+
+17202019  Con Appt Related
+
+(Hex) Max patient welcome email sent
+
+Labcase - DENTAL VESIGNS
+
+Vanage
+
+Patient Inp
+
+F19 BRUXZIR
+
+Shade Al
+
+463013
+
+BiC2  00
+
+232
+
+Op1  ABCD
+
+Op2  Billing Type  Standard Account
+
+Refetted From
+
+Op3  Cate First Visit
+
+Prov. (Primary)  Dik-1 None
+
+FiResdy  Pri Irs
+
+Pt Best  Ser Ins
+
+Payor Types
+
+Op1  Problems  Ne
+
+Op2  MedUrgent
+
+Medical Security
+
+Op3  Service Notes;
+
+FiReacy Medication  Name
+
+Alerger  Note
+
+Ph Asst Fat Restricting  Nora
+
+51
+---
+An "Edit Lab Case" pop-up will appear with all of the info recorded when creating the lab case previously (when the case was sent).
+
+Click on the "Now" button next to "Received" under the "Tracking" info located in the upper right-hand corner of the pop-up.
+
+Click "Okay" after the date and time is recorded next to "Received".
+
+|Appointment|Detzch|Created|12/05/2019 1:46:17 PM|Now|
+|---|---|---|---|---|
+|Planned Appt|Detzch|Seot|Noix| |
+|Provider|Drk-1|Received|12/05/2019 1:51:44 PM|Nov|
+|Fee0CD|Quality Checked| |"Nr"| |
+|Lab|Set Due Date| | | |
+|Anowhead|Darter Lab|Default Lab|DENTAL DESIGNS 4024761331| |
+|Devine Prosthetic: Dental Lab (4021580-|Dr Glenn|New Creations 4024884141|Orthodontics Only 4024885557| |
+|Reflections 4024212022|Date|Time|Due| |
+|Thu 12/05/2019|12.00 AM| | | |
+
+Instructions |#19 BRUXZIR
+
+Shade 41
+
+Delete New Slip Ok Cancel
+---
+The received lab case will then show up as a commlog in the patient's chart
+
+LogOff File Setup Lists Reports Tools Clinics eservices Alerta (0) Help
+
+Selert Fatiert Conalog Email WuebHlail 'Tert Lettet Fomna Taks E0 Label Prpupe Apteryx Dexis Vixwin Verrfic
+
+Appb R Nex Rx ReRx LetCas? Peno Chan Omto Ctent Corsen Tocth Ctan Exm Steei Laxett DertalTek SmenofficeFtora Aptenyx ~Vutwin
+
+# MUMAA Enter Treatment
+
+Missig Teeth Movemen: Frmary Planned Appts Shoa' Daw
+
+Diagnosis Frcerue Ljst Or Type Proc Code Ok
+
+Family BFIV Cores Rocedue Button? Single Click
+
+(m 01 D Recunert Car) CalSugery 2 Ntrous
+
+Incper (at) Implanta
+
+Deledt (pf mies Watch Tooth IV Sedation Fxt 15
+
+Enttr; Status Missing tooth Nhoys Sedbtion IV +15 Min
+
+# Accouti
+
+TieatPkn Inevera Pub Membership
+
+|9|410|1112|13|14|415|~16|
+|---|---|---|---|---|---|---|
+|32|31|30| |194|118|17|
+|Ocomplete|Reve13Pub.|Ciher|OBiCurPov|Apical Peno|ExiOther|Raened|
+|Rrognosis|Arm|Condtion|noPiogRts| |Today|Prorty|
+
+# Chart
+
+1205/2019 moppny Tratment Plans Chart-Lab RX
+
+Dale Th Sun Dx Desctipao Stat Puox [nountDA Code Usef Signed
+
+12,05*2019 LabCase DENTAL DESIGNS
+
+Images 12/05/2019
+
+Due Thu 12,05/2019 12.00 AM
+
+Received
+
+#19 BRUXZIR
+
+Manage 72062079 19 Shade 41 AlI Cer Cr Seat TP DrC 2 0 .00 N4119
+
+# pattent Inlo
+
+|Op1|ABCD|
+|---|---|
+|Op 2|Eilrg Type|
+|Op ?|RelenedFtom|
+|Op 3|Dete Futst Visit|
+|Prov. (Pvi, Sec)|Drk-1 , Nona|
+
+FReaoyPri Irs
+
+Fh Asst Sec Irs
+
+Peyor Typts
+
+|Op|Problene|nce|
+|---|---|---|
+|Op2|Uigert|Mericel Sumrery|
+|Op3|SenviceNctes| |
+
+FRealy Medicatioe Nh?
+
+Allergtes
+
+Ph As3t Pet Restricticns Nont
+
+This system over the last few pages will work well within OpenDental, and hopefully give you and anyone on your team insight into where the lab case is currently:
+
+Hopefully this chapter helps you track your lab cases physically, as well as financially: Remember; the goal is to help manage quality care for the patients within the realm of acceptable costs for the business ideally near 5.5%. If you need help achieving low percentages like this, and are looking for new laboratories to work with, check out WWW dentalsuccessnetworkcom for the preferred vendors who give DSN Members exclusive pricing:
+
+53
+---
+54
+---
+# Chapter 5
+
+# How to Decide on Digital Radiology Equipment
+
+Dental radiology is a rapidly evolving component of the dental profession, with manufacturers vying for lower cost units, smaller equipment, lighter handhelds, and greater image clarity. With this "arms race" in dental radiographic technology, it is sometimes difficult to separate the signal from the noise when it comes to new equipment. In this chapter, we propose a framework for you to make informed decisions.
+
+# General Principles
+
+Initially, it's important to note that different dentists may require equipment for a variety of radiographic indications. For instance, a pediatric dentist would not routinely require a Cone-Beam CT machine for diagnosis. In contrast, an endodontist or oral surgeon should have access to this modality for accurate diagnosis and treatment planning. Orthodontists seldom require intra-oral radiographs such as periapicals and bitewings, but a panoramic radiograph (also known as a pantomograph) is an essential imaging component in their practice.
+
+When evaluating your practice requirements, it is essential to consider the necessity of the following:
+
+- Intra-oral Sensors and X-ray Generators
+- Panoramic Radiography
+- Cone-Beam Computed Tomography (CBCT)
+- Cephalometric Radiography
+
+Even within the realm of Intra-oral sensors, you will need to select appropriate sizes. Conventional sensor options are Sizes 0, 1, and 2, though some manufacturers like Dexis also sell a proprietary sensor - Size 1.5.
+---
+Two different technologies in digital radiography are available - wired sensors and phosphor plates. The greatest advantage of photostimulable phosphor (PSP) plate systems is their physical similarity to traditional film radiology systems in terms of size and relative comfort for the patient: They are very thin like conventional film packets and well-accepted by the pediatric population. Additionally, in the case that a PSP plate is damaged, the replacement cost might only be $25.
+
+The primary inefficiencies in the PSP system include the supplies necessary to operate it: At least one plate scanner is required in the practice, which converts the exposures to a digital image before erasing the image from each plate and re-setting them for the next exposure. Disposable plastic sleeves are needed for each individual plate, removed for processing, then replaced with new sleeves, a process repeated for every single patient: The additional time required for this process, plus the scanning time for exposed radiographs is not insignificant;
+
+# Comparison Summary
+
+|System type|Hard wired sensor (CMOS or CCD options)|Photostimulable Phosphor Plate|
+|---|---|---|
+|Sensor used|hard-wired sensor attached to the USB port of a computer|Radio-sensitive screens in plastic sleeves|
+|Number of uses until replacements|Indefinite|300-600 uses, then must be replaced|
+|Preparation for next use|The sensor is automatically ready in 1-10 seconds|The screen must be "erased" using a bright light; then placed into a new sleeve|
+|Relative placement difficulty|Sensors are stiff and thicker than normal dental film|Comparable to conventional film|
+|Cost for sensor or phosphor plates|$6,000 to $18,000|$25-80 per phosphor plate, Pantomographs are more expensive|
+|Sensor sizes available|Correspond to #0, #1, and #2 dental film|Correspond to #0, #1, #2, and #4 dental film|
+| |No #4 sensor at this time|Size #4 is for Occlusal views|
+---
+# Image Generation Time
+
+A few seconds
+
+60-90 seconds to remove the plate from the packet; feed the film through the scanner and replace the screen with the new packet
+
+# Relative Image Quality
+
+Excellent,; but can vary depending on the particular system
+
+Generally good, but can depend on the age of the plate and previous damage/bending
+
+The most popular types of sensors are generally USB-connected devices due to speed and ease of use.
+
+On the next page, a selection of sensors and their features is presented:
+
+# Size 0 Sensors
+
+|Sensors|XDR (Kodak)|Carestream Elite|Schick (CDR ProSensor)|Planmeca PLUS|Sirona (XIOS GXS-700)|Gendex|
+|---|---|---|---|---|---|---|
+|Corners beveling lost area (mm)|8| | | | | |
+|Active Area|22.2x15.6|29.7x19.8|25.2x18.6| | | |
+|Total Active Area|361|588|469| | | |
+|Surface Area|30.8x22.3|38.3x25.3|33.9x23.6| | | |
+|Surface Area Utilization|53.7%|60.7%|58.6%| | | |
+|Sensor Active Area to Film Ratio|46.9%|61.3%|60.9%| | | |
+
+# Size 1 Sensors
+
+|Sensors|XDR (Kodak)|Carestream Elite|Schick (CDR ProSensor)|Planmeca PLUS|Sirona (XIOS GXS-700)|Gendex|
+|---|---|---|---|---|---|---|
+|Corners beveling lost area (mm)|4.8| | | |20.5| |
+|Active Area|29.6x19.7|29.3x21.9|29.7x19.8|31.3x20.6|30.3x20.4|29.9x19.9|
+|Total Active Area|578|642|588|645|638|575|
+|Surface Area|37x24.4|37.7x27.6|38.3x25.3|40x25.4|38.4x25.2|36.6x25.4|
+|Surface Area Utilization|64.6%|61.7%|60.7%|63.5%|63.9%|64.0%|
+|Sensor Active Area to Film Ratio|60.2%|66.9%|61.3%|67.2%|64.4%|59.9%|
+
+# Reference
+
+AI-Rawi W,, Teich S. Evaluation of Physical Properties of Different Digital Intraoral Sensors. Compendium 2013.34 (8) 57
+---
+On the previous page are the size 0 and 1 sensors from some major manufacturers. The table is a great comparison of actual size and design features, such as beveled corners (increasing comfort to the patient) and active sensor areas. Next is the table for size 2 sensors, used primarily for posterior bitewing radiographs and sometimes occlusal radiographs for young children:
+
+# Size 2 Sensors
+
+|Size 2 Sensors|XDR|Carestream (Kodak)|Dexis|Schick (CDR Elite)|Planmeca (ProSensor)|Sirona (XIOS PLUS)|Gendex (GXS-700)| |
+|---|---|---|---|---|---|---|---|---|
+|Wires Exiting Sensor|5|12|5|2| | | | |
+|Cable Diameter|3.3|3.8|2.8|3.3|2.7|3.4|2.8| |
+|Interface|USB (direct)|USB|USB (direct)|USB (adaptor)|USB/Ethernet|USB (adaptor)|USB (direct)| |
+|Back-scatter Shield|None|Heavily shielded|Shielded|Shielded|Shielded|Shielded|Shielded| |
+|Adaptor/Interface| |Not needed|Yes (integrated in cable)|Not needed|Yes (USB)|Yes (USB/Ethernet)|Yes (USB/Ethernet)|Not needed|
+|Sensor plate thickness (mm)|5.5|7.3|8.5|6.4|6.3|6.4 (head to toe)|7.3|7.7|
+|Sensor plate + Cable Thickness (mm)|11.4|14|13.7|13.5|113|12.8|12.5| |
+|Corners beveling lost area (mm)|22.6|8.3|47.3| |17.5|21.3|47.3| |
+|Active Area Tested|35.5 x 25.6|35.3 x 26.5|32.9 x 25.8|36.3 x 25.9|35.9 x 26|35.6 x 25.5|35.7 x 25.6| |
+|Total Active Area|886|927|802|940|916|887|867| |
+|Sensor External Dimensions|42.8 x 30.5|44.3 x 32.2|38.8 x 29.6|43.9 x 31.3|44.1 x 30.4|44.5 x 31.2|41.5 x 30.6| |
+|Sensor Active Area to Film Ratio|71.7%|75.0%|64.9%|76.3%|74.1%|71.2%|70.2%| |
+
+Some differentiating factors between these sensors include:
+
+- Angle of the cable configuration at the interface
+- Shape of the wire connection
+- Durability of the wire connection
+- Shape, contour; and thickness of the sensor
+---
+See the following images, demonstrating some examples of intra-oral sensor shape, size, and cable connection.
+
+As you evaluate sensors, the software you will be using to operate them is a critical consideration. Some softwares are more open, functioning well with any sensor through a TWAIN driver: Others operate only in a closed system typically proprietary to the corresponding sensor manufacturer.
+
+# Evaluating X-ray Generation Devices
+
+There are two types of generation devices for intraoral images, the wall-mounted X-ray generation devices and the more modern mobile, handheld generation devices. While mobile devices are increasingly popular; wall-mounted devices still have their place.
+
+The workhorse of the dental industry for many years was the Gendex GX-770. One of the most ubiquitous pieces of equipment through the 1980s and 1990s. This unit is still popular and available from used and refurbished distributors. Newer options are available from manufacturers like KaVo, Belmont; Gendex, and many others.
+
+The biggest advantages of wall-mounted units include:
+
+- The ability of staff to stand outside the room
+- No risk of dropping the X-ray tube head
+- Long useful life of equipment
+
+Some potential downsides do exist: It generally takes longer to acquire a series of radiographs with these systems because the technician will need to step out of the room to take the picture. It is also slightly more difficult to align the tube head when the arm is not properly weighted, as it can shift after positioning.
+---
+Many modern offices are switching to handheld, rechargeable generation devices. Examples of these devices, in no particular order; include:
+
+- NOMAD Pro 2 from Dexis
+- VaTech EzRay Air Plus (DSN Member favorite)
+- WoodPecker AiRay Pro
+
+There can be multiple advantages to handheld units, such as quicker setup time, better patient tolerance, and lower start-up cost. While the general wall-mounted options reach $15,000, the mobile units can generally be purchased for around $4,000.
+
+However, some providers are averse, expressing concerns over risk of radiation exposure (a non-issue with proper use), worries about unit longevity with repetitive exposure, and the hassle of switching batteries throughout the workday. Sometimes operators may even struggle in situations with challenging angulations, such as mandibular anteriors with a high vertical angle.
+
+It is also advisable to check with your state regulators before buying a specific brand of unit. Some of the handheld units do not have a secondary lock protection, which state regulations typically require. This secondary lock means that after you turn the unit on with the ON/OFF button, there's a second button or code you have to enter before the unit becomes operational. Some of the lower-priced models on the market do not have this feature. Fortunately, the VaTech and NOMAD devices do have this feature, requiring the user to enter a numerical code before the machine becomes operational.
+
+Each brand has its own advantages and disadvantages, so browse WWW dentalsuccessnetwork.com for the most popular options and decide which may be best implemented in your practice.
+
+# Evaluating Pantomograph and Cone Beam CT Machines
+
+When it comes to evaluating Pantomograph (or panoramic/Panorex/pano) and Cone Beam CT (CBCT) Machines, there are many different aspects to consider. Cost is, of course, one of many important factors that will guide your purchase. Let's review some of the most common questions.
+---
+# Where should you buy a machine?
+
+Generally, many of the larger dental companies will have working relationships with the X-ray manufacturing companies like Dentsply Sirona, Acteon, KaVo, Dexis, and Instrumentarium. If you have a good relationship with these supply companies, this might be your best route for purchase: The advantage is that when you buy from a company with whom you already have a good relationship, service from these companies is generally some of the best around, and the price can be competitive with rebates and sale prices. They will even sometimes have used or showroom units that can be sold to you for less than the list price.
+
+If you are willing to look at refurbished units, we have seen great results with Renew Digital. Their pre-owned units are generally high quality and checked for any deficiencies before being listed for sale. When buying from Renew Digital, one of their technicians will be sent with a team to install the unit in your office. This often results in significant cost savings, as you can get into the 3-dimensional radiology arena for under $40,000.
+
+# VGXEL
+
+One of the most popular vendors for radiology equipment amongst the DSN Membership has been Voxel: They offer Acteon, Prexion, Carestream, RayScan and VaTech machines. DSN Members can review the website for the most up-to-date pricing on these units, which can be $10,000-15,000 lower than public pricing.
+
+One significant benefit to dealing with Voxel is the open software concept; where multiple machine manufacturers can be considered, rather than the vendor being tied to just one: This allows a direct comparison of machine capabilities, allowing you to identify the appropriate machine for your practice, along with the comparative cost.
+
+# What size do you need?
+
+Talking about size in terms of machines can mean multiple things. It might refer to the field-of-view (FOV), voxel size (the size of the 3-dimensional 'pixel'), or physical footprint of the unit. As you look to purchase and evaluate units for your practice, you should first consider the type of procedures you perform. If you are only looking for endodontic or implant uses, a smaller field-of-view (FOV) can be extremely valuable, as these generally offer greater spatial resolution. If you are looking to do more full-mouth rehabilitation with implants, a larger FOV is appropriate to capture most of the head in a single acquisition.
+---
+Size matters for CBCT machines when concerning the field of view. The larger the field of view; the more anatomy will be presented, and the more data will be captured in the scan. You are ultimately responsible for the interpretation of this data, so if it is not needed or warranted, it may be prudent to select a smaller volume size. A common consideration in radiology is to utilize as little radiation as necessary to achieve the diagnostic purpose, although volume size and radiation dose are not necessarily directly correlated due to numerous variables.
+
+The "Image Gently" campaign is a major proponent of this, which historically was quipped ALARA (as low as reasonably achievable), and more recently modified to ALADA (as low as diagnostically acceptable). As suggested, FOV size does not necessarily directly correlate with radiation dose: However; in larger FOV exposures, more anatomy will be directly exposed by the cone-shaped radiation beam: In all cases, scatter radiation is a factor; contributing negatively to the image when detected within the FOV; but only adding exposure with no diagnostic contribution outside the FOV:
+
+The goal, as with all radiology, is to choose the smallest FOV possible to accomplish your diagnostic intent: Most machines, even with a large FOV, will allow for acquisition of a smaller FOV, via internal collimation and machine positioning: The image generated by a CBCT is a series of usually a few hundred cephalometric-type views acquired at varying angles as the gantry rotates around the patient's head. These two-dimensional radiographs are then reconstructed into axial, sagittal, and coronal views by a complicated algorithm known as "back projection". The beam is not continuous, but actually a variable pulse measured in the unit of frequency, much like the frame rate of a modern flat-panel television or computer monitor.
+
+# Diameter of a Cylinder
+
+FOV sizes are customarily described by the cylinder diameter and cylinder height: You may see these sizes depicted as "08 x 5 cm" for example. But even if written more simply as "8 cm x 5 cm" that the three-dimensional VOLUME is being defined, not just a two-dimensional AREA. An example of a small FOV would be 5 cm by 5 cm. A large FOV example is 16 cm by 18 cm. Many options exist in between:
+
+Size also matters in footprint and access. Some machines require a larger physical footprint, occupying a greater square footage in the practice. Some need to be oriented for access from a specific side. As you compare machines and the physical space in which you plan to place them, be sure to evaluate which machines might flow well and which might be problematic or impossible to position. You do NOT want this to be an afterthought:
+---
+The best size for each practice depends entirely on the services provided, as well as the space allotted for the machine. However; you will want to try to go as small as reasonably possible: Generally the larger the FOV, the larger the footprint. Machines with more features, options, and components cost more. Used units are listed between $30,000-90,000, with new units in the $55,000-$130,000 range.
+
+# Software, Computer; and Warranty
+
+Software programs that come with each machine will be slightly different for each manufacturer; although they are generally all good and operable: When you need to export the data, all CBCT machines export the same raw data in the digital imaging and communications in medicine (DICOM) format as conventional image types. These files can then be opened in various viewing and planning software programs. In many practices like mine, we have a stock of inexpensive USB thumb drives containing our practice name/logo for patients to deliver to their dental specialists when referring out for specific procedures.
+
+Most modern CBCT machines will be delivered with an accompanying computer to process the images. These computers are generally high-powered from a graphics perspective, pre-loaded with the image acquisition software and connected to the hardware and storage components necessitated by the sheer volume of data involved. These computers often contain the legacy DVD-RW and CD-RW drives, allowing you to write the patients' image data to a CD or DVD in case you lack the USB drives available for this purpose.
+
+Service and warranty options are major considerations when purchasing a CBCT machine. When evaluating machines, identify the location of the closest representative or technician for each: Once accustomed to this imaging technology and implementing it into your practice routine, being without it even for a couple of days can be incredibly inconvenient: Time is of the essence! Also, the cost to fix one of these machines can be astronomical, so purchasing machines with reliable warranties from reputable companies that will stand behind their product for years after your purchase is essential:
+
+# Below is a quick review of some of the most popular CBCT units:
+
+|Company|Product Name|Smallest FOV|Largest FOV|Voxel Size|Total Exposure Time|
+|---|---|---|---|---|---|
+|Air Techniques|ProVecta 3D|5x5 cm|13 by 8.5 cm|0.08 mm; 0.12 mm, 0.2 mm|16.4 seconds|
+|Acteon|X-MIND Prime 3D|5x5 cm|11.6X 10.3 cm|0.072-.140 mm|5-14 seconds depending on model|
+|Carestream Dental|CS 8100 3D|4 x4 cm|8 by 9 cm|0.075 mm|3-15 seconds|
+---
+|Carestream|CS 9600 3D|4x4cm|16 X 17 cm|0.075 mm|4-16 seconds| | |
+|---|---|---|---|---|---|---|---|
+|Dental|Cefla|MyRay|6x 6 cm|10 by 10 cm|0.08 mm|1.6 seconds| |
+|Medical|Hyperion XS|Dentsply|Orthophos|5x5.5 cm|11 by 10 cm|0.16 mm, 0.08 mm in HD|2-5 seconds|
+|Sirona|S 3D| | | |mode|14 seconds in HD mode| |
+|HDX Will|Dentri a|3 x 3 cm|16 by 8 cm|0.1 mm, 0.15 mm, 0.2 mm|8-24 seconds| | |
+|North America|I-CAT|I-CAT FLX|8x5 cm|8 to 8 cm|0.125-0.4 mm|4.8, 9, or 26.9 seconds| |
+|J.Morita|Veraview|4x4 cm|14 to 15 cm|0.08 mm|9.4 seconds| | |
+|Kavo Kerr|KaVo OP 3D|5x 5 cm|9 by 14 cm|0.08-0.4 mm|1.5-20 seconds| | |
+|PreXion|PreXion3D|5 x 5 cm|15 by 13 cm|0.1 mm|7.7 seconds| | |
+|Ray|RAYSCAN a|4 x 3 cm|10 by 10 cm|0.1 mm|N/A| | |
+|Shatkin|3D Papaya|4x 5 cm|14 by 14 cm|0.075-0.4 mm|9-17 seconds or 7.7/14.5 seconds| | |
+|Vatech|Green CT 2|5x 5 cm|18 by 10 cm|0.08-0.2 mm|4.9 seconds| | |
+|Planmeca|ProMax 3D|3.4 by 4.2 cm|20 by 17 cm|0.075 mm|9-33 seconds| | |
+
+# Do Need a Radiologist to Review My CBCT Studies?
+
+The interpretation of radiographic studies must always meet the standard of care: This is no different than when electing to perform oral surgery, endodontics, restorative procedures, orthodontics, and all other forms of dental intervention: If a general dentist develops the skill for third molar extractions and/or placement of dental implants, should they not manage such cases themselves? Similarly, if a
+---
+A challenging endodontic or periodontal case presents that is beyond their scope of practice, should they not refer to the certified specialist? The benefit of experience guided by sound clinical judgment is that dentists can build their skills over time. New dentists who immediately challenge five-canal molar endodontic procedures and deeply impacted third molars before practicing with much simpler cases are flirting with regret.
+
+The challenge with developing practical radiology experience is the amount of information required to already know. Although acquiring small field-of-view studies at first might be wise in the sense of limiting the included anatomy to assess (and to some degree the radiation exposure), the anatomy and any additional pathology are still depicted in three dimensions, a manner most new dentists are unaccustomed to evaluating. With larger volume studies, there is no real difference beyond just exhibiting MORE of everything. So "developing" experience is not as linear in radiographic diagnosis as in practical dentistry. One of the best ways to do so is through intense anatomical study in order to develop an understanding of the broad variation in normal anatomy. The presence of pathology is not all that difficult to identify, but often the determination of whether some finding is "normal" can certainly be.
+
+There is another aspect of CBCT imaging that must be understood for appropriate implementation and interpretation. Although three-dimensional radiography is a major advancement in imaging diagnostics, it is not without limitations. CBCT images ALWAYS exhibit noise and artifacts, even with the most ideal acquisitions. Radiography is possible thanks to the variability in X-ray absorption and scatter within the body. And, unlike the body, the radiographic sensor's capability is limited by pixel size. This combination of factors effectively guarantees some degree of image degradation by noise and artifact. Fortunately, with a 1:1 size ratio, linear and geometric measurements on the screen match those of the actual anatomy, making, for example, implant sites quite predictable pre-operatively. Still, practitioners must have realistic expectations for their imaging studies to gain the most benefit.
+
+Possibly the greatest factor to consider for the interpretation of patient imaging studies is TIME. Dentists commonly double as Business Owners. Most—especially those in Dental Success Network—are already constrained by time and create systems to leverage it. How much time would be required to interpret a single CBCT study? Further, what time would it take to develop the competence to interpret that one study? Now, how many CBCT studies are acquired in your practice each week? Maybe you use it once a week for a new implant case. Or you might use it for nearly every patient needing endodontic treatment. In either case, is the time required for proper interpretation and reporting on the imaging studies best spent by the dentist on this task? That is for each to decide.
+
+The underlying consideration for each dentist is the degree to which they are willing to accept liability for the findings within each study. Of course, the word "findings" suggests that important details within a study are actually "found." The more significant (read "morbid") the finding, the more critical its identification. Of course, there are CBCT scans acquired due to suspected pathology detected either clinically or on conventional radiography. It seems obvious these would be sent for interpretation by a Certified Oral Maxillofacial Radiologist (OMR). However, occasionally pathology is present when not.
+---
+already suspected. Should such pathology go undetected and undiagnosed despite presenting within the field-of-view; the patient would be well within their rights to pursue litigation.
+
+# OMRs train for two or three years, depending on the program attended
+
+During their training, residents experience a wide variation in normal anatomy: Much time is devoted to pathologic presentation and identifying specific diagnoses. Even more so, residents are trained to identify features and details to develop a radiographic IMPRESSION, leading then to a DIFFERENTIAL DIAGNOSIS, which guides clinical decision-making: Radiology Residents develop a framework for the interpretation of each imaging study that culminates in a formal radiology report: This methodology is true regardless of imaging modality.
+
+Upon completion of their respective programs, Radiology residents are bestowed a Certificate in the ADA-recognized Specialty of Oral and Maxillofacial Radiology, assuming graduation from an accredited institution. Some achieve a Master's Degree as well. As with any other specialty designation, Radiologists may elect to challenge the American Board of Oral and Maxillofacial Radiology exam, a two-part exam administered annually; covering the topics of radiation physics and biology, head and neck anatomy, and pathophysiology: Though optional, the preparation required for a successful Board challenge; along with the continuing education required to maintain the Board-certification, ensures ABOMR Diplomates are reliable experts in the profession.
+
+# If you find yourself in need an OMR for interpretation of a CBCT or any other image modality
+
+look no further than the easy-to-use and incredibly affordable cloud platform of Capture 3D Radiology.
+
+Sean Hershberger; DDS, MS, is a Board-Certified founder of Capture, a service where Dentists can securely and efficiently upload image files to their HIPAA-compliant dashboard for interpretation by a Radiologist; who will generate an official radiology report that can be shared with patients as supporting evidence for proposed interventions. Dr. Hershberger also enjoys advising members in diagnostic challenges and offering clinical tips as a faculty member of Dental Success Network.
+
+66
+---
+# Chapter 6
+
+# Profitability On Each Procedure
+
+Once you find the cost of supplies, it is much easier to start doing more complicated analytics around what it truly costs to perform each procedure: We like to call this exercise "Cost Per Procedure". Without a true cost on each supply, it becomes very hard to complete this exercise to give you clarity:
+
+# Why Calculate Cost Per Procedure?
+
+Each year when analyzing the revenues and expenses of the practice, dentists should look at their fees and reimbursements as a way to possibly help cover more of the rising costs of doing business. When doing the analysis, a dentist will often raise fees a standard percentage, and hope that this will make them more profitable. Oftentimes, this might only make a small difference if most of their revenues are generated through contracts with insurance companies and those reimbursement rates with insurance do not change.
+
+Similarly, we can look at insurance reimbursement rates to get a feeling of how much we are writing off in discounts. These two ways of looking at fees and profitability usually forget the fact that we do not know what it takes to actually perform the procedure. In order to get a true sense of the profitability; we need to know exact costs.
+
+After doing this exercise, you can set fees appropriately and then evaluate whether it is a good business decision to be an 'in-network' partner.
+
+# Performing the Cost per Procedure
+
+There are 5 major steps you will need to complete this exercise:
+
+1. Pick a few of the most frequently performed procedures you do on a regular basis
+2. Find out the base costs of running the business
+3. Outline the supplies used in the procedure
+4. Get the appropriate costs on each supply
+5. Analyze costs versus reimbursement rates and fees
+---
+We will go through one procedure with you as an example. However; we recommend that you should select a few of the most common procedures including:
+
+1. Prophylaxis (Cleaning), Exam, and 4 Bitewings (Typical Routine Hygiene Cleaning and Exam)
+2. 2-Surface Composite filling
+3. Crown and Buildup, plus Seat Appointment
+4. Implant Placement Procedure
+5. Single-tooth Extraction
+6. Single-canal Root Canal plus occlusal filling
+
+In this example we will evaluate a 2-Surface Composite. See the following spreadsheet as an example:
+
+|Product|Quantity|Measurement|Price|Package|$|
+|---|---|---|---|---|---|
+|Tray Cover|1|S11.85|500|S0.02| |
+|Gauze|6|S43.60|1,000|S0.26| |
+|Dri-Angle|1|S6.81|500|S0.01| |
+|Cotton Roll|2|S9.70|2,000|S0.01| |
+|Floss|0.025|3yd/72|S29.99|1|S0.75|
+|Blue tip needle|1|S9.10|100|S0.09| |
+|Benzo Gel|0.025|pea size|S3.35|1|S0.08|
+|Air and Water tips|2|S17.00|250|S0.14| |
+|Articulating Paper|1/2|S2.25|12|S0.09| |
+|Anesthetic: Lido|1|S25.45|50|S0.51| |
+|Anesthetic: Septo|1|S36.90|50|S0.74| |
+|High Vac Tip|1|S2.45|100|S0.02| |
+|Slow Vac Tip|1|S2.65|100|S0.03| |
+|Paper Cover|3|S11.70|500|S0.07| |
+|Brush Tip|1|S2.10|50|S0.04| |
+|Prime/Bond|0.0025|2drops|S110.40|1|S0.28|
+|Flow|0|S64.99|4|So.0o| |
+|Flow tip|2|S5.05|100|S0.10| |
+|Packable|1|S74.00|20|S3.70| |
+|Etch|1/4|S11.10|4|S0.69| |
+|Quick Stat|1/2|S80.50|75|S0.54| |
+|Quick StatTip|1|S44.25|100|S0.44| |
+|Mask|2|S4.85|50|S0.19| |
+|Gloves|12|S18.65|300|S0.75| |
+|Matrix Bands|1|S73.90|72|S1.03| |
+|Wedge|1|S27.71|20|S1.39| |
+---
+|Supply Name|Measurement|Uses|Total Cost|Units in Package|Cost per Use|
+|---|---|---|---|---|---|
+|557 Diamond|0.6|3 uses|S42.20|5|S5.06|
+|330 Bur|0.33|3 uses|S79.59|50|S0.53|
+|Yellow Football|0.1|10 uses|S70.51|10|S0.71|
+|Polishing Paste|0.25|40 uses|S17.50|1|S4.38|
+|Polishing Bur|0.2|20 uses|S64.00|6|S2.13|
+
+Total Supply Cost: S24.78
+
+As you review this sheet, you will notice a few things. First of all, we list each supply used in producing this two-surface composite. This includes all the disposables like paper tray covers and plastic suction tips. Then this also includes carbide and diamond burs. When looking at things that are reusable like burs, it is best to take an estimation of how many uses you will get out of the bur:
+
+Sometimes we have a tube of a supply like PVS impression material. As you start to do evaluations, you might take a permanent marker to notch each time the tube is used, thereby getting a more accurate evaluation of the usage available in each tube: This will allow for more accurate numbers when calculating true costs.
+
+Secondly, you will want to know how much of each supply you are using: Is it 6 pieces of gauze, or just 4? By listing the amount, or number used, it will help in the calculation in the last part of the exercise.
+
+The third column has notes about the product. Because each product is sometimes a different category and different type of material, you might need additional notes about it.
+
+Fourth, we will list the supply package and applicable information. This will include the total price on the package, as well as the number of supplies in that package. For example, gauze is purchased in a package of 1,000 pieces of gauze, and the price is $43.60. That means each gauze costs 4.3 cents.
+
+The final column is calculated with the amount of supply used, multiplied by the per-unit costs of the supply: The gauze, for example, is 6 pieces of gauze multiplied by 4.3 cents. This comes out to be approximately 26 cents. This last column is then added up to come up with the total supply cost for the procedure: In this example, it's $24.78.
+
+# Summary:
+
+- List each Supply Name using
+- Look at how much of that supply you're using by unit
+- When possible, list the measurement of that supply as a note
+- List the total cost of that supply as it comes packaged
+- List the number of units in that supply package
+- Then take the used supply multiplied by per-unit cost
+---
+Of course this only adds up the supply cost for the procedure, but so far we haven't figured out the human labor costs as well as the fixed costs it takes to open the doors of the practice.
+
+For the human resources of the procedure, you will need to take an average hourly cost for the people assisting with this procedure: In the case where it is a regular assistant, maybe this is just $20 per hour (or whatever you pay your assistants): In the case where this is a hygiene procedure, use the hygiene average rate in your practice.
+
+The final piece of the puzzle is the fixed costs to operate the practice: This will include things like:
+
+- Rent; Utilities, and Facility expenses
+- Software expenses like OpenDental, texting services, review service, etc.
+- Human resources at the front desk and management
+- Office supplies that are routine and monthly
+- Other costs in the practice that occur on a frequent monthly basis
+
+After you get all these costs, you will put that in the top cell of the spreadsheet:
+
+|Fixed Costs|Total Costs per Month|$16,846.00|
+|---|---|---|
+|Working Days/mo|21| |
+|Hours/Day|8| |
+|Operatories|6| |
+|Total Cost per/op/Hr|$16.71| |
+
+After that total cost is entered, then you will want to enter the average number of working days per month: If you are a 5-day a week dentist, then this might be near 21 days a month: If it's 4, then probably 16 days. Then you will want to put the number of hours per day you work, as well as the number of operatories. The entire goal here is to get to approximately the number of hours worked per month, as well as active operatories during those hours. If you only work a half day; try to decrease the hours per day to factor that in.
+
+The calculation will be done for you and come up with an average hourly cost of chair time. This means, in the example above, that it costs the business $16.71 dollars per hour of chair time for each chair; every hour of the normal working day:
+
+Then you will need to see how much time it takes of chair time to actually complete the procedure: This is not how fast the doctor is, but rather how much chair time and human resource time it takes to actually complete this procedure. See the chart next for the example calculation:
+
+70
+---
+# Hours Needed for Procedure
+
+05
+
+Hourly Treatment room overhead: $8.36
+
+Hourly HR Cost: $10.00
+
+Total Supply Cost: $24.78
+
+Total Lab Cost: $0.00
+
+# Total Cost per Procedure
+
+$43.13
+
+So as shown in the example, it costs $43.13 to produce this 2-surface composite. However, this figure does not include doctor costs or salary in the procedure. In the case where you are the single doctor and owner of the clinic producing this procedure, then anything you collect above $43.13 is profit to you. In the situation where you employ an associate to produce this, then you must factor in the costs of this.
+
+Let's assume, for clear math, that a 2-surface composite has a full fee of $100 (no insurance for this example patient): To pay an associate to do this filling, you might pay them 30% of their production, or $30. After then removing the costs of the supplies, HR and overhead costs, then the total cost is $73.13. That leaves a profit for the clinic of $26.87.
+
+The math might be different if the reimbursement is only $56.00. In that case, 30% of $56.00 is $16.80. Once you add that $16.80 to the $43.13, the total cost to produce that filling is $59.93. In that case, the business is actually losing money to produce that filling:
+
+# Revenue from Procedure
+
+| |$100 (Full Fee)|$56 (Insurance Total)|
+|---|---|---|
+|Doctor Pay (30%)|$30|$16.80|
+|Costs|$43.13|$43.13|
+|Net|Profit of $26.87|Loss of $3.93|
+
+On this one procedure alone, you might start to feel the visceral, emotional decision cropping up that you want to terminate the contract with this insurance company that only pays you $56.00 for this 2-surface composite: However, the answer is not always that straightforward: In the next chapter, we will give you some advice and share some data around making a decision to either negotiate or terminate an insurance contract:
+---
+72
+---
+# Chapter 7
+
+# Insurance Fee Evaluation
+
+When evaluating the fees of a given insurance company, it is best to always look at a comprehensive picture of the data. To do this, we will follow these steps:
+
+1. Pull the Top 30 Procedures of the practice over the past 12 months
+2. Run your last 18 months Production and Income
+3. Run the # of patients on certain insurance; and percentage income from each insurance
+4. Run an Analysis of the Insurance Fees versus Full Fees
+5. See if the Insurance company allows for assignment of benefits
+6. Calculate potentially lost patients and revenue
+7. Dropping Insurance Contracts
+
+Start to evaluate whether the net profitability of each insurance company is worth it: Along with this book, we will have a downloadable document where you can copy and paste the appropriate OpenDental Queries. But we'll show a little bit of what this process looks like.
+
+To start, here is what it will look like when you run a query of the top codes done in the practice:
+
+**Top 25 Procedures**
+|Proc|Count|Gross|Net|
+|---|---|---|---|
+|D111D|3886|46484.25|306771.889339999|
+|D0120|3444|224775.37|147120/3|
+|D9243|2921|287556.17000001b|359337.430000018|
+|DOZZD|2797|102604.2|61011.1699999999|
+|D9987|2787|4.8|40.8|
+|D1206|2665|61073.240oooo0o2|60216.110oooo002|
+|D01AD|2268|141692.770000002|106312.570000002|
+|DO274|2075|169594.72|102894.3|
+|DO230|2054|66051.56|38169.770dodoo0|
+|D7240|1961|1082466.86999998|982020.5499993985|
+|D721D|1848|707939.810000038|629477.R4d0d0038|
+|D714|1670|397040.389999997|324926.479999997|
+|09239|9p8|141521.,469999997|127086.359999997|
+---
+As you export this, you will want to make sure to export it as either a .csv or xls file: This means it's either "comma separated values" or Microsoft Excel. As you open this up in an Excel or Google Sheets page, you can then prioritize by either "Count" or by "Net Income."
+
+# When organized by "Count"
+
+|Proc|Count|Gross|Net|
+|---|---|---|---|
+|D1110|3850|$440,856.25|$302,626.79|
+|DO120|3443|$223,948.37|$145,914.36|
+|D9243|2922|$377,223.78|$350,410.64|
+|DO220|2748|$100,591.20|$59,754.54|
+|D1206|2671|$60,667.50|$60,667.50|
+|D9987|2533|$134.80|$134.80|
+|DO140|2229|$140,638.74|$140,638.74|
+|D0274|2030|$165,329.72|$100,454.48|
+|DO230|2012|$64,353.39|$37,255.93|
+|D7240|1966|$1,057,717.09|$961,492.53|
+|D7210|1738|$649,515.17|$580,762.76|
+|D7140|1664|$394,429.43|$322,184.38|
+|D9239|978|$136,326.31|$121,953.62|
+|DO150|945|$111,203.69|$64,538.85|
+|D0330|945|$105,230.84|$72,414.47|
+
+# When organized by "Net Fees"
+
+|Proc|Count|Gross|Net|
+|---|---|---|---|
+|D7240|1966|$1,057,717.09|$961,492.53|
+|D0120|3443|$223,948.37|$145,914.36|
+|D7210|1738|$649,515.17|$580,762.76|
+|D0140|2229|$140,638.74|$140,638.74|
+|D7140|1664|$394,429.43|$322,184.38|
+|D9239|978|$136,326.31|$121,953.62|
+|D2392|548|$150,793.74|$97,923.24|
+
+While the organization by Net is interesting and useful for some of this analysis, it is usually not as important as calculating by total count: Meaning, that if you got $3 more for these 3850 "D1110" Codes, that would equate to possibly $11,550 more in income. However; if you got $50 on a surgical placement of an implant.
+
+# Overall Production and Income Report
+
+|Month|Production|Adjustments|Write-off|Tot Prod|Pt Income|Unearned Pt Income|Ins Income|Total Income|
+|---|---|---|---|---|---|---|---|---|
+|Jan 2023|$456,897.59|-$22,601.44|-$120,110.35|$314,185.80|$128,497.60|$6,657.60|$270,009.41|$405,164.61|
+|Feb 2023|$458,953.32|-$16,008.74|-$107,476.81|$335,467.77|$100,694.58|$0.00|$183,689.74|$284,384.32|
+|Mar 2023|$474,594.21|-$18,907.77|-$137,071.20|$318,615.24|$104,115.67|-$118.06|$201,021.56|$305,019.17|
+|Apr 2023|$411,596.39|-$17,166.94|-$109,223.16|$285,206.29|$87,243.60|$8,096.02|$252,127.88|$347,467.50|
+|May 2023|$474,807.06|-$21,456.28|-$110,688.21|$342,662.57|$89,818.69|$32,178.94|$182,369.12|$304,366.75|
+|Jun 2023|$509,094.29|$223,895.25|-$133,212.85|$351,986.19|$102,810.16|$33,149.00|$228,235.78|$364,194.94|
+|Jul 2023|$525,446.82|$220,671.31|-$106,814.65|$397,960.86|$123,260.47|$0.80|$245,979.10|$369,240.37|
+|Aug 2023|$634,905.59|-$33,052.61|-$176,314.36|$425,538.62|$149,180.11|$4,583.95|$344,181.38|$497,945.44|
+|Sep 2023|$453,399.89|-$24,240.37|-$119,935.67|$309,223.85|$94,967.82|$23,537.68|$192,073.89|$310,579.39|
+|Oct 2023|$712,276.34|-$22,491.61|-$178,963.75|$510,820.98|$121,166.95|$73,479.27|$231,541.47|$426,187.69|
+|Nov 2023|$633,485.92|-$33,675.05|-$165,403.05|$434,407.82|$149,717.14|$62,017.13|$281,035.64|$492,769.91|
+|Dec 2023|$581,083.97|-$17,252.93|-$151,058.83|$412,772.21|$68,098.86|$58,788.22|$204,904.16|$331,791.24|
+|Total|$6,326,541.39|-$271,420.30|-$1,616,272.89|$4,438,848.20|$1,319,571.65|$302,370.55|$2,817,169.13|$4,439,111.33|
+---
+In this example, you will see this practice had $6,255,876 in Gross production: It then had $278,829 in in-office adjustments due to membership plan discounts, and $1,594,032 in Insurance write-offs. As a percentage of income, there were 4.45% in-office adjustments, and 25.5% write-offs due to insurance contracts.
+
+Once you run this analysis for your practice, you might find it to either be higher or lower by percentage, and of course that matters a lot on your fees. In this scenario, this practice has fees in the 90th percentile. Meaning, of all fees in this specific zip code, this practice's fees were above 90% of the other practices. This means they are quite high, and so it would make sense that they would have a larger write-off percentage. If a practice were in the 60th percentile; the write-offs might not be as high.
+
+In order to figure out which percentile you are in, or help you set fees into the percentile you desire, you can get this data from a few different places. Sometimes you might get it if you are going through a consulting agreement with an insurance negotiation company like PPO Profits. Other times a rep from a larger dental company might have access to this information and share it with you:
+
+No matter what, all the data actually comes from a place called the National Dental Advisory Service. This book and service looks at each zip code across the US and has the data which will tell you what percentile your fees are in, or give you the fees you can use to pick which percentile you want to be in.
+
+# National Dental Advisory Service 2024 Fee Report
+
+Book: $139.00
+
+SKU: N24
+
+Add to cart
+
+You can buy the electronic version and database for $399. To find it, go to this link.
+
+The next step is to evaluate how much income comes from each insurance company: This is also tangentially related to how many patients are on each insurance: To answer the first question, you can run query #263 and get a report that looks like this:
+
+|Carrier Name|Phone|# Claims|Claim Fees|Ins Pay Est|Ins Paid Amt| |
+|---|---|---|---|---|---|---|
+|Aetna|(877) 277-3358|236|$255|$1,337,894|$55,151.75|$58,187.10|
+|Aetna Coventry|(800) 624-0756|3|$0.00|$614.00|$0.00|$552.00|
+|Medicare Premier|(865) 409-0937|15|$0.16|$8,260.00|$0.00|$4,374.00|
+|Aflac|(800) 199-2352|11|$0.12|$9,252.75|$3,871.60|$4,139.25|
+|Aflac Dental|(855) 812-1873|10|$0.11|$5,704.20|$3,034.10|$3,775.63|
+---
+This report is really good at giving you an idea of what percentage of your practice is tied to each specific payer source. If you were to try to negotiate with a specific insurance, and decide to end a contract with that insurance, you might significantly impact that amount of income: It's also good to see how many patients are on each fee schedule or insurance contract.
+
+# Tile Number of Patients per Carrier
+
+|Carrier Name|Patients|
+|---|---|
+|Aetra Access Discount Plan|176|
+|Aetra Coventry|18|
+|Aetra Medicare Premier| |
+|Aetra Vital Savings Discount|2|
+|Aflac|31|
+|Aflac Dental| |
+|Allied|1|
+|Ambetter|1|
+|Arbetter Dental Network|2|
+|American Public Life|1|
+|American Republic|2|
+|Ameritas|1516|
+
+To find that out, run query # 122, which will give you a list of all active patients and the associated insurance plan: This is for active patients, not just the insurance subscriber: It will appear like this: In the associated document vault for this book, you will find some great OpenDental Query examples, as well as instructional documents that take you step-by-step through this process.
+
+The next step in the process actually involves checking in with each insurance company to see whether they allow for assignment of benefits. This means that if you are out-of-network, will the insurance even allow you to get paid at all by the insurance company? Or will they rather pay the patient? Or, if you are out-of-network, will they even pay anything towards a patient's treatment.
+
+# Percentage of Patients in Assignment of Benefits
+
+|Insurance|Production per Fee Schedule|Number of Patients|Per Fee Schedule|Total Estimated % Loss of Patients|
+|---|---|---|---|---|
+|3CBS Federal|$453,430|10|19|0.6*|
+|BCBS MAX|$537,218|10|1|0.6%|
+|Ceta Dental DPO|$569,427|258|29.53|14.78%|
+|Guardian PPO|$582,527|34|3.97|1.97%|
+|Aetna|$629,276|81|9.3%|46%|
+|Metlife|$633,686|207|23.7%|118%|
+
+Tactically, you will want to make a note for each insurance company on a master spreadsheet. If they allow for assignment of benefits, assume that you will only lose 50% of these patients, and 50% of that revenue. If they don't allow for assignment of benefits, then assume you will lose 100% of patients and revenues. This might seem drastic, but it's better to overestimate the loss and be pleasantly surprised than to underestimate and get caught in a difficult situation.
+
+As a note, if they do not allow assignment of benefits, this means that most likely you will want to collect 100% of full-fees at the time of service: Sometimes this is significant for patients and this will cause headaches for your business office.
+
+The manual data entry phase concludes at this point; transitioning into a more intricate and challenging decision. The question arises: Should you opt to renegotiate or terminate certain insurance contracts? It depends. This is typically where a consultant or fee negotiation company is worth their weight in gold.
+
+There are many different paths here, and for every different kind of dentist; there is a different answer: Sometimes you might love the quick fast-paced rush of a PPO-heavy office and you are ok with the lower.
+---
+reimbursement rates because you can make it up on volume: Sometimes you feel compelled to charge full fees and love the freedom that being a fee-for-service office can give you: There is no right answer; and there is no wrong answer- the only answer to these questions is "It depends:"
+
+Kudos to DSN BlackBelt Coach Dr. Deren Flesher: Much of the forward thinking and amazing resources here was created by Dr. Deren Flesher: He is a BlackBelt Coach with Dental Success Institute, founder of multiple dental softwares, and sought after thinker around many business models inside dentistry: Nowadays he is helping other dentists find their financial success with Legacy Point- WWw LegacyPointGroup com
+
+# Trends Among Fee-for-Service Offices
+
+That being said, there are a few trends that we have seen in fee-for-service offices that are worth consideration. Now these are averages that we have seen over a few different practices, but ones that give some color to a big decision like terminating an insurance contract:
+
+We generally see:
+
+- Lower new patient numbers
+- Higher attrition
+- Higher revenues per employee
+
+When a doctor leaves an in-network status for insurance, they generally lose preferred placement on the insurance website, losing visibility: This visibility alone is sometimes a large driver of new patients to the practice, so this should not be overlooked: However; this is sometimes secondary to the other issue that many patients are driven by "using their benefits" They have been conditioned to believe that the only way to use their benefits is to go to an "in-network" provider: When this thinking is pervasive, even among high income and high net-worth individuals, it makes it tougher to get new patients as an out-of-network provider: In order to overcome this loss of new patients, we often see fee-for-service practices need to spend more on advertising and marketing to achieve a good level of growth in new patients:
+
+Higher attrition is also a secondary effect of being out-of-network. As patients go through treatment and services in an out-of-network office, they might not want to continue paying slightly more. Or they might even get a letter from insurance recommending they go to an in-network dentist! Sometimes it is actual costs that drive them away; or sometimes it's perceived costs. Even with the best scripting and education of the patient about the benefits of the office and how fees work, the patients might choose to leave and go to an in-network office: From what we have seen, this occurs more frequently with out-of-network offices.
+
+However; it's not all bad news! The final major statistical difference we have seen is that these offices generally have more revenue per employee, more revenue per procedure, and are generally quite profitable per unit of work. Sometimes they push their practices to levels that are previously unknown, such as hygiene profitability: We have seen multiple practices have their hygienists routinely producing.
+---
+4-5 times their pay, per hour: So if the hygienist was making $50 per hour; the hygienist was producing and collecting $200-250 per hour: We consider anything over 3.3 times their pay as very profitable:
+
+# Dropping Insurances Advice
+
+If, after much deliberation and evaluation of the statistics, you decide that dropping an insurance contract is the right thing for your practice, then we want to leave you with a few pieces of advice.
+
+First of all, we suggest that this switch happen at least 6 months in the future: The best-practice around this is to have a timeline for termination and let each patient know with either a phone call or in-person meeting during their regularly scheduled hygiene exam and cleaning: This allows for you to frame the conversation in the best way for you. Once you send the termination letter to an insurance company, they will own the narrative and control the perception. However, if you have already prepared each and every patient for this change, then you will help mitigate much of the loss of patients and attrition that may occur with a sudden change:
+
+The second thing we suggest is to have a good set of communication strategies to help team members speak to patients eloquently around the change of status with regard to this insurance: Scripting and role-playing around each difficult question is extremely important: Inevitably there will be questions around, "Do you take my insurance? Can I still see you? Will I pay more?". Some of these questions have many underlying false beliefs and assumptions, and so the more you can learn and coach the team on best communication strategies, the better your office will be.
+
+If you are looking for a list of patients on a specific carrier/plan, use Query #184 from OpenDental to gather this list of patients seen over a specific period of time. (https://opendentalsoft.com:1943/ODQueryList/QueryList.aspx)
+
+Now if you have read this entire chapter and think that everyone needs to go out-of-network, we do not propose that at all. The best thing for all dentists is to know their data, and make the best decision for themselves. Sometimes that is to be in-network with many insurances. Sometimes it's the exact opposite. And sometimes it's a mix of in-network and out-of-network. Just like with bonding agents, PVS, and composites, there is no one-size-fits-all approach to insurance either:
+
+If you need help in this area, seek expert advice. Dental Success Network has faculty that can help in this area, as well as preferred vendors that can help negotiate with you throughout the process. If you need help, go to WWW.dentalsuccessnetwork.com for more information:
+
+78
+---
+# Chapter 8
+
+# Cash Flowing Through your Business
+
+Dental schools are amazing at teaching the clinical aspects of dentistry, but even the most advanced schools still lack some of the more intricate teachings in finance and business theory: Clinical licensure exams are required, but business classes are not. In this chapter; we hope to teach a few of the strategies that will help you as you run your business using the best tips in accounting and cash flow theory:
+
+# Setting the Budget
+
+A budget is simply an estimate of the expenses and income over a set period of time. If we follow the influencers like Dave Ramsey, we may have personal budgets. In essence, to do a budget correctly for our businesses, we take our expected income, then list out all our expenses, and see what the expected profit is at the end of the day:
+
+As we go back to the previous chapters, remember that there are some general accounting principles for a dental practice that look like the chart shown on the next page. These general cost categories give us some goals for our practices.
+
+You will notice that in a "White Belt" practice, the profits are less than 10%. Unfortunately, this is where many dental practices hover in the United States--around 68-72% overhead. After you factor in paying a doctor a normalized salary, there's only two percent, to minus 2 percent left in profit!
+
+However; as the practice grows in revenues and has lower cost percentages in each category the profitability can reach upwards of 25%. From 2 to 25%, this is almost 10X better than another dental practice in terms of profitability. This can also be career-altering money:
+---
+# Profit and Operations Overview
+
+|Category|Belt Status|Belt Status|Belt Status|Belt Status|Belt Status| | | | |
+|---|---|---|---|---|---|
+|White Belt|Blue Belt| |Brown Belt|Black Belt|Double-Black Belt|
+|IProfit|Less than 10%|10%|15%|20%|25%|
+|Operations TOTAL|65%|60.0%|55.0%|55.0%|45.0%|
+|Front Back Off|17.0%|16.0%|15.0%|13.0%|11.5%|
+|Hygiene Salaries|10.0%|9.0%|8.5%|8.0%|8.0%|
+|Payroll Taxes|3.0%|2.5%|2.0%|2.0%|2.0%|
+|Fringe Benefits|3.0%|2.5%|2.0%|2.0%|2.0%|
+|Lab Specialty|7.5%|7.0%|6.5%|6.0%|6.0%|
+|Dental Supplies|5.5%|5.0%|5.0%|4.5%|4.0%|
+|Advertising|2.5%|2.0%|3.5%|3.5%|3.0%|
+|Other Minor|1.0%|1.0%|0.50%|0.50%|0.30%|
+|Other Expenses|4.0%|4.0%|3.0%|2.5%|1.5%|
+|Insurance|1.00%|1.00%|0.50%|0.50%|0.30%|
+|Legal and Accounting|1.00%|1.00%|0.50%|0.50%|0.30%|
+|Office Expense|1.0%|1.0%|1.0%|1.0%|1.0%|
+|Facility and Equipment|8.5%|8.0%|7.0%|6.0%|5.0%|
+|Associate|10.0%|10.0%|10.0%|10.0%|10.0%|
+|Owner Salary|14.0%|14.0%|14.0%|14.0%|14.0%|
+|Total Dr:|24.0%|24.0%|24.0%|24.0%|24.0%|
+
+To set a budget, we suggest using these above percentages as goals, and move across the table from left to right to sequentially lower expenses as possible: To start, use the spreadsheet provided in the document downloads for this chapter. This spreadsheet will help you to estimate what percentage of overhead you can achieve if you follow these generalized guidelines. In this sheet; you will change only the orange cells, as well as the expected income cells in the "Income" line at the top of the sheet.
+
+# Current Month
+
+|Month|Income|Operations Front Back Office|Hygiene Salaries|Payroll Taxes and Fees|Fringe Benefits|Lab Specialty|Dental Supplies|Advertising|Other Minor|Other Expenses|Insurance|Legal and Accounting|Office Expenses|Facility and Equipment|Associate|Owner Salary|Total Dr.|Your Total Overhead|Dr. Pay%|Profit after Dr.|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|May 2023|$159,954|$30,328.00 (18.96%)|$817,774.00 (11.11%)|$4,816.00 (3.01%)|$81,942.00 (1.21%)|$515,784.00 (9.87%)|$7,694.00 (4.81%)|$819,888.00 (12.43%)|$276.00 (0.17%)|$511,429.00 (2.15%)|$0.00 (0.00%)|$0.00 (0.00%)|$82,095.00 (1.31%)|$513,004.00 (8.13%)|$81,278.00 (0.80%)|$19,959.00 (12.48%)|$21,237.00|$125,030.00 (78.17%)|$21,237.00 (21.83%)|$13,687 (8.56%)|
+|Jun 2023|$165,000|$528,050.00 (10%)|$516,500.00 (10.0%)|$4,950.00 (3.0%)|$12,375.00 (7.5%)|$9,075.00 (5.5%)|$54,125.00 (2.5%)|$1,650.00 (10%)|$6,600.00 (4.0%)|$1,650.00 (1.00%)|$1,650.00 (1.00%)|$81,650.00 (1.0%)|$814,025.00 (8.5%)|$816,500.00 (10.0%)|$23,100.00 (14.0%)| | | |$0.00 (35.00%)|$18,150 (11.00%)|
+
+For a more thorough spreadsheet, we also give the download for a comprehensive "Gameplan" and budgeting spreadsheet.
+---
+# Where is My Profit?
+
+Profitability is the amount of money left over at the end of a period of time after running our business well. If we run a really efficient business and it creates a surplus of money, and sometimes we actually lose money if we have either low revenues, or high costs. However; sometimes we get to the end of the month and our accountant tells us, "Great job, you had a $10,000 profit this month." for us only to find that there is not $10,000 more in our bank account: Why is that?
+
+# Doctor Pay
+
+Let's go back to the budget; here is what we see as the general idea of where your money goes. Remember that 24-30% of your income will go to pay a doctor salary: If you run an associate driven practice, then this truly gets paid as salary: If you are a single doctor-owner practice, then you might not pay yourself this, but you should always factor it into your calculations.
+
+Then you take your Operations percentage, which might be 65% in White Belt status, down to 45% in Black Belt status.
+
+So why doesn't the profit equal what you see adding into the bank account each month? Basically it is because "Profit" does not equal "Cash Flow".
+
+Profit is only shown on your Profit and Loss Statement, whereas Cash Flow is what's shown on your Cash Flow Statement and what is actually in the bank account: Profit doesn't go to your bank account, Cash Flow does. In essence, the equation is:
+
+|Cash Profit|Profit|
+|---|---|
+|Debt|~Taxes|
+|40% of "Profit"| |
+---
+Once we see this, we instantly understand why accountants will make our numbers look good, but we really don't see that much cash. Many dentists carry some debt as they get their practices started. Usually this is a monthly payment for a while, and this cadence matches our monthly profit. However, taxes can sometimes fall into different timeframes. For many dentists who fall into higher tax brackets, they pay their taxes quarterly in April, June, September, and January of each year.
+
+The worst feeling in the world is when an accountant tells you that you should owe a significant amount to the US Federal Government on quarterly taxes, but you don't have the money saved up. This happens almost like clockwork every year to many business owners. As we see these problems of cash flow crop up, we will next address the tactical ways to systemize our cash flow and help avoid these problems.
+
+# Cash Flow System
+
+Systemizing the cash flowing through your business is simple; but it is not necessarily easy to start. For those who have looked into this, you will notice it is the same system as Dave Ramsey touts for this "Envelope Budgeting." If you have read the book Profit First from Mike Michaelowicz, you will see similarities as well. Quite frankly, these are all similar ideas that start with the idea that different buckets of money need different "envelopes" to gain more clarity around the money moving through that bucket.
+
+In essence, we start by opening a few more bank accounts at our local bank, or wherever we do our business banking. In more simple setups you could choose just a couple accounts, but you could also go all the way up to 7 accounts. If you choose 7, here is an example:
+
+|1|Income (All income enters this account)|
+|---|---|
+|2|Operations|
+|3|Doctor Pay|
+|4|Profit|
+|5|Debt|
+|6|Taxes|
+|7|Emergency (Keep 2-3 Months base costs in high % interest accruing account)|
+
+To start, all money will flow into one account. Any Electronic Funds Transfers (EFT) should get auto-deposited into this account. Any cash, checks, and other deposits should also enter here. This way, this account should be almost 100% match to your practice management income data. If you want, you could even give 'read-only' access to your bookkeeper or front office in the dental practice to make sure they see when EFT's come in.
+
+Second, open up the other 6 bank accounts. Emergency is the last bank account which can be added. We like to keep a couple months of basic costs in there so that if some tragedy were to befall the business.
+---
+that at least there is a stock of cash flow there to help. The COVID-19 pandemic, which shut down many businesses, was a good example of a cash-crunch which hurt many practices that didn't have an extra bank account stocked with cash:
+
+As expenses come in throughout the month for the practice, You can then use each subsequent bank account for those costs Of course operations, debt, and doctor payroll costs will come out monthly, whereas taxes might only be paid out quarterly: Cash profit is then the last bucket which can be drained to a personal account whenever you feel like it. See the graph below for how the cash flows into the practice:
+
+|Income (179k)|Doctor Pay 23% (40.9k)|Lab (9.55k)|
+|---|---|---|
+|Profit 11% (13.4k)|Debt 13% (23.5k)|Interest Expense (4.12k)|
+|Taxes 14% (25.8k)|Doctor Salary (40.9k)| |
+|Debt (19.4k)|Taxes (25.8k)| |
+|Operations 39% (69.4k)|Clinical Wages (12.4k)| |
+|Hygiene Wages (9.92k)|Office Staff (8.17k)|Payroll Costs (2.83k)|
+|Office Expenses (1.09k)|Facility (4.426)|Advertising Promotion (7.72k)|
+|Meetings Meals Entertainment (292.87)|Other Minor Expenses (451.99)|Professional Fees (500)|
+|Continuing Education (803.93)|Billing Outside and Collections (951.03)|Merchant Fees (1.82k)|
+
+Once you agree that you will need multiple bank accounts, the next question is, "How do set these percentages and how do move the money?" The great thing is that if you follow a budget, you already probably know the answers. If you have the reasonable expectation that you will run a "Black Belt" level practice, then you know your operational overhead will be near 50%. After paying doctors another 25%, then that leaves the accountant's profitability at the remaining 25%.
+
+Note: Notice that if you pay a doctor 30% of adjusted production on their work; it actually works out to be less than 30% of all revenues: In the typical dental practice, only 75% of the income comes from the dentist. The remaining 25% comes from hygiene: If you pay 30% for all doctor work, then it actually works out to be 22.5% of all production: After adding in payroll taxes and some benefits, we like to assume 25% total pay for a doctor on average. In practices where the doctor produces a much higher percentage of the practice versus hygiene; then you might want to increase your doctor pay account percentage higher than 25%.
+---
+Next is the graph of how the money should move around these accounts, and the target percentages for a Black Belt practice:
+
+|Incoming Deposit Account|15 0(|Visible?|Overdan|Have|
+|---|---|---|---|---|
+|Doc Pzy|Shoxn|From Profit|opion (0|ada ouler accounts|
+|On ISt|2584|Only DoctorPay from this account|Onetatiotal|Shorn|
+|Aecouthl|50r0|Checks Ghly|Etten @n Sth,|207 0i YOnin|
+|AHl Checks and Employee Payroll from this account|2596|40of|100|Jer Accounl|
+|Hidden|From Prom|From|304 0t|754|
+|Prelt|Hidden|Operatoai|Remaining|3080 0t|
+|7.596|Debt|Shon|om Prolt|Remaining|
+
+Flot a0 $3 unt should amays add UD t0 100 & Emergency (3X Accoum HAs 5120k {xed Expeneea}
+
+After 100% of the money comes into the "Incoming" bank account; we see the light blue boxes that describe how the money is then moved into the next boxes. For a Black Belt practice, 50% of the income should go into Operations. Then 25% of the Income goes into DoctorPay: The remaining 25% goes into the Profit section- which is actually split into Profit, Debt, and Taxes. (Remember you only pay taxes on what is deemed "profit".
+
+For taxes, we never want to be in a shortfall, So make sure you save more than is necessary: In most states and locations, 40% of your profit saved for taxes should be enough to cover your tax bill. So 40% of the 25% equals 10% of total revenues.
+
+For debt; this will be totally dependant on what your historical revenue levels have been and what amount you need to save for your current debt payments In this example, that's another 7.5% of total revenues saved for debt payments on a monthly basis.
+
+Cash profit is the last and final bucket of money: After the remaining 7.5% of money is put into this account, you can then draw this money out into your personal accounts and use it for whatever purpose you want! This profit distribution will be great for you because now you do not have to think about how much to save for taxes or whether you really get to see all this money: Rest assured, if you've followed this process, you have saved enough for taxes!
+---
+Note: If you have a practice shared between multiple partners, we highly recommend this system because different partners might not save adequately for the profits that the dental practice creates: If you follow this system, then each partner gets a withdrawal from the tax account each quarter to pay for their respective tax bills.
+
+# When to Move Money
+
+If we want to really tactical about moving our money, we should move it every 7 to 14 days. For larger businesses with lots of cash movement, every 7 days is a good cadence. However; smaller dental practices will only need to move money every 14 days.
+
+When this occurs, look at your money in the incoming bank account; apply the correct percentages, and then move it into the other accounts accordingly:
+
+If you have set a goal for the Emergency account, you might flow your profit bucket into Emergency until it fills up to your desired level. Once the Emergency account tops out at the desired level, then continue to fill up the profit bucket like normal:
+
+# When You Run Out of Money
+
+Inevitably your operations account will run out of money and you will find yourself in a cash crunch: This happens, and it is a good thing! Why?! As you run out of money, it is a real, and visceral, warning that you are leaving your desired profitability level. When this warning light goes on, you get to see exactly which cost categories are high and eat into your profit.
+
+When you find the cost that is out of normal range for your desired level, that is when you need to evaluate that cost and how to lower it.
+
+As your operations account dwindles, you should pull money back from the general "Profit" category in the respective parts Taxes, Debt, and Profit: This of course is under the assumption that you've got enough in the debt account, otherwise you only pull money out of profit and taxes:
+
+# How to Start
+
+To get started for this system it is important to remember not to start out too aggressive. Although it is a good idea to slice the budgets to those levels at the start. Generally you will want to begin at the level you are currently at, and slowly increase the profitability:
+
+To begin, set the profitability up to 5% better than you are currently earning: As this proverbial belt-tightening starts to happen, you will notice that your operations account will squeeze you into making better decisions and spending less money, on a percentage basis, than you previously have:
+---
+# To review; we generally outline the steps of this system as follows:
+
+1. Set up 7 accounts
+2. Move money every 1-2 weeks
+3. Set your debt and tax percentages accordingly
+4. When the Operations account runs out of money, figure out why: What happened?
+5. Don't become a Black Belt overnight: Change percentages smoothly, especially as revenues grow
+
+# What You Will Learn
+
+As you start this new cash flow process, you will see some general trends around your business. First off, you will notice the cash flow and cycles within the month: When you write big checks from your bank account at certain times of the month, you will see the cyclic nature of the Operations account building cash, then losing cash: These large expenditures could be rent; lab bills, or payroll. As you notice this, you can change and edit your money movement to have better timing.
+
+Another thing you will see is that as revenues grow above a certain point; your fixed costs do not grow accordingly, making it easier to attain a higher status. If you use the cash flow spreadsheet as given out in the document downloads, you will see it is pre-filled out with the numbers as shown below:
+
+|Month|Jun 2023| |Jul 2023| |Aug 2023|Sep 2023|Oct 2023|Nov 2023|
+|---|---|---|---|---|---|---|---|---|
+|White Belt|$29,410.00|$28,320.00|$28,640.00|$27,150.00|$23,530.00| | |13.0%|
+|Blue Belt|$17,300.00|$15,930.00|$16,110.00|$15,385.00|$14,480.00| | |8.0%|
+|Brown Belt|$5,190.00|$4,425.00|$4,475.00|$3,620.00|$3,620.00| | |20%|
+|Black Belt|$5,190.00|$4,425.00|$4,475.00|$3,620.00|$3,620.00| | |20%|
+| |Double Black Belt|$11,765.00|$12,975.00|$12,390.00|$12,530.00|$9,050.00|$8,145.00| |
+|Other Entries| | | | | | | | |
+|$59,075.00|$9,515.00|$8,850.00|$8,950.00|$6,600.00|$6,920.00| | | |
+|$81,650.00|$1,730.00|$1,770.00|$1,790.00|$905.00|$905.00| | | |
+|$18,150.00|$19,030.00|$28,320.00|$28,640.00|$38,010.00|$47,060.00| | | |
+---
+You will notice as the months move along, the revenues start to increase. As your production and revenues increase, there are categories that will increase. These are variable expenses. So as you do more crowns, your lab bills will increase. As you perform more fillings, your supplies usage will increase. However; as you do more dentistry, there are things that do not necessarily increase, like human resources, rent; and office supplies. Since this category does not increase with more revenues, your profit percentage will automatically go up.
+
+The final thing you'll learn is that everyone runs this system a little differently: If you took Dave Ramsey's envelope system, he has some intricacies that are unique to his goals (like no debt). If you copy Mike Michalowicz's system of Profit First, there are some timing differences that he espouses. If you want to read a lot more about the Profit First system, the book is absolutely worth the read.
+
+# Transform Your Business from Cash-Eating Monster to a Money-Making Machine
+
+# REJSE EXP DE D
+
+# MIKE Michalowicz
+
+87
+---
+88
+---
+# Conclusion
+
+We hope that this manual has held a lot of strategic value for you, as well as the tactical information to get to your goals. Since each office is different; there are going to be little details about each of these systems in this book that will either work well for you, or totally clash with how you like your office to run. However; it is through these friction points that we need to revert back to the strategic goals of this book and the framework to think about them.
+
+First of all, we will remember that our goal in Dental Supply ordering should be to have a 4% budget. And to hit that; we will use a frequent ordering cadence to keep on hand only what is needed: No matter whether we like our big supply rep or not; we should order from the best places to keep our budget in check. We will then also keep our Lab costs should be around a 6% budget. As we look for equipment and radiology technology, we should look to find the right digital radiology equipment to help us do good dentistry; and only buy what we need.
+
+However; that's just from the expense side of the equation: On the revenue side, we will master another domain of knowledge: We should know our cost per procedure for each major procedure we perform: After we know each procedure well, we should evaluate insurance participation frequently to see whether their reimbursement covers our desired cost per procedure as well as profitability.
+
+And finally; once we see how the financials of the practice works, we will start to utilize the cash flow system to help manage money and save for taxes and profit: This system will give you freedom to sleep at night knowing that your cash and movement is helping you achieve "Black Belt" status.
+
+While these chapters may seem divergent in thinking and topic, the whole goal is to help dentists be more successful. Hope this book has helped you achieve that; because at the end of the day; whether you are in a group practice in Manhattan, NY, or a single doctor in the middle of Kansas, a rising tide lifts all boats.
+---
+# Downloads
+
+Get the Documents
+
+Togeta FREE 45-day trial of Dental Success Network and receive digital versions of these documents visit www.dentalsuccessnetwork.com/supply-ordering or Scan the QR Code.
+
+Throughout the book we listed documents available for download: Here is the complete list and over time there may even be more added.
+
+|1|Systemization Scorecard|
+|---|---|
+|2|Budget Goals with Belt Status|
+|3|DSN Ordering Formulary|
+|4|DSN Manual Monthly Ordering Budget|
+|5|DSN Cost per Procedure|
+|6|Steps to Evaluating Insurance and Write-offs|
+|7|Insurance Evaluation Spreadsheet|
+|8|Cash Flowing through your Business|
+|9|Folder with OpenDental Fee Analysis Help (Created by Dr: Deren Flesher)|
+|10|Example Budget-Gameplan Spreadsheet|

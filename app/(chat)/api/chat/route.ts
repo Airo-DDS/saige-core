@@ -11,6 +11,12 @@ import { generateTitleFromUserMessage } from '../../actions';
 import { openai } from '@/lib/openai';
 import { pineconeIndex } from '@/lib/pinecone';
 import { streamText } from 'ai';
+import OpenAI from 'openai';
+
+// Create a direct OpenAI client for embeddings
+const openaiClient = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 export const maxDuration = 60;
 
@@ -18,22 +24,27 @@ const RAG_TOP_K = 5; // Number of context chunks to retrieve
 
 async function getContext(query: string, userId: string, chatId: string) {
   try {
-    // We'll create a mock embedding for the query to match our 1536-dimension Pinecone index
-    // Generate a random vector with 1536 dimensions
-    const mockEmbedding = Array.from(
-      { length: 1536 },
-      () => Math.random() * 2 - 1,
-    );
+    if (!query || query.trim() === '') {
+      return '';
+    }
 
-    // Using the mock embedding instead of generating a real one
-    // In production, you would use OpenAI's embedding model
+    // Use OpenAI client to generate a real embedding for the query
+    const embeddingResponse = await openaiClient.embeddings.create({
+      model: 'text-embedding-3-small',
+      input: query.replace(/\n/g, ' '),
+      dimensions: 1536,
+    });
+
+    const queryEmbedding = embeddingResponse.data[0].embedding;
+
+    // Query Pinecone with the real embedding
     const vectorQuery = {
-      vector: mockEmbedding,
+      vector: queryEmbedding,
       topK: RAG_TOP_K,
       includeMetadata: true,
     };
 
-    // Query the pinecone index directly
+    // Query the pinecone index
     const results = await pineconeIndex.query(vectorQuery);
     const matches = results.matches || [];
 
@@ -41,11 +52,18 @@ async function getContext(query: string, userId: string, chatId: string) {
       return '';
     }
 
-    // Format the context from the matches
+    // Format the context from the matches with source information
     const contextText = matches
-      .map((match: any) => {
-        const metadata = match.metadata as { text: string };
-        return metadata?.text || '';
+      .map((match: any, index: number) => {
+        const metadata = match.metadata as { text: string; source: string };
+        const score = match.score
+          ? `(Relevance: ${(match.score * 100).toFixed(1)}%)`
+          : '';
+        const sourceInfo = metadata?.source
+          ? `[Source: ${metadata.source}]`
+          : '';
+        const textContent = metadata?.text || '';
+        return `### Context Chunk ${index + 1} ${score}\n${textContent}`;
       })
       .join('\n\n');
 

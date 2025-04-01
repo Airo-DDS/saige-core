@@ -9,12 +9,27 @@ interface MessageProps {
 }
 
 export function Message({ message, isLoading }: MessageProps) {
+  // Diagnostic logging to see the exact message structure
+  console.log('Message component received:', {
+    id: message.id,
+    role: message.role,
+    content: message.content,
+    hasContent: !!message.content,
+    contentType: typeof message.content,
+    parts: message.parts,
+    hasParts:
+      !!message.parts &&
+      Array.isArray(message.parts) &&
+      message.parts.length > 0,
+  });
+
   const isUser = message.role === 'user';
 
   // Extract the message content, handling all possible formats
   const getMessageContent = () => {
     // If message.content is a non-empty string, use it
     if (typeof message.content === 'string' && message.content.trim() !== '') {
+      console.log('Using content string:', message.content);
       return message.content;
     }
 
@@ -31,12 +46,16 @@ export function Message({ message, isLoading }: MessageProps) {
           (part) => typeof part.text === 'string' && part.text.trim() !== '',
         );
 
+      console.log('Text parts found:', textParts.length);
+
       if (textParts.length > 0) {
+        console.log('Using part text:', textParts[0].text);
         return textParts[0].text;
       }
     }
 
     // Fallback to empty string if no content found
+    console.log('No content found in message');
     return '';
   };
 
@@ -44,8 +63,14 @@ export function Message({ message, isLoading }: MessageProps) {
 
   // Don't render empty messages
   if (!messageContent && !isLoading) {
+    console.log('Skipping empty message:', message.id);
     return null;
   }
+
+  console.log(
+    'Rendering message with content:',
+    messageContent ? messageContent.substring(0, 50) + '...' : 'empty',
+  );
 
   return (
     <div

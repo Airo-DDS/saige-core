@@ -1,7 +1,7 @@
 'use client';
 
 import type { UIMessage } from 'ai';
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 import type { Vote } from '@/lib/db/schema';
 import { useScrollToBottom } from './use-scroll-to-bottom';
 import { Overview } from './overview';
@@ -28,6 +28,27 @@ function PureMessages({
   const [messagesContainerRef, messagesEndRef] =
     useScrollToBottom<HTMLDivElement>();
 
+  // Debug log for messages props
+  useEffect(() => {
+    console.log('Messages component received props:', {
+      chatId,
+      messageCount: messages.length,
+      status,
+      votesAvailable: !!votes,
+    });
+
+    if (messages.length > 0) {
+      console.log('Last message:', {
+        id: messages[messages.length - 1].id,
+        role: messages[messages.length - 1].role,
+        contentPreview:
+          typeof messages[messages.length - 1].content === 'string'
+            ? `${messages[messages.length - 1].content.substring(0, 40)}...`
+            : 'Not a string',
+      });
+    }
+  }, [chatId, messages, status, votes]);
+
   return (
     <div
       ref={messagesContainerRef}
@@ -35,9 +56,13 @@ function PureMessages({
     >
       {messages.length === 0 && <Overview />}
 
-      {messages.map((message) => (
-        <Message key={message.id} message={message} isLoading={false} />
-      ))}
+      {messages.map((message, index) => {
+        console.log(`Rendering message ${index + 1}/${messages.length}:`, {
+          id: message.id,
+          role: message.role,
+        });
+        return <Message key={message.id} message={message} isLoading={false} />;
+      })}
 
       {status === 'submitted' &&
         messages.length > 0 &&

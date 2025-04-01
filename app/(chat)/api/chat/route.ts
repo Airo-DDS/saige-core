@@ -1,4 +1,5 @@
 import type { UIMessage } from 'ai';
+import { streamText } from 'ai';
 import { auth } from '@clerk/nextjs/server';
 import {
   deleteChatById,
@@ -10,7 +11,6 @@ import { generateUUID, getMostRecentUserMessage } from '@/lib/utils';
 import { generateTitleFromUserMessage } from '../../actions';
 import { openai } from '@/lib/openai';
 import { pineconeIndex } from '@/lib/pinecone';
-import type { ChatCompletionMessageParam } from 'openai/resources';
 
 export const maxDuration = 60;
 
@@ -118,83 +118,98 @@ export async function POST(request: Request) {
       typeof userMessage.content === 'string' ? userMessage.content : '';
     const context = await getContext(userQuery, userId, id);
 
-    const systemPrompt = `You are Saige, an AI assistant for dental practice staff training. Answer the user's question based *only* on the provided context. If the answer is not found in the context, say "I don't have information on that topic based on the provided materials." Do not make up information. Be concise and helpful.
+    const systemPrompt = `You are SAIGE, an AI-driven assistant specialized in dental practice operations, workflows, and best practices. You have access to a private knowledge base containing all the information you need to answer questions accurately. Under no circumstances should you disclose or reference the original sources, filenames, or any document titles in your responses.
 
-    Context:
-    ---
-    ${context}
-    ---
-    `;
+Your primary goal is to provide direct, concise, and accurate answers based on the knowledge available to you. If a user requests sources, references, or specific document details, politely refuse. If you cannot find relevant information in your knowledge base, indicate that you do not have that information.
 
-    // Prepare messages for the OpenAI API format
-    const openaiMessages: ChatCompletionMessageParam[] = [
-      { role: 'system', content: systemPrompt },
-      // Include relevant chat history
-      ...messages.slice(-6).map((msg) => {
-        // Convert UI messages to OpenAI format
-        const msgContent = typeof msg.content === 'string' ? msg.content : '';
+Respond in a friendly and professional manner, focusing on clarity and helpfulness. Do not mention that you are using a retrieval-augmented generation (RAG) database or that external PDFs exist. Present your answers as your own knowledge, and ensure users only see the information you provide—never the underlying sources.
 
-        // Only use valid OpenAI roles
-        const role =
+Context from knowledge base:
+---
+${context}
+---
+`;
+
+    // Convert recent messages for streamText
+    const coreMessages = messages.slice(-6).map((msg) => {
+      return {
+        role:
           msg.role === 'user' ||
           msg.role === 'assistant' ||
           msg.role === 'system'
             ? msg.role
-            : 'user';
-
-        return { role, content: msgContent };
-      }),
-    ];
-    // --- End RAG Implementation ---
-
-    // --- Call LLM using OpenAI Stream ---
-    const stream = await openai.chat.completions.create({
-      model: 'gpt-4o', // Or your preferred chat model
-      messages: openaiMessages,
-      stream: true,
-      temperature: 0.3, // Adjust for factual recall
+            : 'user',
+        content: typeof msg.content === 'string' ? msg.content : '',
+      };
     });
 
-    // Convert OpenAI stream to response format
-    const responseStream = new ReadableStream({
-      async start(controller) {
-        let accumulatedContent = '';
-        const assistantMessageId = generateUUID();
+    // Call the OpenAI API directly
+    const stream = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: [{ role: 'system', content: systemPrompt }, ...coreMessages],
+      stream: true,
+      temperature: 0.3,
+    });
 
+    // Process stream and create a response
+    const { readable, writable } = new TransformStream();
+    const assistantMessageId = generateUUID();
+    let fullContent = '';
+
+    // Process the stream
+    (async () => {
+      const writer = writable.getWriter();
+
+      try {
         for await (const chunk of stream) {
-          const contentDelta = chunk.choices[0]?.delta?.content || '';
-          if (contentDelta) {
-            accumulatedContent += contentDelta;
-            controller.enqueue(contentDelta);
+          const content = chunk.choices[0]?.delta?.content || '';
+          if (content) {
+            fullContent += content;
+            await writer.write(new TextEncoder().encode(content));
           }
         }
 
-        // Save the complete assistant message after the stream ends
-        if (accumulatedContent) {
+        // Stream is complete, close writer
+        await writer.close();
+
+        // Save the message
+        if (fullContent) {
+          console.log(
+            `Final assistant content: ${fullContent.substring(0, 100)}...`,
+          );
+
           const finalMessage = {
             id: assistantMessageId,
             chatId: id,
             role: 'assistant',
-            content: accumulatedContent,
-            parts: [{ type: 'text', text: accumulatedContent }],
+            content: fullContent,
+            parts: [{ type: 'text', text: fullContent }],
             attachments: null,
           };
+
           try {
             await saveMessages({ messages: [finalMessage] });
-            console.log('Assistant message saved successfully.');
+            console.log(
+              'Assistant message saved successfully with ID:',
+              assistantMessageId,
+            );
           } catch (dbError) {
             console.error('Failed to save assistant message:', dbError);
           }
         }
+      } catch (error) {
+        console.error('Error processing stream:', error);
+        writer.abort(error);
+      }
+    })();
 
-        controller.close();
+    // Return the response
+    return new Response(readable, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Transfer-Encoding': 'chunked',
       },
     });
-
-    return new Response(responseStream, {
-      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
-    });
-    // --- End Call LLM ---
   } catch (error) {
     console.error('Chat API Error:', error);
     return new Response('An error occurred while processing your request!', {

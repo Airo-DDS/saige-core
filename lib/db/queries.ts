@@ -237,3 +237,14 @@ export async function getVotesByMessageIds({
     throw error;
   }
 }
+
+export async function getVotesByChatId({ chatId }: { chatId: string }) {
+  try {
+    return await prisma.vote.findMany({
+      where: { chatId },
+    });
+  } catch (error) {
+    console.error('Failed to get votes by chat id from database', error);
+    throw error;
+  }
+}

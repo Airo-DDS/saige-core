@@ -10,20 +10,33 @@ export function DataStreamHandler({ id }: DataStreamHandlerProps) {
   useEffect(() => {
     const setupEventSource = async () => {
       try {
-        // This is a placeholder for setting up a Server-Sent Events connection
-        // or other streaming mechanism to handle real-time data
         console.log('Setting up data stream for chat ID:', id);
 
-        // Example of what you might do with an actual EventSource
-        // const eventSource = new EventSource(`/api/stream?chatId=${id}`);
-        // eventSource.onmessage = (event) => {
-        //   const data = JSON.parse(event.data);
-        //   // Process streaming data
-        // };
-        //
-        // return () => {
-        //   eventSource.close();
-        // };
+        // Create a real EventSource connection to the server
+        const eventSource = new EventSource(`/api/stream?chatId=${id}`);
+
+        // Handle incoming messages
+        eventSource.onmessage = (event) => {
+          try {
+            console.log('Received SSE data:', event.data);
+            const data = JSON.parse(event.data);
+            // Process the streaming data
+            console.log('Parsed SSE data:', data);
+          } catch (error) {
+            console.error('Error parsing SSE data:', error);
+          }
+        };
+
+        // Handle connection errors
+        eventSource.onerror = (error) => {
+          console.error('EventSource error:', error);
+          eventSource.close();
+        };
+
+        return () => {
+          console.log('Closing EventSource connection');
+          eventSource.close();
+        };
       } catch (error) {
         console.error('Error setting up data stream:', error);
       }

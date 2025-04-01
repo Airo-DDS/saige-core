@@ -9,7 +9,8 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://chat.vercel.ai'),
   title: 'Saige - AI Dental Assistant',
-  description: 'Saige AI chatbot for dental practice staff training.',
+  description:
+    'Saige AI chatbot for dental practice staff coaching and training.',
 };
 
 export const viewport = {

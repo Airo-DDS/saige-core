@@ -1,10 +1,16 @@
 // Placeholder data-stream-handler component
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
+
+export interface DataStreamDelta {
+  type: string;
+  content?: string;
+  data?: any;
+}
 
 export interface DataStreamProps {
   children: ReactNode;
   isLoading?: boolean;
-  onData?: (data: any) => void;
+  onData?: (data: DataStreamDelta) => void;
 }
 
 export function DataStreamHandler({ children }: DataStreamProps) {

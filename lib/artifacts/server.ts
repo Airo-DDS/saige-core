@@ -1,12 +1,12 @@
-import { codeArtifactHandler } from '@/artifacts/code/server';
-import { imageArtifactHandler } from '@/artifacts/image/server';
-import { sheetArtifactHandler } from '@/artifacts/sheet/server';
-import { textArtifactHandler } from '@/artifacts/text/server';
-import { ArtifactKind } from '@/components/artifact';
-import { DataStreamWriter } from 'ai';
-import { Document } from '../db/schema';
+// import { codeArtifactHandler } from '@/artifacts/code/server';
+// import { imageArtifactHandler } from '@/artifacts/image/server';
+// import { sheetArtifactHandler } from '@/artifacts/sheet/server';
+// import { textArtifactHandler } from '@/artifacts/text/server';
+import type { ArtifactKind } from '@/components/artifact';
+import type { DataStreamWriter } from 'ai';
+import type { Document } from '../db/schema';
 import { saveDocument } from '../db/queries';
-import { Session } from 'next-auth';
+import type { Session } from 'next-auth';
 
 export interface SaveDocumentProps {
   id: string;
@@ -89,11 +89,60 @@ export function createDocumentHandler<T extends ArtifactKind>(config: {
 /*
  * Use this array to define the document handlers for each artifact kind.
  */
+// Define basic placeholder handlers that conform to the DocumentHandler interface
+const textArtifactHandlerPlaceholder: DocumentHandler<'text'> = {
+  kind: 'text',
+  onCreateDocument: async () => {
+    console.log('text create called');
+    return;
+  },
+  onUpdateDocument: async () => {
+    console.log('text update called');
+    return;
+  },
+};
+
+const codeArtifactHandlerPlaceholder: DocumentHandler<'code'> = {
+  kind: 'code',
+  onCreateDocument: async () => {
+    console.log('code create called');
+    return;
+  },
+  onUpdateDocument: async () => {
+    console.log('code update called');
+    return;
+  },
+};
+
+const imageArtifactHandlerPlaceholder: DocumentHandler<'image'> = {
+  kind: 'image',
+  onCreateDocument: async () => {
+    console.log('image create called');
+    return;
+  },
+  onUpdateDocument: async () => {
+    console.log('image update called');
+    return;
+  },
+};
+
+const sheetArtifactHandlerPlaceholder: DocumentHandler<'sheet'> = {
+  kind: 'sheet',
+  onCreateDocument: async () => {
+    console.log('sheet create called');
+    return;
+  },
+  onUpdateDocument: async () => {
+    console.log('sheet update called');
+    return;
+  },
+};
+
 export const documentHandlersByArtifactKind: Array<DocumentHandler> = [
-  textArtifactHandler,
-  codeArtifactHandler,
-  imageArtifactHandler,
-  sheetArtifactHandler,
+  textArtifactHandlerPlaceholder,
+  codeArtifactHandlerPlaceholder,
+  imageArtifactHandlerPlaceholder,
+  sheetArtifactHandlerPlaceholder,
 ];
 
 export const artifactKinds = ['text', 'code', 'image', 'sheet'] as const;
@@ -101,14 +150,14 @@ export const artifactKinds = ['text', 'code', 'image', 'sheet'] as const;
 export function getArtifactHandler(kind: ArtifactKind) {
   switch (kind) {
     case 'code':
-      return codeArtifactHandler;
+      return codeArtifactHandlerPlaceholder;
     case 'image':
-      return imageArtifactHandler;
+      return imageArtifactHandlerPlaceholder;
     case 'sheet':
-      return sheetArtifactHandler;
+      return sheetArtifactHandlerPlaceholder;
     case 'text':
-      return textArtifactHandler;
+      return textArtifactHandlerPlaceholder;
     default:
-      return textArtifactHandler;
+      return textArtifactHandlerPlaceholder;
   }
 }

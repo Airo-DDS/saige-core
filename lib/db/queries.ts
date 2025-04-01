@@ -248,3 +248,31 @@ export async function getVotesByChatId({ chatId }: { chatId: string }) {
     throw error;
   }
 }
+
+// Note: Document and Suggestion models are not implemented in the schema
+// These functions are placeholders and have been removed from the code
+// that depends on them.
+
+// Placeholder function for document saving - actual implementation would use a Document model
+export async function saveDocument({
+  id,
+  title,
+  content,
+  kind,
+  userId,
+}: {
+  id: string;
+  title: string;
+  content: string;
+  kind: string;
+  userId: string;
+}) {
+  console.log('Placeholder saveDocument called with:', {
+    id,
+    title,
+    kind,
+    userId,
+  });
+  // In a real implementation, this would save to the database
+  return { id, title, content, kind, userId, createdAt: new Date() };
+}

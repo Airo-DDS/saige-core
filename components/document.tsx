@@ -120,7 +120,7 @@ function PureDocumentToolCall({
           height: rect.height,
         };
 
-        setArtifact((currentArtifact) => ({
+        setArtifact((currentArtifact: any) => ({
           ...currentArtifact,
           isVisible: true,
           boundingBox,

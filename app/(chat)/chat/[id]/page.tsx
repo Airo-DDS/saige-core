@@ -1,4 +1,4 @@
-import { cookies } from 'next/headers';
+
 import { notFound } from 'next/navigation';
 
 import { auth } from '@clerk/nextjs/server';

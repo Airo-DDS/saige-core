@@ -2,16 +2,16 @@
 
 import {
   memo,
-  MouseEvent,
+  type MouseEvent,
   useCallback,
   useEffect,
   useMemo,
   useRef,
 } from 'react';
-import { ArtifactKind, UIArtifact } from './artifact';
+import type { ArtifactKind, UIArtifact } from './artifact';
 import { FileIcon, FullscreenIcon, ImageIcon, LoaderIcon } from './icons';
 import { cn, fetcher } from '@/lib/utils';
-import { Document } from '@/lib/db/schema';
+import type { Document } from '@/lib/db/schema';
 import { InlineDocumentSkeleton } from './document-skeleton';
 import useSWR from 'swr';
 import { Editor } from './text-editor';
@@ -45,9 +45,14 @@ export function DocumentPreview({
   useEffect(() => {
     const boundingBox = hitboxRef.current?.getBoundingClientRect();
 
-    if (artifact.documentId && boundingBox) {
-      setArtifact((artifact) => ({
-        ...artifact,
+    if (
+      artifact &&
+      'documentId' in artifact &&
+      artifact.documentId &&
+      boundingBox
+    ) {
+      setArtifact((currentArtifact: any) => ({
+        ...currentArtifact,
         boundingBox: {
           left: boundingBox.x,
           top: boundingBox.y,
@@ -56,9 +61,9 @@ export function DocumentPreview({
         },
       }));
     }
-  }, [artifact.documentId, setArtifact]);
+  }, [artifact, setArtifact]);
 
-  if (artifact.isVisible) {
+  if (artifact && 'isVisible' in artifact && artifact.isVisible) {
     if (result) {
       return (
         <DocumentToolResult
@@ -86,18 +91,23 @@ export function DocumentPreview({
 
   const document: Document | null = previewDocument
     ? previewDocument
-    : artifact.status === 'streaming'
+    : artifact && 'status' in artifact && artifact.status === 'streaming'
       ? {
           title: artifact.title,
           kind: artifact.kind,
-          content: artifact.content,
-          id: artifact.documentId,
+          content: artifact.content || '',
+          id: (artifact as UIArtifact & { documentId: string }).documentId,
           createdAt: new Date(),
           userId: 'noop',
         }
       : null;
 
-  if (!document) return <LoadingSkeleton artifactKind={artifact.kind} />;
+  if (!document)
+    return (
+      <LoadingSkeleton
+        artifactKind={artifact && 'kind' in artifact ? artifact.kind : 'text'}
+      />
+    );
 
   return (
     <div className="relative w-full cursor-pointer">
@@ -109,7 +119,13 @@ export function DocumentPreview({
       <DocumentHeader
         title={document.title}
         kind={document.kind}
-        isStreaming={artifact.status === 'streaming'}
+        isStreaming={
+          !!(
+            artifact &&
+            'status' in artifact &&
+            artifact.status === 'streaming'
+          )
+        }
       />
       <DocumentContent document={document} />
     </div>
@@ -249,7 +265,10 @@ const DocumentContent = ({ document }: { document: Document }) => {
     content: document.content ?? '',
     isCurrentVersion: true,
     currentVersionIndex: 0,
-    status: artifact.status,
+    status:
+      artifact && 'status' in artifact
+        ? (artifact.status as 'idle' | 'streaming')
+        : 'idle',
     saveContent: () => {},
     suggestions: [],
   };
@@ -276,7 +295,11 @@ const DocumentContent = ({ document }: { document: Document }) => {
           content={document.content ?? ''}
           isCurrentVersion={true}
           currentVersionIndex={0}
-          status={artifact.status}
+          status={
+            artifact && 'status' in artifact
+              ? (artifact.status as 'idle' | 'streaming')
+              : 'idle'
+          }
           isInline={true}
         />
       ) : null}

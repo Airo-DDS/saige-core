@@ -68,7 +68,7 @@ export function PureMessageActions({
             <Button
               data-testid="message-upvote"
               className="py-1 px-2 h-fit text-muted-foreground !pointer-events-auto"
-              disabled={vote?.isUpvoted}
+              disabled={vote && vote.value === 1}
               variant="outline"
               onClick={async () => {
                 const upvote = fetch('/api/vote', {
@@ -95,9 +95,13 @@ export function PureMessageActions({
                         return [
                           ...votesWithoutCurrent,
                           {
+                            id: message.id + '-vote',
                             chatId,
                             messageId: message.id,
-                            isUpvoted: true,
+                            userId: 'current-user',
+                            value: 1,
+                            createdAt: new Date(),
+                            updatedAt: new Date(),
                           },
                         ];
                       },
@@ -122,7 +126,7 @@ export function PureMessageActions({
               data-testid="message-downvote"
               className="py-1 px-2 h-fit text-muted-foreground !pointer-events-auto"
               variant="outline"
-              disabled={vote && !vote.isUpvoted}
+              disabled={vote && vote.value === -1}
               onClick={async () => {
                 const downvote = fetch('/api/vote', {
                   method: 'PATCH',
@@ -148,9 +152,13 @@ export function PureMessageActions({
                         return [
                           ...votesWithoutCurrent,
                           {
+                            id: message.id + '-vote',
                             chatId,
                             messageId: message.id,
-                            isUpvoted: false,
+                            userId: 'current-user',
+                            value: -1,
+                            createdAt: new Date(),
+                            updatedAt: new Date(),
                           },
                         ];
                       },

@@ -1,5 +1,6 @@
 // Placeholder artifact hook to satisfy imports
 import { Artifact } from '@/components/artifact';
+import { Dispatch, SetStateAction } from 'react';
 
 export function useArtifact(id?: string) {
   return {
@@ -9,6 +10,7 @@ export function useArtifact(id?: string) {
     refetch: async () => {},
     update: async () => {},
     delete: async () => {},
+    setArtifact: (() => {}) as Dispatch<SetStateAction<any>>,
   };
 }
 
@@ -28,4 +30,12 @@ export function useArtifactVersions(artifactId: string) {
     error: null,
     refetch: async () => {},
   };
+}
+
+// Placeholder for artifact selector hook
+export function useArtifactSelector<T>(
+  selector: (state: { isVisible: boolean }) => T,
+): T {
+  // Return default state with isVisible set to false
+  return selector({ isVisible: false });
 }

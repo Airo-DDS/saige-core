@@ -2,7 +2,6 @@
 
 import type { Message } from 'ai';
 import { generateText } from 'ai';
-import { cookies } from 'next/headers';
 import { openai } from '@/lib/openai';
 import {
   deleteMessagesByChatIdAfterTimestamp,

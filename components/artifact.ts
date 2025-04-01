@@ -1,5 +1,5 @@
 // Placeholder artifact component
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 // Types used throughout the application
 export type ArtifactKind = 'text' | 'code' | 'image' | 'sheet';
@@ -30,6 +30,7 @@ export interface ArtifactDefinition {
   name: string;
   icon: ReactNode;
   actions: ArtifactAction[];
+  toolbar?: any[];
 }
 
 // Placeholder artifact definitions

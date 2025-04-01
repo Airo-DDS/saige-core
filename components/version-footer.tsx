@@ -55,35 +55,37 @@ export const VersionFooter = ({
           onClick={async () => {
             setIsMutating(true);
 
-            mutate(
-              `/api/document?id=${artifact.documentId}`,
-              await fetch(`/api/document?id=${artifact.documentId}`, {
-                method: 'PATCH',
-                body: JSON.stringify({
-                  timestamp: getDocumentTimestampByIndex(
-                    documents,
-                    currentVersionIndex,
-                  ),
+            if (artifact && 'documentId' in artifact) {
+              mutate(
+                `/api/document?id=${artifact.documentId}`,
+                await fetch(`/api/document?id=${artifact.documentId}`, {
+                  method: 'PATCH',
+                  body: JSON.stringify({
+                    timestamp: getDocumentTimestampByIndex(
+                      documents,
+                      currentVersionIndex,
+                    ),
+                  }),
                 }),
-              }),
-              {
-                optimisticData: documents
-                  ? [
-                      ...documents.filter((document) =>
-                        isAfter(
-                          new Date(document.createdAt),
-                          new Date(
-                            getDocumentTimestampByIndex(
-                              documents,
-                              currentVersionIndex,
+                {
+                  optimisticData: documents
+                    ? [
+                        ...documents.filter((document) =>
+                          isAfter(
+                            new Date(document.createdAt),
+                            new Date(
+                              getDocumentTimestampByIndex(
+                                documents,
+                                currentVersionIndex,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ]
-                  : [],
-              },
-            );
+                      ]
+                    : [],
+                },
+              );
+            }
           }}
         >
           <div>Restore this version</div>

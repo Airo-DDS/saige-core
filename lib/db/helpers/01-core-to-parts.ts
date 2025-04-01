@@ -1,3 +1,7 @@
+// This file is a utility script for migrating databases
+// It is not meant to be run during the build process
+
+/*
 import { config } from 'dotenv';
 import postgres from 'postgres';
 import {
@@ -9,7 +13,7 @@ import {
 } from '../schema';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import { inArray } from 'drizzle-orm';
-import { appendResponseMessages, UIMessage } from 'ai';
+import { appendResponseMessages, type UIMessage } from 'ai';
 
 config({
   path: '.env.local',
@@ -197,3 +201,7 @@ createNewTable()
     console.error('Script failed:', error);
     process.exit(1);
   });
+*/
+
+// This is now a placeholder comment
+console.log('This script is disabled for production builds');

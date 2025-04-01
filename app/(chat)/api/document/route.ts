@@ -1,5 +1,5 @@
 import { auth } from '@clerk/nextjs/server';
-import { ArtifactKind } from '@/components/artifact';
+import type { ArtifactKind } from '@/components/artifact';
 
 // Placeholder query functions since we're encountering missing exports
 async function getDocumentsById({ id }: { id: string }) {

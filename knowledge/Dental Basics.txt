@@ -1,0 +1,321 @@
+PROCEDURE & TERMINOLOGY REFERENCE
+==================================================================================
+
+This file is the backend reference for training the AI voice receptionist.
+It is designed to help interpret patient calls, understand layperson 
+phrasing, map terms to correct codes,
+triage urgent vs routine care, and communicate office policies 
+consistently.
+
+Each entry contains formal terminology, patient-friendly synonyms, billing 
+codes, procedural flow, 
+insurance considerations, and examples of common phrasing or confusion 
+points.
+
+--------------------------------------------------------------------------------
+CATEGORY: PREVENTIVE CARE
+--------------------------------------------------------------------------------
+
+Term / Procedure Name: Adult Prophylaxis (Dental Cleaning)
+Common Slang / Patient-Friendly Terms / Abbreviations: "Cleaning", 
+"regular cleaning", "teeth cleaning", "checkup cleaning", "basic 
+cleaning", "routine cleaning", "prophy", "six-month cleaning"
+CDT Procedure Code(s): D1110
+Purpose & Indications: Preventive removal of plaque, calculus (tartar), 
+and surface stains for patients without active periodontal disease. Helps 
+maintain gum health and prevent decay.
+Appointment Flow / Timeline: 45–60 minutes. Hygienist performs cleaning 
+and polishing. Dentist does exam and x-rays if due.
+Follow-Up or Aftercare Considerations: Brush/floss daily. Visit every 6 
+months unless advised otherwise.
+Insurance / Billing Notes: Covered twice annually by most PPOs; frequency 
+restrictions apply; must not show periodontal disease.
+Related Terms / Concepts: Periodontal Maintenance (D4910), Child Prophy 
+(D1120), Gingivitis
+Common Patient Questions / Phrases:
+- “Can I get my teeth cleaned?” → [Adult Prophylaxis]
+- “I’m due for my 6-month visit” → [Adult Prophylaxis]
+- “I don’t need x-rays, just a cleaning” → [Adult Prophylaxis; may prompt 
+D0210/D0274 check]
+
+Term / Procedure Name: Child Prophylaxis
+Common Slang / Patient-Friendly Terms / Abbreviations: "Kids cleaning", 
+"child checkup", "pediatric cleaning", "baby teeth cleaning", "school 
+cleaning"
+CDT Procedure Code(s): D1120
+Purpose & Indications: Preventive cleaning for children under 14. Removes 
+biofilm, provides fluoride, tracks development.
+Appointment Flow / Timeline: 30–45 minutes. Includes exam, cleaning, 
+fluoride varnish, and possibly sealants.
+Follow-Up or Aftercare Considerations: Same as adults. Discuss 
+diet/habits.
+Insurance / Billing Notes: Typically covered 100% twice per year for 
+patients under 14.
+Related Terms / Concepts: Fluoride (D1208), Sealants (D1351), Space 
+Maintainers
+Common Patient Questions / Phrases:
+- “Do you see kids?” → [Child Prophylaxis]
+- “Is fluoride safe?” → [Fluoride Treatment]
+
+Term / Procedure Name: Fluoride Treatment
+Common Slang / Patient-Friendly Terms / Abbreviations: "Fluoride", 
+"protective coating", "varnish", "tooth treatment"
+CDT Procedure Code(s): D1208
+Purpose & Indications: Helps remineralize enamel, lower decay risk. 
+Especially beneficial for kids, ortho patients, and high-risk adults.
+Appointment Flow / Timeline: Applied by hygienist after cleaning; takes 
+1–2 minutes.
+Follow-Up or Aftercare Considerations: No eating/drinking 30 mins. Avoid 
+abrasive brushing that evening.
+Insurance / Billing Notes: Covered for kids. Some adult coverage with 
+high-risk documentation.
+Related Terms / Concepts: Cavity Prevention, Topical Application, 
+Preventive Care
+Common Patient Questions / Phrases:
+- “Do I need fluoride?” → [Fluoride Treatment]
+- “Is this covered?” → [Fluoride Treatment]
+
+--------------------------------------------------------------------------------
+CATEGORY: RESTORATIVE
+--------------------------------------------------------------------------------
+
+Term / Procedure Name: Dental Fillings
+Common Slang / Patient-Friendly Terms / Abbreviations: "Cavity filling", 
+"silver filling", "white filling", "composite", "patch", "tooth repair", 
+"resin"
+CDT Procedure Code(s): D2140–D2161 (Amalgam), D2330–D2394 (Composite)
+Purpose & Indications: Repairs damage from decay or fracture. Restores 
+form and function to tooth.
+Appointment Flow / Timeline: 30–60 minutes; local anesthesia; performed by 
+dentist.
+Follow-Up or Aftercare Considerations: Avoid eating until numbness wears 
+off. Mild soreness possible.
+Insurance / Billing Notes: Composite fillings may be downgraded if 
+posterior. Verify posterior vs anterior limits.
+Related Terms / Concepts: Local Anesthetic, Decay, Drilling, Bonding
+Common Patient Questions / Phrases:
+- “Do I have a cavity?” → [Dental Fillings]
+- “Can you match the color?” → [Composite Fillings]
+
+Term / Procedure Name: Root Canal Therapy
+Common Slang / Patient-Friendly Terms / Abbreviations: "Root canal", 
+"nerve treatment", "tooth infection fix", "endo"
+CDT Procedure Code(s): D3310 (Anterior), D3320 (Premolar), D3330 (Molar)
+Purpose & Indications: Treats infected pulp inside tooth; relieves pain, 
+avoids extraction.
+Appointment Flow / Timeline: 1–3 visits; involves cleaning out roots and 
+sealing canals. Followed by buildup and crown.
+Follow-Up or Aftercare Considerations: Pain meds as needed. Crown needed 
+soon after for long-term success.
+Insurance / Billing Notes: Often pre-auth required. Crowns billed 
+separately. Verify coverage tiers.
+Related Terms / Concepts: Infection, Abscess, Crown
+Common Patient Questions / Phrases:
+- “Is it going to hurt?” → [Root Canal Therapy]
+- “Do I need a crown too?” → [Dental Crowns]
+
+Term / Procedure Name: Dental Crowns
+Common Slang / Patient-Friendly Terms / Abbreviations: "Cap", "tooth cap", 
+"crown", "porcelain tooth", "covering"
+CDT Procedure Code(s): D2740 (Porcelain), D2790 (Full Gold), D2750 (PFM)
+Purpose & Indications: Protects cracked, weak, or heavily restored teeth. 
+Often needed post-root canal.
+Appointment Flow / Timeline: 2 visits: prep and temp crown → cementation 
+visit.
+Follow-Up or Aftercare Considerations: Be careful with temp. Final crown 
+care like natural teeth.
+Insurance / Billing Notes: Frequency limitations (5–7 yrs); may require 
+documentation if replacing.
+Related Terms / Concepts: Root Canal, Onlay, Core Build-Up
+Common Patient Questions / Phrases:
+- “Is a cap the same thing as a crown?” → [Dental Crowns]
+- “Can I chew normally?” → [Dental Crowns]
+
+--------------------------------------------------------------------------------
+CATEGORY: INSURANCE & BILLING
+--------------------------------------------------------------------------------
+
+Term / Concept: Deductible
+Lay Terms: "Out-of-pocket minimum", "amount before insurance kicks in"
+Definition: Set dollar amount patient must pay before insurance begins 
+covering procedures.
+Common Questions:
+- “Why isn’t insurance paying for this?” → [Deductible]
+
+Term / Concept: Frequency Limitation
+Lay Terms: "How often it’s covered", "yearly allowance"
+Definition: Restriction on how often a service is covered (e.g., 2 
+cleanings/year).
+Common Questions:
+- “Can I come more than twice a year?” → [Frequency Limitation]
+
+--------------------------------------------------------------------------------
+CATEGORY: SCHEDULING
+--------------------------------------------------------------------------------
+
+Term / Concept: New Patient Exam
+Lay Terms: "First visit", "initial appointment", "first-time checkup"
+CDT Codes: D0150 (Comprehensive Exam), D0210 (Full Mouth X-Rays)
+Common Questions:
+- “Do you take new patients?” → [New Patient Exam]
+- “How long is the first visit?” → [New Patient Exam]
+
+Term / Concept: Emergency Appointment
+Lay Terms: "Toothache visit", "urgent appointment", "same-day visit", 
+"walk-in"
+CDT Codes: D0140 (Limited Exam), D0220 (X-ray), D9110 (Palliative 
+Treatment)
+Common Questions:
+- “Can I come in today?” → [Emergency Appointment]
+- “My tooth broke—can you see me?” → [Emergency Appointment]
+
+==================================================================================
+END OF REFERENCE DOCUMENT – AIRODENTAL INTERNAL USE ONLY
+==================================================================================
+
+
+--------------------------------------------------------------------------------
+CATEGORY: PROSTHODONTICS
+--------------------------------------------------------------------------------
+
+Term / Procedure Name: Dentures (Complete and Partial)
+Common Slang / Patient-Friendly Terms / Abbreviations: "False teeth", 
+"plates", "partials", "full set", "bottom/top teeth"
+CDT Procedure Code(s): D5110 (Complete upper), D5120 (Complete lower), 
+D5211–D5214 (Partial dentures)
+Purpose & Indications: Replaces missing teeth for function, esthetics, and 
+speech. Can be full (no teeth remaining) or partial (some teeth remain).
+Appointment Flow / Timeline: Multiple visits for impressions, try-in, 
+delivery. Adjustments needed after seating.
+Follow-Up or Aftercare Considerations: Soak dentures nightly, regular 
+relines. Adjustments may be required over time.
+Insurance / Billing Notes: Covered once every 5–10 years typically. Often 
+has waiting period.
+Related Terms / Concepts: Extractions, Immediate Dentures, Reline
+Common Patient Questions / Phrases:
+- “Do you make dentures?” → [Dentures]
+- “Can I get teeth pulled and dentures same day?” → [Immediate Dentures]
+
+Term / Procedure Name: Dental Bridge
+Common Slang / Patient-Friendly Terms / Abbreviations: "Bridge", "tooth 
+bridge", "fake tooth"
+CDT Procedure Code(s): D6740–D6791 (based on material and location)
+Purpose & Indications: Non-removable prosthetic replacing missing teeth 
+using neighboring teeth as support.
+Appointment Flow / Timeline: 2–3 visits; prep and temp → final 
+cementation.
+Follow-Up or Aftercare Considerations: Floss under bridge with threaders 
+or Waterpik.
+Insurance / Billing Notes: Usually covered every 5–7 years. Must document 
+necessity and support.
+Related Terms / Concepts: Crowns, Implants, Pontic
+Common Patient Questions / Phrases:
+- “Is a bridge better than an implant?” → [Dental Bridge]
+
+Term / Procedure Name: Implant Crown
+Common Slang / Patient-Friendly Terms / Abbreviations: "Implant tooth", 
+"screw tooth", "fake tooth"
+CDT Procedure Code(s): D6065 (Implant crown), D6010 (Surgical implant 
+placement)
+Purpose & Indications: Replaces single missing tooth with a titanium post 
+and crown.
+Appointment Flow / Timeline: Surgery → healing (3–6 months) → final 
+restoration.
+Follow-Up or Aftercare Considerations: Clean like a natural tooth. Monitor 
+bone levels.
+Insurance / Billing Notes: Medical vs dental coverage confusion common; 
+often not fully covered.
+Related Terms / Concepts: Bone Grafting, Healing Abutment, 
+Osseointegration
+Common Patient Questions / Phrases:
+- “Is it permanent?” → [Implant Crown]
+- “Does insurance cover implants?” → [Implant Crown]
+
+--------------------------------------------------------------------------------
+CATEGORY: PERIODONTICS
+--------------------------------------------------------------------------------
+
+Term / Procedure Name: Scaling and Root Planing (SRP)
+Common Slang / Patient-Friendly Terms / Abbreviations: "Deep cleaning", 
+"gum treatment", "scaling"
+CDT Procedure Code(s): D4341 (4+ teeth), D4342 (1–3 teeth)
+Purpose & Indications: Removes calculus below gumline; for patients with 
+periodontal disease.
+Appointment Flow / Timeline: Usually split into quadrants; numbing 
+required.
+Follow-Up or Aftercare Considerations: Perio maintenance every 3–4 months. 
+Home care critical.
+Insurance / Billing Notes: Needs perio charting/x-rays. Usually 80% 
+covered.
+Related Terms / Concepts: Periodontal Maintenance (D4910), Gingivitis, 
+Bone Loss
+Common Patient Questions / Phrases:
+- “Is this different than a regular cleaning?” → [SRP]
+- “Why do I need a deep cleaning?” → [SRP]
+
+Term / Procedure Name: Periodontal Maintenance
+Common Slang / Patient-Friendly Terms / Abbreviations: "Perio cleaning", 
+"maintenance cleaning"
+CDT Procedure Code(s): D4910
+Purpose & Indications: Ongoing therapy for periodontal patients after SRP.
+Appointment Flow / Timeline: 45–60 mins; every 3–4 months.
+Follow-Up or Aftercare Considerations: Essential to prevent disease 
+progression.
+Insurance / Billing Notes: Covered under perio benefits; not prophy. Often 
+80% covered.
+Related Terms / Concepts: SRP, D1110 (not interchangeable), Gum Disease
+Common Patient Questions / Phrases:
+- “Is this the same as a regular cleaning?” → [Periodontal Maintenance]
+
+--------------------------------------------------------------------------------
+CATEGORY: EMERGENCY & TRIAGE
+--------------------------------------------------------------------------------
+
+Term / Scenario: Broken Tooth
+Routing: Limited Exam + X-ray (D0140 + D0220), possible same-day treatment
+Common Patient Phrases:
+- “My tooth broke while eating” → [Emergency Visit]
+- “Half of my tooth is gone” → [Dental Crown or Extraction evaluation]
+
+Term / Scenario: Swelling or Infection
+Routing: Immediate eval; same-day or ER referral if systemic symptoms 
+(fever, swelling spreading)
+Common Patient Phrases:
+- “My face is swollen” → [Emergency Visit + Antibiotic Protocol]
+- “I think I have an abscess” → [Root Canal or Extraction triage]
+
+Term / Scenario: Pain After Treatment
+Routing: Based on recent procedure; document and escalate
+Common Patient Phrases:
+- “I had a filling/crown and it still hurts” → [Post-op Eval + X-ray]
+
+--------------------------------------------------------------------------------
+CATEGORY: COMMON INSURANCE DISPUTES
+--------------------------------------------------------------------------------
+
+Term / Concept: Downgrading
+Lay Terms: “Insurance won’t cover the white filling”, “they’re only paying 
+for silver”
+Definition: Insurance covers least expensive material and patient pays 
+difference.
+Common Phrases:
+- “Why do I owe more for a white filling?” → [Downgrading]
+
+Term / Concept: Waiting Period
+Lay Terms: “You have to wait before they’ll pay for this”
+Definition: Time after insurance starts before major procedures are 
+covered (e.g. crowns, dentures)
+Common Phrases:
+- “Why isn’t this covered yet?” → [Waiting Period]
+
+Term / Concept: Out-of-Network
+Lay Terms: “Do you take my insurance?”, “Are you in-network?”
+Definition: Office doesn’t have contract with carrier. Benefits may still 
+apply at lower rate.
+Common Phrases:
+- “Can I still come if you’re not in-network?” → [Out-of-Network 
+Workflow]
+
+==================================================================================
+FULL REFERENCE COMPLETE
+==================================================================================

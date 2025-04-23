@@ -25,6 +25,12 @@ export async function getChatsByUserId({ userId }: { userId: string }) {
     return await prisma.chat.findMany({
       where: { userId },
       orderBy: { createdAt: 'desc' },
+      include: {
+        messages: {
+          orderBy: { createdAt: 'asc' },
+          include: { vote: true },
+        },
+      },
     });
   } catch (error) {
     console.error('Failed to get chats by user from database', error);
@@ -275,4 +281,18 @@ export async function saveDocument({
   });
   // In a real implementation, this would save to the database
   return { id, title, content, kind, userId, createdAt: new Date() };
+}
+
+// Functions for user monitoring
+/** Fetch all users (id + email + createdAt) */
+export async function getAllUsers() {
+  try {
+    return await prisma.user.findMany({
+      select: { id: true, email: true, createdAt: true },
+      orderBy: { createdAt: 'desc' }, // Order by creation date
+    });
+  } catch (error) {
+    console.error('Failed to get all users from database', error);
+    throw error;
+  }
 }

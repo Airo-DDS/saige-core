@@ -95,7 +95,7 @@ export function PureMessageActions({
                         return [
                           ...votesWithoutCurrent,
                           {
-                            id: message.id + '-vote',
+                            id: `${message.id}-vote`,
                             chatId,
                             messageId: message.id,
                             userId: 'current-user',
@@ -152,7 +152,7 @@ export function PureMessageActions({
                         return [
                           ...votesWithoutCurrent,
                           {
-                            id: message.id + '-vote',
+                            id: `${message.id}-vote`,
                             chatId,
                             messageId: message.id,
                             userId: 'current-user',

@@ -1,6 +1,6 @@
 // Placeholder artifact hook to satisfy imports
-import { Artifact } from '@/components/artifact';
-import { Dispatch, SetStateAction } from 'react';
+import type { Artifact } from '@/components/artifact';
+import type { Dispatch, SetStateAction } from 'react';
 
 export function useArtifact(id?: string) {
   return {
